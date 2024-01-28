@@ -9,6 +9,7 @@
 class USkeletalMeshComponent;
 class UBoxComponent;
 class UPawnMovementComponent;
+class UHealthComponent;
 
 UCLASS()
 class ASTEROIDS_API ABaseSpacecraft : public APawn
@@ -31,4 +32,7 @@ protected:
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Components")
     UPawnMovementComponent* MovementComponent;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Components")
+    UHealthComponent* HealthComponent;
 };

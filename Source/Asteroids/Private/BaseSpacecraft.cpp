@@ -3,6 +3,7 @@
 #include "Components/SkeletalMeshComponent.h"
 #include "Components/BoxComponent.h"
 #include "GameFramework/FloatingPawnMovement.h"
+#include "Components/HealthComponent.h"
 
 ABaseSpacecraft::ABaseSpacecraft()
 {
@@ -16,6 +17,8 @@ ABaseSpacecraft::ABaseSpacecraft()
     MeshComponent->SetupAttachment(BoxCollision);
 
     MovementComponent = CreateDefaultSubobject<UFloatingPawnMovement>("MovementComponent");
+
+    HealthComponent = CreateDefaultSubobject<UHealthComponent>("HealthComponent");
 }
 
 void ABaseSpacecraft::BeginPlay()
@@ -26,6 +29,7 @@ void ABaseSpacecraft::BeginPlay()
         checkf(BoxCollision, TEXT("BoxCollision doesn't exist!"));
         checkf(MeshComponent, TEXT("MeshComponent doesn't exist!"));
         checkf(MovementComponent, TEXT("MovementComponent doesn't exist!"));
+        checkf(HealthComponent, TEXT("HealthComponent doesn't exist!"));
     }
 }
 
