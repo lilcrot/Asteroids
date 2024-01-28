@@ -3,10 +3,12 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
+
 #include "BaseSpacecraft.generated.h"
 
 class USkeletalMeshComponent;
 class UBoxComponent;
+class UPawnMovementComponent;
 
 UCLASS()
 class ASTEROIDS_API ABaseSpacecraft : public APawn
@@ -19,11 +21,14 @@ public:
     virtual void Tick(float DeltaTime) override;
 
 protected:
+    virtual void BeginPlay() override;
+
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
     USkeletalMeshComponent* MeshComponent;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
     UBoxComponent* BoxCollision;
 
-    virtual void BeginPlay() override;
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Components")
+    UPawnMovementComponent* MovementComponent;
 };
