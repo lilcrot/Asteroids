@@ -44,7 +44,7 @@ protected:
     int32 MaxHealth = 4;
 
 private:
-    int CurrentHealth = MaxHealth;
+    int CurrentHealth;
 
 public:
     //----------------------

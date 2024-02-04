@@ -8,7 +8,7 @@
 
 class USkeletalMeshComponent;
 class UBoxComponent;
-class UPawnMovementComponent;
+class UFloatingPawnMovement;
 class UHealthComponent;
 
 UCLASS()
@@ -24,14 +24,14 @@ public:
 protected:
     virtual void BeginPlay() override;
 
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Components")
     USkeletalMeshComponent* MeshComponent;
 
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Components")
     UBoxComponent* BoxCollision;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Components")
-    UPawnMovementComponent* MovementComponent;
+    UFloatingPawnMovement* MovementComponent;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Components")
     UHealthComponent* HealthComponent;

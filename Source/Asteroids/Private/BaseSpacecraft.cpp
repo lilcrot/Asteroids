@@ -10,27 +10,26 @@ ABaseSpacecraft::ABaseSpacecraft()
     PrimaryActorTick.bCanEverTick = false;
 
     BoxCollision = CreateDefaultSubobject<UBoxComponent>("BoxCollision");
+    checkf(BoxCollision, TEXT("BoxCollision doesn't exist!"));
+
     BoxCollision->SetCollisionProfileName(UCollisionProfile::Pawn_ProfileName);
     SetRootComponent(BoxCollision);
 
     MeshComponent = CreateDefaultSubobject<USkeletalMeshComponent>("MeshComponent");
+    checkf(MeshComponent, TEXT("MeshComponent doesn't exist!"));
+
     MeshComponent->SetupAttachment(BoxCollision);
 
     MovementComponent = CreateDefaultSubobject<UFloatingPawnMovement>("MovementComponent");
+    checkf(MovementComponent, TEXT("MovementComponent doesn't exist!"));
 
     HealthComponent = CreateDefaultSubobject<UHealthComponent>("HealthComponent");
+    checkf(HealthComponent, TEXT("HealthComponent doesn't exist!"));
 }
 
 void ABaseSpacecraft::BeginPlay()
 {
     Super::BeginPlay();
-
-    {
-        checkf(BoxCollision, TEXT("BoxCollision doesn't exist!"));
-        checkf(MeshComponent, TEXT("MeshComponent doesn't exist!"));
-        checkf(MovementComponent, TEXT("MovementComponent doesn't exist!"));
-        checkf(HealthComponent, TEXT("HealthComponent doesn't exist!"));
-    }
 }
 
 void ABaseSpacecraft::Tick(float DeltaTime)
