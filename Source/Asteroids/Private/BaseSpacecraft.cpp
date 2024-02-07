@@ -11,13 +11,11 @@ ABaseSpacecraft::ABaseSpacecraft()
 
     BoxCollision = CreateDefaultSubobject<UBoxComponent>("BoxCollision");
     checkf(BoxCollision, TEXT("BoxCollision doesn't exist!"));
-
     BoxCollision->SetCollisionProfileName(UCollisionProfile::Pawn_ProfileName);
     SetRootComponent(BoxCollision);
 
     MeshComponent = CreateDefaultSubobject<USkeletalMeshComponent>("MeshComponent");
     checkf(MeshComponent, TEXT("MeshComponent doesn't exist!"));
-
     MeshComponent->SetupAttachment(BoxCollision);
 
     MovementComponent = CreateDefaultSubobject<UFloatingPawnMovement>("MovementComponent");
@@ -30,9 +28,21 @@ ABaseSpacecraft::ABaseSpacecraft()
 void ABaseSpacecraft::BeginPlay()
 {
     Super::BeginPlay();
+
+    {
+        checkf(!FMath::IsNearlyZero(OverlapDamage), TEXT("OverlapDamage must be more than zero!"));
+    }
+
+    OnActorBeginOverlap.AddDynamic(this, &ThisClass::OnActorBeginOverlapReceive);
 }
 
 void ABaseSpacecraft::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
+}
+
+void ABaseSpacecraft::OnActorBeginOverlapReceive(AActor* OverlappedActor, AActor* OtherActor)
+{
+    if (!OtherActor) return;
+    OtherActor->TakeDamage(OverlapDamage, FDamageEvent(), Controller, this);
 }

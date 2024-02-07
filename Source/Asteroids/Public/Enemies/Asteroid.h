@@ -12,7 +12,7 @@ class USphereComponent;
 class UHealthComponent;
 class UFloatingPawnMovement;
 
-UCLASS()
+UCLASS(Abstract, NotBlueprintType, Blueprintable)
 class ASTEROIDS_API AAsteroid : public APawn
 {
     GENERATED_BODY()
@@ -39,6 +39,9 @@ protected:
 
     UFUNCTION()
     void OnActorBeginOverlapReceive(AActor* OverlappedActor, AActor* OtherActor);
+
+    UFUNCTION(BlueprintNativeEvent)
+    void OnDeath();
 
 private:
     void StartRecoverVelocity();

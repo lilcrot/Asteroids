@@ -25,6 +25,8 @@ AAsteroid::AAsteroid()
 
     MovementComponent = CreateDefaultSubobject<UFloatingPawnMovement>("MovementComponent");
     checkf(MovementComponent, TEXT("MovementComponent doesn't exist!"));
+
+    AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;
 }
 
 void AAsteroid::Tick(float DeltaTime)
@@ -42,20 +44,34 @@ void AAsteroid::BeginPlay()
         checkf(MaxAcceleration > MinAcceleration, TEXT("MaxAcceleration must be more than MinAcceleration!"));
         MovementComponent->Acceleration = FMath::RandRange(MaxAcceleration, MinAcceleration);
 
-        checkf(!FMath::IsNearlyZero(MaxSpeed), TEXT("MaxSpeed must be more than zero!"));
+        checkf(MaxSpeed > 0.0f, TEXT("MaxSpeed must be more than zero!"));
         MovementComponent->MaxSpeed = MaxSpeed;
 
-        checkf(!FMath::IsNearlyZero(OverlapDamage), TEXT("OverlapDamage must be more than zero!"));
+        checkf(OverlapDamage > 0.0f, TEXT("OverlapDamage must be more than zero!"));
+
+        checkf(VelocityDivideCoefficient > 0.0f, TEXT("VelocityDivideCoefficient must be more than zero!"));
     }
 
     OnActorBeginOverlap.AddDynamic(this, &ThisClass::OnActorBeginOverlapReceive);
+
+    HealthComponent->OnDeath.AddDynamic(this, &ThisClass::OnDeath);
+}
+
+void AAsteroid::OnDeath_Implementation()
+{
+    SphereCollision->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
+    Destroy();
 }
 
 void AAsteroid::OnActorBeginOverlapReceive(AActor* OverlappedActor, AActor* OtherActor)
 {
     if (!OtherActor || OtherActor->IsA(AWorldObtacle::StaticClass())) return;
 
-    OtherActor->TakeDamage(OverlapDamage, FDamageEvent(), nullptr, this);
+    /* Asteroids only attack another actors, if an asteroid is hit by another asteroid, then they should only change their direction */
+    if (!OtherActor->IsA(AAsteroid::StaticClass()))
+    {
+        OtherActor->TakeDamage(OverlapDamage, FDamageEvent(), Controller, this);
+    }
 
     CurrentVelocityScaleValue /= VelocityDivideCoefficient;
     StartRecoverVelocity();

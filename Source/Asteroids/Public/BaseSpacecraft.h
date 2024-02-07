@@ -35,4 +35,12 @@ protected:
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Components")
     UHealthComponent* HealthComponent;
+
+    /* When a spacecraft collides with another actor, how much damage should it do */
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Overlap", meta = (MinClamp = "0"))
+    float OverlapDamage = 1.0f;
+
+protected:
+    UFUNCTION()
+    virtual void OnActorBeginOverlapReceive(AActor* OverlappedActor, AActor* OtherActor);
 };
