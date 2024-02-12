@@ -6,7 +6,7 @@
 #include "Weapons/Ranged/BaseRangedWeapon.h"
 #include "Laser.generated.h"
 
-UCLASS()
+UCLASS(Abstract)
 class ASTEROIDS_API ALaser : public ABaseRangedWeapon
 {
     GENERATED_BODY()
@@ -19,4 +19,7 @@ public:
 
 protected:
     virtual void BeginPlay() override;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Weapon|Fire", meta = (Units = "cm"))
+    float ShotRange = 3000.0f;
 };

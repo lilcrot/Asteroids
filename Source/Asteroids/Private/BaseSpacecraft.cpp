@@ -4,6 +4,7 @@
 #include "Components/BoxComponent.h"
 #include "GameFramework/FloatingPawnMovement.h"
 #include "Components/HealthComponent.h"
+#include "Components/WeaponComponent.h"
 
 ABaseSpacecraft::ABaseSpacecraft()
 {
@@ -23,15 +24,15 @@ ABaseSpacecraft::ABaseSpacecraft()
 
     HealthComponent = CreateDefaultSubobject<UHealthComponent>("HealthComponent");
     checkf(HealthComponent, TEXT("HealthComponent doesn't exist!"));
+
+    WeaponComponent = CreateDefaultSubobject<UWeaponComponent>("WeaponComponent");
+    checkf(WeaponComponent, TEXT("WeaponComponent doesn't exist!"));
 }
 
 void ABaseSpacecraft::BeginPlay()
 {
     Super::BeginPlay();
-
-    {
-        checkf(!FMath::IsNearlyZero(OverlapDamage), TEXT("OverlapDamage must be more than zero!"));
-    }
+    checkf(OverlapDamage > 0, TEXT("OverlapDamage must be more than zero!"));
 
     OnActorBeginOverlap.AddDynamic(this, &ThisClass::OnActorBeginOverlapReceive);
 }

@@ -15,19 +15,14 @@ void ABaseWeapon::Tick(float DeltaTime)
 void ABaseWeapon::BeginPlay()
 {
     Super::BeginPlay();
+    checkf(DamageAmount > 0, TEXT("DamageAmount must be more than zero!"));
 
     TryAttachToOwner();
 }
 
-void ABaseWeapon::StartFire() 
-{
-    bFiring = true;
-}
+void ABaseWeapon::StartFire() {}
 
-void ABaseWeapon::StopFire() 
-{
-    bFiring = false;
-}
+void ABaseWeapon::StopFire() {}
 
 bool ABaseWeapon::TryAttachToOwner()
 {
@@ -35,5 +30,5 @@ bool ABaseWeapon::TryAttachToOwner()
     if (!MyOwner) return false;
 
     FAttachmentTransformRules TransformRules = FAttachmentTransformRules::SnapToTargetIncludingScale;
-    return AttachToActor(MyOwner, TransformRules, OwnerAttackSocketName);
+    return AttachToActor(MyOwner, TransformRules);
 }

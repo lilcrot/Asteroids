@@ -4,7 +4,6 @@
 UHealthComponent::UHealthComponent()
 {
     PrimaryComponentTick.bCanEverTick = false;
-    checkf(MaxHealth > 0, TEXT("DefaultHealth must be more than zero"));
 }
 
 void UHealthComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
@@ -15,6 +14,7 @@ void UHealthComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActo
 void UHealthComponent::BeginPlay()
 {
     Super::BeginPlay();
+    checkf(MaxHealth > 0, TEXT("DefaultHealth must be more than zero"));
     CurrentHealth = MaxHealth;
 
     AActor* MyOwner = GetOwner();

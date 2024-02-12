@@ -37,4 +37,6 @@ private:
     ABaseWeapon* CurrentWeapon;
     TArray<ABaseWeapon*> Weapons;
     int32 CurrentWeaponIndex = 0;
+
+    void SpawnWeapons();
 };

@@ -24,9 +24,9 @@ public:
 protected:
     virtual void BeginPlay() override;
 
-    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Weapon")
-    FName OwnerAttackSocketName = "";
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Weapon|Fire")
+    bool bAutoFire = true;
 
-private:
-    bool bFiring = false;
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Weapon|Fire", meta = (ClampMin = "0"))
+    int32 DamageAmount = 1;
 };

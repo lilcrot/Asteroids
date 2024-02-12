@@ -30,8 +30,12 @@ protected:
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Movement", meta = (ClampMin = "0.0"))
     float RotationSpeed = 2.5f;
 
+    void FirstWeaponFire();
+    void StopFire();
+
 private:
     void LookToMouse(float DeltaTime);
+
 protected:
     //-------------------
     // Enhanced Inputs
@@ -44,4 +48,7 @@ protected:
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "EnhancedInput|Default")
     UInputAction* MovementAction;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "EnhancedInput|Default")
+    UInputAction* FirstWeaponFireAction;
 };

@@ -10,6 +10,7 @@ class USkeletalMeshComponent;
 class UBoxComponent;
 class UFloatingPawnMovement;
 class UHealthComponent;
+class UWeaponComponent;
 
 UCLASS()
 class ASTEROIDS_API ABaseSpacecraft : public APawn
@@ -36,9 +37,12 @@ protected:
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Components")
     UHealthComponent* HealthComponent;
 
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Components")
+    UWeaponComponent* WeaponComponent;
+
     /* When a spacecraft collides with another actor, how much damage should it do */
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Overlap", meta = (MinClamp = "0"))
-    float OverlapDamage = 1.0f;
+    int32 OverlapDamage = 1;
 
 protected:
     UFUNCTION()

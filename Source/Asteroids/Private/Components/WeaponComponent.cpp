@@ -2,7 +2,7 @@
 #include "Components/WeaponComponent.h"
 #include "Weapons/BaseWeapon.h"
 
-DEFINE_LOG_CATEGORY_STATIC(LogBaseWeapon, All, All);
+DEFINE_LOG_CATEGORY_STATIC(LogWeaponComponent, All, All);
 
 UWeaponComponent::UWeaponComponent()
 {
@@ -12,6 +12,29 @@ UWeaponComponent::UWeaponComponent()
 void UWeaponComponent::BeginPlay()
 {
     Super::BeginPlay();
+    SpawnWeapons();
+}
+
+void UWeaponComponent::SpawnWeapons()
+{
+    UWorld* World = GetWorld();
+    if (!World) return;
+
+    FActorSpawnParameters SpawnParams;
+    SpawnParams.Owner = GetOwner();
+
+    for (int i = 0; i < WeaponClasses.Num(); ++i)
+    {
+        if (!IsValid(WeaponClasses[i]))
+        {
+            UE_LOG(LogWeaponComponent, Warning, TEXT("The %ith class isn't valid in WeaponClasses"), i);
+            continue;
+        }
+        const auto Weapon = World->SpawnActor<ABaseWeapon>(WeaponClasses[i], SpawnParams);
+        if (!Weapon) continue;
+
+        Weapons.Add(Weapon);
+    }
 }
 
 void UWeaponComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
@@ -33,7 +56,7 @@ void UWeaponComponent::StartFireByIndex(const int32 Index)
 {
     if (!Weapons.IsValidIndex(Index))
     {
-        UE_LOG(LogBaseWeapon, Warning, TEXT("StartFireByIndex: invalid index so start fire is failed!"));
+        UE_LOG(LogWeaponComponent, Warning, TEXT("StartFireByIndex: invalid index so start fire is failed!"));
         return;
     }
     if (Weapons[Index])

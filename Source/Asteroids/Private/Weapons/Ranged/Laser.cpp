@@ -6,6 +6,7 @@ ALaser::ALaser() {}
 void ALaser::BeginPlay()
 {
     Super::BeginPlay();
+    checkf(ShotRange > 0, TEXT("ShotRange must be more than zero!"));
 }
 
 void ALaser::StartFire()

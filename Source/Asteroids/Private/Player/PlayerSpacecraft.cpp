@@ -4,6 +4,7 @@
 #include "EnhancedInputSubsystems.h"
 #include "EnhancedInputComponent.h"
 #include "Kismet/KismetMathLibrary.h"
+#include "Components/WeaponComponent.h"
 
 APlayerSpacecraft::APlayerSpacecraft()
 {
@@ -37,6 +38,9 @@ void APlayerSpacecraft::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
     if (!EnhancedInputComponent) return;
 
     EnhancedInputComponent->BindAction(MovementAction, ETriggerEvent::Triggered, this, &ThisClass::Move);
+
+    EnhancedInputComponent->BindAction(FirstWeaponFireAction, ETriggerEvent::Started, this, &ThisClass::FirstWeaponFire);
+    EnhancedInputComponent->BindAction(FirstWeaponFireAction, ETriggerEvent::Completed, this, &ThisClass::StopFire);
 }
 
 void APlayerSpacecraft::Move(const FInputActionValue& Value)
@@ -47,7 +51,19 @@ void APlayerSpacecraft::Move(const FInputActionValue& Value)
     AddMovementInput(FVector::RightVector, MovementVector.Y);
 }
 
-void APlayerSpacecraft::LookToMouse(float DeltaTime) 
+void APlayerSpacecraft::FirstWeaponFire()
+{
+    if (!WeaponComponent) return;
+    WeaponComponent->StartFireByIndex(0);
+}
+
+void APlayerSpacecraft::StopFire() 
+{
+    if (!WeaponComponent) return;
+    WeaponComponent->StopFire();
+}
+
+void APlayerSpacecraft::LookToMouse(float DeltaTime)
 {
     const auto* PlayerController = Cast<APlayerController>(Controller);
     if (!PlayerController) return;

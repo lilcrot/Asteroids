@@ -40,7 +40,7 @@ protected:
     void OnTakeAnyDamage(AActor* DamagedActor, float Damage, const class UDamageType* DamageType,  //
         class AController* InstigatedBy, AActor* DamageCauser);                                    //
 
-    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Health")
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Health", meta = (MinClamp = "0"))
     int32 MaxHealth = 4;
 
 private:
