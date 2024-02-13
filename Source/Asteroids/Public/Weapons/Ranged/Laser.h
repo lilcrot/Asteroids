@@ -20,6 +20,27 @@ public:
 protected:
     virtual void BeginPlay() override;
 
-    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Weapon|Fire", meta = (Units = "cm"))
+    virtual void MakeShot() override;
+    virtual bool CanMakeShot() const override;
+
+    void GetTraceData(FVector& TraceStart, FVector& TraceEnd) const;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Weapon|Laser", meta = (Units = "cm"))
     float ShotRange = 3000.0f;
+
+    /* Think of the laser as a sphere */
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Weapon|Laser", meta = (Units = "cm"))
+    float LaserRadius = 15.0f;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Weapon|Laser")
+    int32 MaxLaserShots = 10;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Weapon|Laser", meta = (ClampMin = "0.01", Units = "s"))
+    float ReloadingTime = 10.0f;
+
+private:
+    int32 CurrentLaserShots = 0;
+
+    void StartReloadLaserShots();
+    bool bReloading = false;
 };

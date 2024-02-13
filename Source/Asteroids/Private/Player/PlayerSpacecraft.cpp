@@ -41,6 +41,9 @@ void APlayerSpacecraft::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 
     EnhancedInputComponent->BindAction(FirstWeaponFireAction, ETriggerEvent::Started, this, &ThisClass::FirstWeaponFire);
     EnhancedInputComponent->BindAction(FirstWeaponFireAction, ETriggerEvent::Completed, this, &ThisClass::StopFire);
+
+    EnhancedInputComponent->BindAction(SecondWeaponFireAction, ETriggerEvent::Started, this, &ThisClass::SecondWeaponFire);
+    EnhancedInputComponent->BindAction(SecondWeaponFireAction, ETriggerEvent::Completed, this, &ThisClass::StopFire);
 }
 
 void APlayerSpacecraft::Move(const FInputActionValue& Value)
@@ -57,7 +60,13 @@ void APlayerSpacecraft::FirstWeaponFire()
     WeaponComponent->StartFireByIndex(0);
 }
 
-void APlayerSpacecraft::StopFire() 
+void APlayerSpacecraft::SecondWeaponFire()
+{
+    if (!WeaponComponent) return;
+    WeaponComponent->StartFireByIndex(1);
+}
+
+void APlayerSpacecraft::StopFire()
 {
     if (!WeaponComponent) return;
     WeaponComponent->StopFire();

@@ -8,13 +8,13 @@ ABaseRangedWeapon::ABaseRangedWeapon() {}
 void ABaseRangedWeapon::BeginPlay()
 {
     Super::BeginPlay();
+
+    checkf(ShootRate > 0.0f, TEXT("ShootRate must be more than zero, else fire will always fail!"));
 }
 
 void ABaseRangedWeapon::StartFire()
 {
     Super::StartFire();
-
-    checkf(ShootRate > 0.0f, TEXT("ShootRate must be more than zero, else fire will always fail!"));
 
     if (UWorld* World = GetWorld())
     {

@@ -31,6 +31,7 @@ protected:
     float RotationSpeed = 2.5f;
 
     void FirstWeaponFire();
+    void SecondWeaponFire();
     void StopFire();
 
 private:
@@ -51,4 +52,7 @@ protected:
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "EnhancedInput|Default")
     UInputAction* FirstWeaponFireAction;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "EnhancedInput|Default")
+    UInputAction* SecondWeaponFireAction;
 };
