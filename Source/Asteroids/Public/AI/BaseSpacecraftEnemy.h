@@ -7,6 +7,8 @@
 
 #include "BaseSpacecraftEnemy.generated.h"
 
+class UBehaviorTree;
+
 UCLASS()
 class ASTEROIDS_API ABaseSpacecraftEnemy : public ABaseSpacecraft
 {
@@ -14,4 +16,10 @@ class ASTEROIDS_API ABaseSpacecraftEnemy : public ABaseSpacecraft
 
 public:
     ABaseSpacecraftEnemy();
+
+protected:
+    virtual void BeginPlay() override;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Enemy")
+    UBehaviorTree* DefaultBT = nullptr;
 };

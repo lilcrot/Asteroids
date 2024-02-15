@@ -1,11 +1,11 @@
 // A test task by KEFIR
-#include "Enemies/Asteroid.h"
+#include "Asteroid.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Components/SphereComponent.h"
 #include "Components/HealthComponent.h"
 #include "GameFramework/FloatingPawnMovement.h"
 #include "AsteroidCoreTypes.h"
-#include "WorldObtacle.h"
+#include "WorldBoundary.h"
 
 AAsteroid::AAsteroid()
 {
@@ -65,7 +65,7 @@ void AAsteroid::OnDeath_Implementation()
 
 void AAsteroid::OnActorBeginOverlapReceive(AActor* OverlappedActor, AActor* OtherActor)
 {
-    if (!OtherActor || OtherActor->IsA(AWorldObtacle::StaticClass())) return;
+    if (!OtherActor || OtherActor->IsA(AWorldBoundary::StaticClass())) return;
 
     /* Asteroids only attack another actors, if an asteroid is hit by another asteroid, then they should only change their direction */
     if (!OtherActor->IsA(AAsteroid::StaticClass()))

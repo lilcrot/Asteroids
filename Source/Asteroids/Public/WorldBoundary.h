@@ -4,17 +4,17 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "WorldObtacle.generated.h"
+#include "WorldBoundary.generated.h"
 
 class UBoxComponent;
 
 UCLASS()
-class ASTEROIDS_API AWorldObtacle : public AActor
+class ASTEROIDS_API AWorldBoundary : public AActor
 {
     GENERATED_BODY()
 
 public:
-    AWorldObtacle();
+    AWorldBoundary();
 
 protected:
     virtual void BeginPlay() override;

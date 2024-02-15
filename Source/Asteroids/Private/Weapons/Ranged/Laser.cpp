@@ -13,7 +13,7 @@ void ALaser::BeginPlay()
     checkf(MaxLaserShots > 0, TEXT("MaxLaserShots must be more than zero!"));
     checkf(ReloadingTime > 0.0f, TEXT("ReloadingTime must be more than zero!"))
 
-    CurrentLaserShots = MaxLaserShots;
+        CurrentLaserShots = MaxLaserShots;
 }
 
 void ALaser::StartFire()
@@ -41,8 +41,8 @@ void ALaser::MakeShot()
     GetTraceData(TraceStart, TraceEnd);
     FHitResult Hit;
 
-    UKismetSystemLibrary::SphereTraceSingle(GetWorld(), TraceStart, TraceEnd, LaserRadius,                                          //
-        UEngineTypes::ConvertToTraceType(TraceChannel_Weapon), true, {GetOwner()}, EDrawDebugTrace::Type::ForDuration, Hit, true);  //
+    UKismetSystemLibrary::SphereTraceSingle(GetWorld(), TraceStart, TraceEnd, LaserRadius,
+        UEngineTypes::ConvertToTraceType(WeaponTraceCollisionChannel), true, {GetOwner()}, EDrawDebugTrace::Type::ForDuration, Hit, true);
 
     if (Hit.bBlockingHit && Hit.GetActor())
     {
@@ -74,7 +74,8 @@ void ALaser::StartReloadLaserShots()
 
     bReloading = true;
     FTimerHandle ReloadTimerHandle;
-    World->GetTimerManager().SetTimer(ReloadTimerHandle,
+    World->GetTimerManager().SetTimer(
+        ReloadTimerHandle,
         [&]()
         {
             bReloading = false;

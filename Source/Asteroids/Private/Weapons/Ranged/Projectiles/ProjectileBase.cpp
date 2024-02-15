@@ -23,6 +23,8 @@ AProjectileBase::AProjectileBase()
     MovementComponent->InitialSpeed = 1500.0f;
     MovementComponent->MaxSpeed = 3000.0f;
     MovementComponent->ProjectileGravityScale = 0.0f;
+
+    InitialLifeSpan = 5.0f;
 }
 
 void AProjectileBase::Tick(float DeltaTime)

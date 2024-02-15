@@ -1,20 +1,19 @@
 // A test task by KEFIR
-#include "WorldObtacle.h"
+#include "WorldBoundary.h"
 #include "Components/BoxComponent.h"
 #include "AsteroidCoreTypes.h"
 
-AWorldObtacle::AWorldObtacle()
+AWorldBoundary::AWorldBoundary()
 {
     PrimaryActorTick.bCanEverTick = false;
 
     DeathCollision = CreateDefaultSubobject<UBoxComponent>("DeathCollision");
-    DeathCollision->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Block);
-    DeathCollision->SetCollisionResponseToChannel(AsteroidCollisionChannel, ECollisionResponse::ECR_Overlap);
+    DeathCollision->SetCollisionProfileName(UCollisionProfile::BlockAll_ProfileName, true);
 
     SetRootComponent(DeathCollision);
 }
 
-void AWorldObtacle::BeginPlay()
+void AWorldBoundary::BeginPlay()
 {
     Super::BeginPlay();
 
@@ -23,7 +22,7 @@ void AWorldObtacle::BeginPlay()
     DeathCollision->OnComponentEndOverlap.AddDynamic(this, &ThisClass::OnDeathCollisionEndOverlap);
 }
 
-void AWorldObtacle::OnDeathCollisionEndOverlap(UPrimitiveComponent* OverlappedComponent,  //
+void AWorldBoundary::OnDeathCollisionEndOverlap(UPrimitiveComponent* OverlappedComponent,  //
     AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)             //
 {
     if (!OtherActor || !GetWorld()) return;
