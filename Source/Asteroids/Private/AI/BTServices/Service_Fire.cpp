@@ -30,7 +30,7 @@ void UService_Fire::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemor
     auto WeaponComponent = EnemyOwner->FindComponentByClass<UWeaponComponent>();
     if (!WeaponComponent)
     {
-        UE_LOG(LogAIServiceFire, Error, TEXT("Owner doesn't have WeaponComponent, but it's implied"));
+        UE_LOG(LogAIServiceFire, Error, TEXT("Owner doesn't has WeaponComponent, but it's implied"));
         return;
     }
 

@@ -19,7 +19,7 @@ void UBTT_ChasingTarget::TickTask(UBehaviorTreeComponent& OwnerComp, uint8* Node
     AAIController* AIController = OwnerComp.GetAIOwner();
     if (!AIController)
     {
-        FinishLatentTaskWithError(OwnerComp, Result::Failed, "UBTT_ChasingTarget doesn't has a AIController.");
+        FinishLatentTaskWithError(OwnerComp, Result::Failed, "UBTT_ChasingTarget doesn't has an AIController.");
         return;
     }
 
