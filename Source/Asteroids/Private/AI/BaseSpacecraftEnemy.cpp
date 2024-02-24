@@ -3,7 +3,10 @@
 #include "AIController.h"
 #include "BehaviorTree/BehaviorTree.h"
 
-ABaseSpacecraftEnemy::ABaseSpacecraftEnemy() {}
+ABaseSpacecraftEnemy::ABaseSpacecraftEnemy()
+{
+    AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;
+}
 
 void ABaseSpacecraftEnemy::BeginPlay()
 {
