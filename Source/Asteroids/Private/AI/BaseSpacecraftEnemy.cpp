@@ -8,6 +8,11 @@ ABaseSpacecraftEnemy::ABaseSpacecraftEnemy()
     AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;
 }
 
+AActor* ABaseSpacecraftEnemy::GetCurrentTarget() const
+{
+    return CurrentTarget;
+}
+
 void ABaseSpacecraftEnemy::BeginPlay()
 {
     Super::BeginPlay();

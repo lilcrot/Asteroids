@@ -37,6 +37,8 @@ protected:
 private:
     void LookToMouse(float DeltaTime);
 
+    void ToggleGamePause();
+
 protected:
     //-------------------
     // Enhanced Inputs
@@ -55,4 +57,7 @@ protected:
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "EnhancedInput|Default")
     UInputAction* SecondWeaponFireAction;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "EnhancedInput|Default")
+    UInputAction* ToggleGamePauseAction;
 };

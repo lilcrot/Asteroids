@@ -36,3 +36,18 @@ void UHealthComponent::SetHealth(const int32 NewHealth)
     CurrentHealth = FMath::Clamp(NewHealth, 0, MaxHealth);
     if (CurrentHealth <= 0) OnDeath.Broadcast();
 }
+
+int32 UHealthComponent::GetHealth() const
+{
+    return CurrentHealth;
+}
+
+int32 UHealthComponent::GetMaxHealth() const
+{
+    return MaxHealth;
+}
+
+bool UHealthComponent::IsDead() const
+{
+    return CurrentHealth <= 0;
+}

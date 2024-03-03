@@ -14,4 +14,10 @@ class ASTEROIDS_API ASpacecraftPlayerController : public APlayerController
 
 public:
     ASpacecraftPlayerController();
+
+    UFUNCTION(BlueprintCallable, Category = "PlayerController")
+    void ToggleGamePause();
+
+protected:
+    virtual void OnPossess(APawn* InPawn) override;
 };

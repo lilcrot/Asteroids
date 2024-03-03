@@ -3,12 +3,14 @@
 #include "AI/EnemySpawner.h"
 #include "Kismet/GameplayStatics.h"
 #include "Player/PlayerSpacecraft.h"
+#include "Player/SpacecraftPlayerController.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogEnemyWavesGMBase, All, All);
 
 AEnemyWavesGameModeBase::AEnemyWavesGameModeBase()
 {
     DefaultPawnClass = APlayerSpacecraft::StaticClass();
+    PlayerControllerClass = ASpacecraftPlayerController::StaticClass();
 }
 
 void AEnemyWavesGameModeBase::InitGame(const FString& MapName, const FString& Options, FString& ErrorMessage)
@@ -51,13 +53,32 @@ void AEnemyWavesGameModeBase::BeginPlay()
     StartNewWave(false);  // we don't need progression on the first wave
 }
 
+bool AEnemyWavesGameModeBase::SetPause(APlayerController* PC, FCanUnpause CanUnpauseDelegate)
+{
+    const bool bSucceed = Super::SetPause(PC, CanUnpauseDelegate);
+    if (bSucceed) OnGamePauseChangedEvent.Broadcast(true);
+
+    return bSucceed;
+}
+
+bool AEnemyWavesGameModeBase::ClearPause()
+{
+    const bool bSucceed = Super::ClearPause();
+    if (bSucceed) OnGamePauseChangedEvent.Broadcast(false);
+
+    return bSucceed;
+}
+
+//-----------------------
+//     Enemy Waves
+//-----------------------
+
 void AEnemyWavesGameModeBase::StartNewWave(const bool bApplyProgression)
 {
     CurrentWaveNumber++;
     if (bApplyProgression) ApplyProgression();
 
     UE_LOG(LogEnemyWavesGMBase, Display, TEXT("The new %i-th wave with %f points !"), CurrentWaveNumber, CurrentWavePoints);
-
 
     const TArray<TSubclassOf<AActor>> EnemyPool = BuildEnemyPool(CurrentWavePoints);
     RemainingEnemies += EnemyPool.Num();

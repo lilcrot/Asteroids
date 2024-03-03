@@ -18,7 +18,7 @@ public:
     ABaseSpacecraftEnemy();
 
     UFUNCTION(BlueprintPure, Category = "Enemy")
-    AActor* GetCurrentTarget() const { return CurrentTarget; }
+    AActor* GetCurrentTarget() const;
 
 protected:
     virtual void BeginPlay() override;

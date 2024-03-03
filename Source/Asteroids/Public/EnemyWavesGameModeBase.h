@@ -19,6 +19,8 @@ struct FEnemyClassInWaveInfo
     int32 MaxSpawnPerWave = 10;
 };
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnGamePauseChangedDelegate, bool, bIsPaused);
+
 UCLASS(Abstract)
 class ASTEROIDS_API AEnemyWavesGameModeBase : public AGameModeBase
 {
@@ -29,8 +31,19 @@ public:
 
     virtual void InitGame(const FString& MapName, const FString& Options, FString& ErrorMessage) override;
 
+    UPROPERTY(BlueprintAssignable, Category = "GameMode")
+    FOnGamePauseChangedDelegate OnGamePauseChangedEvent;
+
 protected:
     virtual void BeginPlay() override;
+
+    virtual bool SetPause(APlayerController* PC, FCanUnpause CanUnpauseDelegate = FCanUnpause()) override;
+    virtual bool ClearPause() override;
+
+protected:
+    //-----------------------
+    //      Enemy Waves
+    //-----------------------
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "EnemyWaves")
     TMap<TSubclassOf<AActor>, FEnemyClassInWaveInfo> EnemyClassesInfoMap;

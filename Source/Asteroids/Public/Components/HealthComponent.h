@@ -24,14 +24,14 @@ public:
     void SetHealth(const int32 NewHealth);
 
     UFUNCTION(BlueprintPure, Category = "Health")
-    int32 GetHealth() const { return CurrentHealth; }
+    int32 GetHealth() const;
 
     /* return health limit */
     UFUNCTION(BlueprintPure, Category = "Health")
-    int32 GetMaxHealth() const { return MaxHealth; }
+    int32 GetMaxHealth() const;
 
     UFUNCTION(BlueprintPure, Category = "Health")
-    bool IsDead() const { return CurrentHealth <= 0; }
+    bool IsDead() const;
 
 protected:
     virtual void BeginPlay() override;
@@ -41,7 +41,7 @@ protected:
         class AController* InstigatedBy, AActor* DamageCauser);                                    //
 
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Health", meta = (MinClamp = "0"))
-    int32 MaxHealth = 4;
+    int32 MaxHealth = 1;
 
 private:
     int CurrentHealth;

@@ -5,6 +5,7 @@
 #include "EnhancedInputComponent.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "Components/WeaponComponent.h"
+#include "Player/SpacecraftPlayerController.h"
 
 APlayerSpacecraft::APlayerSpacecraft()
 {
@@ -44,6 +45,8 @@ void APlayerSpacecraft::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 
     EnhancedInputComponent->BindAction(SecondWeaponFireAction, ETriggerEvent::Started, this, &ThisClass::SecondWeaponFire);
     EnhancedInputComponent->BindAction(SecondWeaponFireAction, ETriggerEvent::Completed, this, &ThisClass::StopFire);
+
+    EnhancedInputComponent->BindAction(ToggleGamePauseAction, ETriggerEvent::Completed, this, &ThisClass::ToggleGamePause);
 }
 
 void APlayerSpacecraft::Move(const FInputActionValue& Value)
@@ -84,4 +87,12 @@ void APlayerSpacecraft::LookToMouse(float DeltaTime)
     const FRotator RInterpResult = UKismetMathLibrary::RInterpTo(GetActorRotation(), TargetRotation, DeltaTime, RotationSpeed);
 
     SetActorRotation(FRotator(0.0, RInterpResult.Yaw, 0.0));
+}
+
+void APlayerSpacecraft::ToggleGamePause()
+{
+    if (auto* MyPlayerController = Cast<ASpacecraftPlayerController>(Controller))
+    {
+        MyPlayerController->ToggleGamePause();
+    }
 }
