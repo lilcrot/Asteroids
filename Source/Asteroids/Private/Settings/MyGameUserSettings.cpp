@@ -1,6 +1,8 @@
 // A test task by KEFIR
 #include "Settings/MyGameUserSettings.h"
-#include "Settings/GameSettings.h"
+
+#include "Settings/ScalarGameSettings.h"
+#include "Settings/OptionsGameSettings.h"
 #include "Kismet/GameplayStatics.h"
 
 #define BIND_SETTINGS_FUNC(FUNC)                                                                                                           \
@@ -41,11 +43,11 @@ void UMyGameUserSettings::RunBenchmark()
 
 void UMyGameUserSettings::InitializeVideoSettings()
 {
-    const TArray<FSettingOption> VideoSettingOptions = {
-        {LOCTEXT("VideoSettingQualityLow_Loc", "Low"), 0},        //
-        {LOCTEXT("VideoSettingQualityMedium_Loc", "Medium"), 1},  //
-        {LOCTEXT("VideoSettingQualityHigh_Loc", "High"), 2},      //
-        {LOCTEXT("VideoSettingQualityEpic_Loc", "Epic"), 3}       //
+    const TArray<FText> VideoSettingOptions = {
+        LOCTEXT("VideoSettingQualityLow_Loc", "Low"),        // 0 lvl
+        LOCTEXT("VideoSettingQualityMedium_Loc", "Medium"),  // 1 lvl
+        LOCTEXT("VideoSettingQualityHigh_Loc", "High"),      // 2 lvl
+        LOCTEXT("VideoSettingQualityEpic_Loc", "Epic")       // 3 lvl
     };
 
     const auto AddSetting = [&](const FText& Name, TFunction<int32()> Getter, TFunction<void(const int32)> Setter)
@@ -53,7 +55,7 @@ void UMyGameUserSettings::InitializeVideoSettings()
         auto* Setting = NewObject<UVideoGameSetting>();
         check(Setting);
         Setting->SetName(Name);
-        Setting->SetOptions(VideoSettingOptions);
+        Setting->SetPossibleOptions(VideoSettingOptions);
         Setting->AddGetter(Getter);
         Setting->AddSetter(Setter);
         VideoSettings.Add(Setting);
@@ -79,6 +81,26 @@ void UMyGameUserSettings::InitializeVideoSettings()
 const TArray<UScalarGameSetting*>& UMyGameUserSettings::GetAudioSettings() const
 {
     return AudioSettings;
+}
+
+UAudioDeviceOutputGameSetting* UMyGameUserSettings::GetAudioDeviceOutputGameSetting(ULocalPlayer* InLocalPlayer)
+{
+    if (IsValid(AudioDeviceOutputGameSetting) == false)
+    {
+        AudioDeviceOutputGameSetting = NewObject<UAudioDeviceOutputGameSetting>(InLocalPlayer);
+        checkf(IsValid(AudioDeviceOutputGameSetting), TEXT("AudioDeviceOutputGameSetting isn't valid!"));
+
+        AudioDeviceOutputGameSetting->SetName(LOCTEXT("AudioOutputDevice_Loc", "AudioOutputDevice"));
+        AudioDeviceOutputGameSetting->AddGetter([&]() { return AudioOutputDeviceId; });
+        AudioDeviceOutputGameSetting->AddSetter(
+            [&](const FString& InAudioOutputDeviceId)
+            {
+                AudioOutputDeviceId = InAudioOutputDeviceId;
+                ApplySettings(false);
+            });
+        AudioDeviceOutputGameSetting->OnInitialized();
+    }
+    return AudioDeviceOutputGameSetting;
 }
 
 void UMyGameUserSettings::InitializeAudioSettings()

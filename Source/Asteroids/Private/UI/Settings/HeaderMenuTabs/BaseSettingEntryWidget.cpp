@@ -1,7 +1,7 @@
 // A test task by KEFIR
-#include "UI/Settings/HeaderMenuTabs/BaseSettingOptionEntryWidget.h"
+#include "UI/Settings/HeaderMenuTabs/BaseSettingEntryWidget.h"
 
-void UBaseSettingOptionEntryWidget::NativeOnInitialized()
+void UBaseSettingEntryWidget::NativeOnInitialized()
 {
     Super::NativeOnInitialized();
 

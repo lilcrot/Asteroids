@@ -5,12 +5,12 @@
 #include "Blueprint/UserWidget.h"
 #include "Blueprint/IUserObjectListEntry.h"
 
-#include "BaseSettingOptionEntryWidget.generated.h"
+#include "BaseSettingEntryWidget.generated.h"
 
 class UTextBlock;
 
 UCLASS(Abstract, NotBlueprintable, NotBlueprintType)
-class ASTEROIDS_API UBaseSettingOptionEntryWidget : public UUserWidget, public IUserObjectListEntry
+class ASTEROIDS_API UBaseSettingEntryWidget : public UUserWidget, public IUserObjectListEntry
 {
     GENERATED_BODY()
 

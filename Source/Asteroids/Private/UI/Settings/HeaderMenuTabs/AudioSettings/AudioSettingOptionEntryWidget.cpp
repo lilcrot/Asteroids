@@ -1,6 +1,6 @@
 // A test task by KEFIR
 #include "UI/Settings/HeaderMenuTabs/AudioSettings/AudioSettingOptionEntryWidget.h"
-#include "Settings/GameSettings.h"
+#include "Settings/ScalarGameSettings.h"
 #include "Components/TextBlock.h"
 #include "Components/Slider.h"
 
@@ -14,7 +14,7 @@ void UAudioSettingOptionEntryWidget::NativeOnListItemObjectSet(UObject* ListItem
 
     {
         SettingDisplayName->SetText(GameSetting->GetName());
-        OnDefaultValueChanged(-1.0f);
+        OnDefaultValueChanged(INDEX_NONE);
         UpdateTexts();
     }
 }

@@ -4,10 +4,10 @@
 #include "CoreMinimal.h"
 #include "UI/Settings/HeaderMenuTabs/BaseSettingPossibleOptionsEntryWidget.h"
 
-#include "VideoSettingOptionEntryWidget.generated.h"
+#include "SoundSettingOptionEntryWidget.generated.h"
 
 UCLASS(Abstract, Blueprintable, BlueprintType)
-class ASTEROIDS_API UVideoSettingOptionEntryWidget : public UBaseSettingPossibleOptionsEntryWidget
+class ASTEROIDS_API USoundSettingOptionEntryWidget : public UBaseSettingPossibleOptionsEntryWidget
 {
     GENERATED_BODY()
 

@@ -9,6 +9,7 @@
 
 class UVideoGameSetting;
 class UScalarGameSetting;
+class UAudioDeviceOutputGameSetting;
 
 class USoundClass;
 class USoundMix;
@@ -34,10 +35,12 @@ class ASTEROIDS_API UMyGameUserSettings : public UGameUserSettings
 
 public:
     UMyGameUserSettings();
+
     static UMyGameUserSettings* Get();
 
     const TArray<UVideoGameSetting*>& GetVideoSettings() const;
     const TArray<UScalarGameSetting*>& GetAudioSettings() const;
+
 public:
     //------------------
     //  VideoSettings
@@ -47,16 +50,20 @@ public:
     void RunBenchmark();
 
     FOnSettingsUpdatedDelegate OnVideoSettingsUpdated;
+
 private:
     UPROPERTY()
     TArray<UVideoGameSetting*> VideoSettings;
     void InitializeVideoSettings();
 
-protected:
+public:
     //------------------
     //  AudioSettings
     //------------------
+    
+    UAudioDeviceOutputGameSetting* GetAudioDeviceOutputGameSetting(ULocalPlayer* InLocalPlayer);
 
+protected:
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "AudioSettings")
     FSoundMixClassInfo OverrallAudioInfo;
 
@@ -71,7 +78,7 @@ private:
     TArray<UScalarGameSetting*> AudioSettings;
     void InitializeAudioSettings();
 
-    UPROPERTY(Config) 
+    UPROPERTY(Config)
     float OverallVolumePercentage = 1.0f;
 
     UPROPERTY(Config)
@@ -79,4 +86,10 @@ private:
 
     UPROPERTY(Config)
     float SoundFXVolumePercentage = 1.0f;
+
+    UPROPERTY()
+    UAudioDeviceOutputGameSetting* AudioDeviceOutputGameSetting;
+
+    UPROPERTY(Config)
+    FString AudioOutputDeviceId;
 };

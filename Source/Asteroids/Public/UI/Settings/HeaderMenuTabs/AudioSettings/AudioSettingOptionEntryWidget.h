@@ -2,7 +2,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "UI/Settings/HeaderMenuTabs/BaseSettingOptionEntryWidget.h"
+#include "UI/Settings/HeaderMenuTabs/BaseSettingEntryWidget.h"
 
 #include "AudioSettingOptionEntryWidget.generated.h"
 
@@ -11,8 +11,8 @@ class USlider;
 
 class UScalarGameSetting;
 
-UCLASS(Abstract)
-class ASTEROIDS_API UAudioSettingOptionEntryWidget : public UBaseSettingOptionEntryWidget
+UCLASS()
+class ASTEROIDS_API UAudioSettingOptionEntryWidget : public UBaseSettingEntryWidget
 {
     GENERATED_BODY()
 

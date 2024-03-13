@@ -11,7 +11,7 @@ public class Asteroids : ModuleRules
         PublicDependencyModuleNames.AddRange(new string[]
         { 
             "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput",
-            "AIModule", "GameplayTasks"
+            "AIModule", "GameplayTasks", "AudioMixer"
         });
 
         PrivateDependencyModuleNames.AddRange(new string[] { });

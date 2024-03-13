@@ -1,5 +1,5 @@
 // A test task by KEFIR
-#include "UI/Settings/HeaderMenuTabs/VideoSettings/GameSettingRotatorWidget.h"
+#include "UI/Settings/GameSettingRotatorWidget.h"
 
 UGameSettingRotatorWidget::UGameSettingRotatorWidget(const FObjectInitializer& Initializer) : Super(Initializer) {}
 

@@ -2,7 +2,7 @@
 #include "UI/Settings/HeaderMenuTabs/VideoSettings/VideoSettingsWidget.h"
 #include "UI/Settings/HeaderMenuTabs/VideoSettings/VideoSettingOptionEntryWidget.h"
 #include "Settings/MyGameUserSettings.h"
-#include "Settings/GameSettings.h"
+#include "Settings/OptionsGameSettings.h"
 #include "Components/ListView.h"
 #include "Components/Button.h"
 
@@ -13,14 +13,14 @@ void UVideoSettingsWidget::NativeOnInitialized()
     Super::NativeOnInitialized();
 
     auto* UserSettings = UMyGameUserSettings::Get();
-    if (!UserSettings)
+    if (IsValid(UserSettings) == false)
     {
         UE_LOG(LogVideoSettingsWidget, Error, TEXT("MyGameUserSettings is nullptr"));
         return;
     }
 
     UserSettings->LoadSettings();
-    const auto VideoSettings = UserSettings->GetVideoSettings();
+    const auto& VideoSettings = UserSettings->GetVideoSettings();
 
     checkf(ListViewVideoSettings, TEXT("ListViewVideoSettings doesn't exist!"));
     ListViewVideoSettings->ClearListItems();

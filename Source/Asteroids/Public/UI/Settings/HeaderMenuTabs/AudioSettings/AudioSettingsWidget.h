@@ -18,4 +18,7 @@ protected:
 
     UPROPERTY(meta = (BindWidget))
     UListView* ListViewAudioSettings;
+
+    UPROPERTY(meta = (BindWidget))
+    UListView* ListViewSoundSettings;
 };
