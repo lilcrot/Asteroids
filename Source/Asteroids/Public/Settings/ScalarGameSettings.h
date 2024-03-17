@@ -9,16 +9,24 @@
 //  Scalar GameSettings
 //---------------------------------
 
+enum EScalarDisplayFormat
+{
+    SDF_Number,
+    SDF_Percent
+};
+
+
 UCLASS()
 class UScalarGameSetting : public UBaseGameSetting
 {
     GENERATED_BODY()
 
 public:
-    /* Note: Function must be set before object using */
     void AddGetter(const TFunction<float()>& Func);
-    /* Note: Function must be set before object using */
     void AddSetter(const TFunction<void(const float)>& Func);
+
+    void SetDisplayFormat(const EScalarDisplayFormat& NewFormat);
+    EScalarDisplayFormat GetDisplayFormat() const;
 
     float GetCurrentValue() const;
     void SetValue(const float NewValue);
@@ -26,4 +34,6 @@ public:
 private:
     TFunction<float()> Getter;
     TFunction<void(const float)> Setter;
+
+    EScalarDisplayFormat DisplayFormat;
 };

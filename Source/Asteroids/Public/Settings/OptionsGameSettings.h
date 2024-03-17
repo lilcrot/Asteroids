@@ -52,9 +52,7 @@ class UVideoGameSetting : public UBaseOptionGameSetting
     GENERATED_BODY()
 
 public:
-    /* Note: Function must be set before object using */
     void AddGetter(const TFunction<int32()>& Func);
-    /* Note: Function must be set before object using */
     void AddSetter(const TFunction<void(const int32)>& Func);
 
     virtual void ApplyNextOption() override;
@@ -84,9 +82,7 @@ class UAudioDeviceOutputGameSetting : public UBaseOptionGameSetting
 public:
     friend class UMyGameUserSettings;
 
-    /* Note: Function must be set before object using */
     void AddGetter(const TFunction<FString()>& Func);
-    /* Note: Function must be set before object using */
     void AddSetter(const TFunction<void(const FString&)>& Func);
 
     virtual void ApplyNextOption() override;

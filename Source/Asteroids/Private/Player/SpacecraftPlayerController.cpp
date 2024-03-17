@@ -5,17 +5,26 @@
 ASpacecraftPlayerController::ASpacecraftPlayerController()
 {
     PrimaryActorTick.bTickEvenWhenPaused = true;
+    SetShowMouseCursor(true);
 }
 
 void ASpacecraftPlayerController::ToggleGamePause()
 {
-    SetPause(!IsPaused());
-}
+    const bool bIsPaused = !IsPaused();
+    if (SetPause(bIsPaused) == false) return;
 
-void ASpacecraftPlayerController::OnPossess(APawn* InPawn)
-{
-    Super::OnPossess(InPawn);
+    if (bIsPaused)
+    {
+        FInputModeGameAndUI InputMode;
+        InputMode.SetHideCursorDuringCapture(false);
 
-    SetShowMouseCursor(true);
-    SetInputMode(FInputModeGameOnly().SetConsumeCaptureMouseDown(false));
+        SetInputMode(InputMode);
+    }
+    else
+    {
+        FInputModeGameOnly InputMode;
+        InputMode.SetConsumeCaptureMouseDown(false);
+
+        SetInputMode(InputMode);
+    }
 }

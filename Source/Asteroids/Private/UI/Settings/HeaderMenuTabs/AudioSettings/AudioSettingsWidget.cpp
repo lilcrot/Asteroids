@@ -7,6 +7,7 @@
 
 DEFINE_LOG_CATEGORY_STATIC(LogAudioSettingsWidget, All, All);
 
+
 void UAudioSettingsWidget::NativeOnInitialized()
 {
     Super::NativeOnInitialized();
@@ -36,6 +37,10 @@ void UAudioSettingsWidget::NativeOnInitialized()
     const auto* OwningPlayerController = GetOwningPlayer();
     if (IsValid(OwningPlayerController))
     {
-        ListViewSoundSettings->AddItem(UserSettings->GetAudioDeviceOutputGameSetting(OwningPlayerController->GetLocalPlayer()));
+        const auto SoundSettings = UserSettings->GetSoundSettings(OwningPlayerController->GetLocalPlayer());
+        for (auto* Setting : SoundSettings)
+        {
+            ListViewSoundSettings->AddItem(Setting);
+        }
     }
 }

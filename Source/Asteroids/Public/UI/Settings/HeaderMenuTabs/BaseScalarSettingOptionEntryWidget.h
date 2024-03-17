@@ -4,15 +4,15 @@
 #include "CoreMinimal.h"
 #include "UI/Settings/HeaderMenuTabs/BaseSettingEntryWidget.h"
 
-#include "AudioSettingOptionEntryWidget.generated.h"
+#include "BaseScalarSettingOptionEntryWidget.generated.h"
 
 class UTextBlock;
 class USlider;
 
 class UScalarGameSetting;
 
-UCLASS()
-class ASTEROIDS_API UAudioSettingOptionEntryWidget : public UBaseSettingEntryWidget
+UCLASS(Abstract)
+class ASTEROIDS_API UBaseScalarSettingOptionEntryWidget : public UBaseSettingEntryWidget
 {
     GENERATED_BODY()
 
@@ -28,7 +28,7 @@ protected:
     USlider* SliderSettingValue;
 
     UPROPERTY(meta = (BindWidget))
-    UTextBlock* PercentageValueText;
+    UTextBlock* ScalarValueText;
 
 private:
     TWeakObjectPtr<UScalarGameSetting> GameSetting;

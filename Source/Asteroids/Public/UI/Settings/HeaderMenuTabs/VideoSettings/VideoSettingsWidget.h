@@ -2,16 +2,17 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Blueprint/UserWidget.h"
+#include "UI/Settings/BaseGameSettingScreenWidget.h"
+
 #include "VideoSettingsWidget.generated.h"
 
 class UListView;
 class UButton;
 
-UCLASS(Abstract)
-class ASTEROIDS_API UVideoSettingsWidget : public UUserWidget
+UCLASS(Abstract, Blueprintable)
+class ASTEROIDS_API UVideoSettingsWidget : public UBaseGameSettingScreenWidget
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 
 protected:
     UPROPERTY(meta = (BindWidget))

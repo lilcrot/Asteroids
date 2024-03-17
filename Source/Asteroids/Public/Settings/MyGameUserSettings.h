@@ -7,6 +7,7 @@
 
 #include "MyGameUserSettings.generated.h"
 
+class UBaseGameSetting;
 class UVideoGameSetting;
 class UScalarGameSetting;
 class UAudioDeviceOutputGameSetting;
@@ -40,6 +41,7 @@ public:
 
     const TArray<UVideoGameSetting*>& GetVideoSettings() const;
     const TArray<UScalarGameSetting*>& GetAudioSettings() const;
+    const TArray<UBaseGameSetting*>& GetSoundSettings(ULocalPlayer* InLocalPlayer);
 
 public:
     //------------------
@@ -57,11 +59,9 @@ private:
     void InitializeVideoSettings();
 
 public:
-    //------------------
-    //  AudioSettings
-    //------------------
-    
-    UAudioDeviceOutputGameSetting* GetAudioDeviceOutputGameSetting(ULocalPlayer* InLocalPlayer);
+    //--------------------------
+    //  Audio & Sound Settings
+    //--------------------------
 
 protected:
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "AudioSettings")
@@ -78,6 +78,13 @@ private:
     TArray<UScalarGameSetting*> AudioSettings;
     void InitializeAudioSettings();
 
+    UPROPERTY()
+    TArray<UBaseGameSetting*> SoundSettings;
+
+    #if WITH_EDITOR
+    void OnWorldCleanup(UWorld* World, const bool bSessionEnded, const bool bCleanupResources);
+    #endif  // WITH_EDITOR
+
     UPROPERTY(Config)
     float OverallVolumePercentage = 1.0f;
 
@@ -86,9 +93,6 @@ private:
 
     UPROPERTY(Config)
     float SoundFXVolumePercentage = 1.0f;
-
-    UPROPERTY()
-    UAudioDeviceOutputGameSetting* AudioDeviceOutputGameSetting;
 
     UPROPERTY(Config)
     FString AudioOutputDeviceId;

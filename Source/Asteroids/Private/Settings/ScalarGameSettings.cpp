@@ -16,6 +16,16 @@ void UScalarGameSetting::AddSetter(const TFunction<void(const float)>& Func)
     Setter = Func;
 }
 
+void UScalarGameSetting::SetDisplayFormat(const EScalarDisplayFormat& NewFormat) 
+{
+    DisplayFormat = NewFormat;
+}
+
+EScalarDisplayFormat UScalarGameSetting::GetDisplayFormat() const
+{
+    return DisplayFormat;
+}
+
 float UScalarGameSetting::GetCurrentValue() const
 {
     if (!Getter)

@@ -176,25 +176,31 @@ void UAudioDeviceOutputGameSetting::ApplyPrevOption()
     }
 }
 
-// TODO: fix bug that if we turn off some Audio Device in Editor ( without play, so GWorld->HasBegunPlay() == false )
-// then Option sets to empty and never changed till restart engine.
 void UAudioDeviceOutputGameSetting::OnAudioOutputDevicesObtained(const TArray<FAudioOutputDeviceInfo>& AvailableDevices)
 {
     PossibleOptions.Empty();
     OutputDevices.Empty();
 
+    const FString SelectedAudioOutputDeviceID = GetCurrentAudioOutputDeviceID();
+    const auto* SelectedAudioOutputDevice =
+        AvailableDevices.FindByPredicate([&](const FAudioOutputDeviceInfo& Info) { return Info.DeviceId == SelectedAudioOutputDeviceID; });
+    
+    const bool bHaveSelectedOutDevice = SelectedAudioOutputDeviceID.IsEmpty() == false && SelectedAudioOutputDevice != nullptr;
+
     for (const auto& DeviceInfo : AvailableDevices)
     {
         if (DeviceInfo.DeviceId.IsEmpty() || DeviceInfo.Name.IsEmpty()) continue;
 
-        if (DeviceInfo.bIsSystemDefault)
+        if (bHaveSelectedOutDevice == false)
         {
-            SetAudioOutputDeviceId(DeviceInfo.DeviceId);
-        }
-
-        if (DeviceInfo.bIsCurrentDevice)
-        {
-            SetAudioOutputDeviceId(DeviceInfo.DeviceId);
+            if (DeviceInfo.bIsSystemDefault)
+            {
+                SetAudioOutputDeviceId(DeviceInfo.DeviceId);
+            }
+            if (DeviceInfo.bIsCurrentDevice)
+            {
+                SetAudioOutputDeviceId(DeviceInfo.DeviceId);
+            }
         }
 
         OutputDevices.Add(DeviceInfo);

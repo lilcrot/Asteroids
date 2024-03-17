@@ -12,7 +12,7 @@ void USoundSettingOptionEntryWidget::NativeOnListItemObjectSet(UObject* ListItem
         AudioDeviceOutputGameSetting->OnAudioSettingsUpdated.AddUObject(this, &ThisClass::UpdateTexts);
     }
 
-    checkf(GameSetting.IsValid(), TEXT("Some SoundGameSetting isn't valid. GameSetting is implied for this class!"));
+    checkf(GameSetting.IsValid(), TEXT("SoundGameSetting isn't valid. GameSetting is implied for this class!"));
 
     UpdateTexts();
 }

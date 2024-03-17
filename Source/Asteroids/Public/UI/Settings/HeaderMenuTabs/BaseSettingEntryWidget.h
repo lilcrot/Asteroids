@@ -9,7 +9,7 @@
 
 class UTextBlock;
 
-UCLASS(Abstract, NotBlueprintable, NotBlueprintType)
+UCLASS(Abstract, Blueprintable)
 class ASTEROIDS_API UBaseSettingEntryWidget : public UUserWidget, public IUserObjectListEntry
 {
     GENERATED_BODY()

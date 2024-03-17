@@ -2,14 +2,14 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Blueprint/UserWidget.h"
+#include "UI/Settings/BaseGameSettingScreenWidget.h"
 
 #include "AudioSettingsWidget.generated.h"
 
 class UListView;
 
-UCLASS(Abstract)
-class ASTEROIDS_API UAudioSettingsWidget : public UUserWidget
+UCLASS(Abstract, Blueprintable)
+class ASTEROIDS_API UAudioSettingsWidget : public UBaseGameSettingScreenWidget
 {
     GENERATED_BODY()
 

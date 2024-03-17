@@ -17,7 +17,4 @@ public:
 
     UFUNCTION(BlueprintCallable, Category = "PlayerController")
     void ToggleGamePause();
-
-protected:
-    virtual void OnPossess(APawn* InPawn) override;
 };
