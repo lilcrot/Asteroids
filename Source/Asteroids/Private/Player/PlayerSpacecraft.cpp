@@ -6,10 +6,14 @@
 #include "Kismet/KismetMathLibrary.h"
 #include "Components/WeaponComponent.h"
 #include "Player/SpacecraftPlayerController.h"
+#include "Components/BoxComponent.h"
+#include "AsteroidCoreTypes.h"
 
 APlayerSpacecraft::APlayerSpacecraft()
 {
     PrimaryActorTick.bCanEverTick = true;
+
+    BoxCollision->SetCollisionProfileName(PlayerCollisionProfileName);
 }
 
 void APlayerSpacecraft::Tick(float DeltaTime)

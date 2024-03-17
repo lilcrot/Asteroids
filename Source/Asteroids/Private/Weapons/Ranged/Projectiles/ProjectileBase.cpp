@@ -42,7 +42,7 @@ void AProjectileBase::BeginPlay()
 
 void AProjectileBase::OnProjectileHitReceive(AActor* OverlappedActor, AActor* OtherActor)
 {
-    if (!OtherActor || OtherActor == GetOwner() || OtherActor == GetInstigator()) return;
+    if (!IsValid(OtherActor) || OtherActor == GetOwner() || OtherActor == GetInstigator()) return;
 
     MakePointDamage(OtherActor);
     Destroy();
@@ -50,10 +50,10 @@ void AProjectileBase::OnProjectileHitReceive(AActor* OverlappedActor, AActor* Ot
 
 bool AProjectileBase::MakePointDamage(AActor* DamageTaker)
 {
-    if (!DamageTaker) return false;
+    if (IsValid(DamageTaker) == false) return false;
 
     const APawn* MyInstigator = GetInstigator();
-    if (!MyInstigator) return false;
+    if (IsValid(MyInstigator) == false) return false;
 
     AController* EventInstigator = MyInstigator->GetController();
     FPointDamageEvent PointDamageEvent;

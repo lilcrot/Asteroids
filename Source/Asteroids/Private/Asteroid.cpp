@@ -65,15 +65,13 @@ void AAsteroid::OnDeath_Implementation()
 
 void AAsteroid::OnActorBeginOverlapReceive(AActor* OverlappedActor, AActor* OtherActor)
 {
-    if (!OtherActor || OtherActor->IsA(AWorldBoundary::StaticClass())) return;
+    if (IsValid(OtherActor) == false || OtherActor->IsA(AWorldBoundary::StaticClass())) return;
 
-    /* Asteroids only attack another actors, if an asteroid is hit by another asteroid, then they should only change their direction */
-    if (!OtherActor->IsA(AAsteroid::StaticClass()))
-    {
-        OtherActor->TakeDamage(OverlapDamage, FDamageEvent(), Controller, this);
-    }
+    OtherActor->TakeDamage(OverlapDamage, FDamageEvent(), Controller, this);
 
     CurrentVelocityScaleValue /= VelocityDivideCoefficient;
+    CurrentVelocityScaleValue *= -1.0f;
+
     StartRecoverVelocity();
 }
 
@@ -87,9 +85,15 @@ void AAsteroid::StartRecoverVelocity()
         RecoverVelocityTimerHandle,
         [&]()
         {
-            CurrentVelocityScaleValue = FMath::Clamp(CurrentVelocityScaleValue + 0.01f, 0.0f, 1.0f);
+            const float Plus = 0.05f;
+            const float PlusPerRateResult = CurrentVelocityScaleValue < 0.0f ? -Plus : Plus;
 
-            if (CurrentVelocityScaleValue >= 1.0f && GetWorld()) GetWorld()->GetTimerManager().ClearTimer(RecoverVelocityTimerHandle);
+            CurrentVelocityScaleValue = FMath::Clamp(CurrentVelocityScaleValue + PlusPerRateResult, -1.0f, 1.0f);
+
+            if ((CurrentVelocityScaleValue == 1.0f || CurrentVelocityScaleValue == -1.0f) && GetWorld())
+            {
+                GetWorld()->GetTimerManager().ClearTimer(RecoverVelocityTimerHandle);
+            }
         },
         TimerRate, true, -1.0f);
 }
