@@ -1,6 +1,5 @@
 // A test task by KEFIR
 #include "Asteroid.h"
-#include "Components/SkeletalMeshComponent.h"
 #include "Components/SphereComponent.h"
 #include "Components/HealthComponent.h"
 #include "GameFramework/FloatingPawnMovement.h"
@@ -15,10 +14,6 @@ AAsteroid::AAsteroid()
     checkf(SphereCollision, TEXT("SphereCollision doesn't exist!"));
     SphereCollision->SetCollisionProfileName(AsteroidCollisionProfileName);
     SetRootComponent(SphereCollision);
-
-    MeshComponent = CreateDefaultSubobject<USkeletalMeshComponent>("MeshComponent");
-    checkf(MeshComponent, TEXT("MeshComponent doesn't exist!"));
-    MeshComponent->SetupAttachment(SphereCollision);
 
     HealthComponent = CreateDefaultSubobject<UHealthComponent>("HealthComponent");
     checkf(HealthComponent, TEXT("HealthComponent doesn't exist!"));

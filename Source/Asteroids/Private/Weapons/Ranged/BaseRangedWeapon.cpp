@@ -3,6 +3,8 @@
 #include "AsteroidCoreTypes.h"
 #include "Weapons/Ranged/Projectiles/ProjectileBase.h"
 
+DEFINE_LOG_CATEGORY_STATIC(LogBaseRangedWeapon, All, All);
+
 ABaseRangedWeapon::ABaseRangedWeapon() {}
 
 void ABaseRangedWeapon::BeginPlay()
@@ -65,10 +67,18 @@ void ABaseRangedWeapon::GetSpawnProjectileData(FTransform& SpawnTransform, FActo
 FTransform ABaseRangedWeapon::GetMuzzleSocketTransform() const
 {
     const auto* MyOwner = GetOwner();
-    if (!MyOwner) return FTransform();
+    if (!MyOwner)
+    {
+        UE_LOG(LogBaseRangedWeapon, Warning, TEXT("BaseRangedWeapon has not owner, so GetMuzzleSocketTransform is failed!"));
+        return FTransform();
+    }
 
     const auto* OwnerMesh = MyOwner->FindComponentByClass<USkeletalMeshComponent>();
-    if (!OwnerMesh) return FTransform();
+    if (!OwnerMesh)
+    {
+        UE_LOG(LogBaseRangedWeapon, Warning, TEXT("BaseRangedWeapon has not SkeletalMesh, so GetMuzzleSocketTransform is failed!"));
+        return FTransform();
+    }
 
     return OwnerMesh->GetSocketTransform(OwnerMuzzleSocketName);
 }

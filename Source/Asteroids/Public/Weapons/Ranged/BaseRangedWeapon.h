@@ -25,7 +25,7 @@ protected:
     virtual void BeginPlay() override;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Weapon")
-    FName OwnerMuzzleSocketName = "";
+    FName OwnerMuzzleSocketName = "Socket_WeaponMuzzle";
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Weapon")
     TSubclassOf<AProjectileBase> ProjectileClass;

@@ -7,7 +7,6 @@
 
 #include "Asteroid.generated.h"
 
-class USkeletalMeshComponent;
 class USphereComponent;
 class UHealthComponent;
 class UFloatingPawnMovement;
@@ -24,9 +23,6 @@ public:
 
 protected:
     virtual void BeginPlay() override;
-
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
-    USkeletalMeshComponent* MeshComponent;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
     USphereComponent* SphereCollision;
