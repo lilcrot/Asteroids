@@ -37,7 +37,7 @@ protected:
     int32 Damage = 1;
 
     UFUNCTION()
-    void OnProjectileHitReceive(AActor* OverlappedActor, AActor* OtherActor);
+    void OnProjectileOverlapReceive(AActor* OverlappedActor, AActor* OtherActor);
 
     bool MakePointDamage(AActor* DamageTaker);
 };

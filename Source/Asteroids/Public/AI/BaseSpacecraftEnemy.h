@@ -25,8 +25,11 @@ protected:
 
     // It can be set by AI perception or etc methods
     UPROPERTY(BlueprintReadWrite, Category = "Enemy")
-    AActor* CurrentTarget = nullptr;
+    AActor* CurrentTarget;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Enemy")
-    UBehaviorTree* DefaultBT = nullptr;
+    UBehaviorTree* DefaultBT;
+
+private:
+    virtual void OnDeath() override;
 };

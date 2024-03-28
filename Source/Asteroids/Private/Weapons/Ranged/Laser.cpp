@@ -11,9 +11,9 @@ void ALaser::BeginPlay()
     checkf(ShotRange > 0.0f, TEXT("ShotRange must be more than zero!"));
     checkf(LaserRadius > 0.0f, TEXT("LaserRadius must be more than zero!"));
     checkf(MaxLaserShots > 0, TEXT("MaxLaserShots must be more than zero!"));
-    checkf(ReloadingTime > 0.0f, TEXT("ReloadingTime must be more than zero!"))
+    checkf(ReloadingTime > 0.0f, TEXT("ReloadingTime must be more than zero!"));
 
-        CurrentLaserShots = MaxLaserShots;
+    CurrentLaserShots = MaxLaserShots;
 }
 
 void ALaser::StartFire()
@@ -44,9 +44,10 @@ void ALaser::MakeShot()
     UKismetSystemLibrary::SphereTraceSingle(GetWorld(), TraceStart, TraceEnd, LaserRadius,
         UEngineTypes::ConvertToTraceType(WeaponTraceCollisionChannel), true, {GetOwner()}, EDrawDebugTrace::Type::ForDuration, Hit, true);
 
-    if (Hit.bBlockingHit && Hit.GetActor())
+    AActor* HitActor = Hit.GetActor();
+    if (Hit.bBlockingHit && IsValid(HitActor))
     {
-        Hit.GetActor()->Destroy();
+        HitActor->Destroy();
     }
 
     --CurrentLaserShots;
@@ -61,16 +62,15 @@ void ALaser::GetTraceData(FVector& TraceStart, FVector& TraceEnd) const
 {
     const FTransform& MuzzleSocketTransform = GetMuzzleSocketTransform();
 
-    const FVector ShotDirection = MuzzleSocketTransform.GetRotation().Vector();  // Get Normalized direction vector
+    const FVector ShotDirection = MuzzleSocketTransform.GetRotation().Vector();
     TraceStart = MuzzleSocketTransform.GetLocation();
     TraceEnd = TraceStart + ShotDirection * ShotRange;
-    TraceEnd.Z = MuzzleSocketTransform.GetLocation().Z;  // freeze Z axe
 }
 
 void ALaser::StartReloadLaserShots()
 {
     UWorld* World = GetWorld();
-    if (bReloading || !World) return;
+    if (bReloading || World == nullptr) return;
 
     bReloading = true;
     FTimerHandle ReloadTimerHandle;

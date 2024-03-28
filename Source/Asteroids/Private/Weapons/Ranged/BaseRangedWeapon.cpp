@@ -18,27 +18,27 @@ void ABaseRangedWeapon::StartFire()
 {
     Super::StartFire();
 
-    if (UWorld* World = GetWorld())
-    {
-        World->GetTimerManager().SetTimer(FireHandle, this, &ThisClass::MakeShot,  //
-            ShootRate, bAutoFire, -1.0f);                                          //
-    }
+    UWorld* World = GetWorld();
+    if (World == nullptr) return;
+
+    World->GetTimerManager().SetTimer(FireHandle, this, &ThisClass::MakeShot,  //
+        ShootRate, bAutoFire, -1.0f);                                          //
 }
 
 void ABaseRangedWeapon::StopFire()
 {
     Super::StopFire();
 
-    if (UWorld* World = GetWorld())
-    {
-        World->GetTimerManager().ClearTimer(FireHandle);
-    }
+    UWorld* World = GetWorld();
+    if (World == nullptr) return;
+
+    World->GetTimerManager().ClearTimer(FireHandle);
 }
 
 void ABaseRangedWeapon::MakeShot()
 {
     UWorld* World = GetWorld();
-    if (!World || !CanMakeShot())
+    if (World == nullptr || !CanMakeShot())
     {
         StopFire();
         return;
@@ -55,7 +55,7 @@ void ABaseRangedWeapon::GetSpawnProjectileData(FTransform& SpawnTransform, FActo
 {
     const FTransform MuzzleSocketTransform = GetMuzzleSocketTransform();
     const FVector SpawnLocation = MuzzleSocketTransform.GetLocation();
-    const FVector ShotDirection = MuzzleSocketTransform.GetRotation().Vector();  // Get Normalized direction vector
+    const FVector ShotDirection = MuzzleSocketTransform.GetRotation().Vector();
 
     SpawnTransform = FTransform(ShotDirection.Rotation(), SpawnLocation, FVector::OneVector);
 
@@ -67,14 +67,14 @@ void ABaseRangedWeapon::GetSpawnProjectileData(FTransform& SpawnTransform, FActo
 FTransform ABaseRangedWeapon::GetMuzzleSocketTransform() const
 {
     const auto* MyOwner = GetOwner();
-    if (!MyOwner)
+    if (!IsValid(MyOwner))
     {
         UE_LOG(LogBaseRangedWeapon, Warning, TEXT("BaseRangedWeapon has not owner, so GetMuzzleSocketTransform is failed!"));
         return FTransform();
     }
 
     const auto* OwnerMesh = MyOwner->FindComponentByClass<USkeletalMeshComponent>();
-    if (!OwnerMesh)
+    if (OwnerMesh == nullptr)
     {
         UE_LOG(LogBaseRangedWeapon, Warning, TEXT("BaseRangedWeapon has not SkeletalMesh, so GetMuzzleSocketTransform is failed!"));
         return FTransform();

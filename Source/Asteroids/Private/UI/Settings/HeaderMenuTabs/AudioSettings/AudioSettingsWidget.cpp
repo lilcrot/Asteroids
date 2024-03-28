@@ -15,7 +15,7 @@ void UAudioSettingsWidget::NativeOnInitialized()
     checkf(ListViewSoundSettings, TEXT("ListViewSoundSettings doesn't exist!"));
 
     auto* UserSettings = UMyGameUserSettings::Get();
-    if (IsValid(UserSettings) == false)
+    if (!IsValid(UserSettings))
     {
         UE_LOG(LogAudioSettingsWidget, Error, TEXT("MyGameUserSettings is nullptr"));
         return;

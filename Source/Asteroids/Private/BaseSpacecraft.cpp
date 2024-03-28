@@ -13,6 +13,14 @@ ABaseSpacecraft::ABaseSpacecraft()
     BoxCollision = CreateDefaultSubobject<UBoxComponent>("BoxCollision");
     checkf(BoxCollision, TEXT("BoxCollision doesn't exist!"));
     BoxCollision->SetCollisionProfileName(UCollisionProfile::Pawn_ProfileName);
+    BoxCollision->SetNotifyRigidBodyCollision(true);
+
+    const auto BoxBodyInstance = BoxCollision->GetBodyInstance();
+    if (BoxBodyInstance != nullptr)
+    {
+        BoxBodyInstance->bLockZTranslation = true;
+    }
+
     SetRootComponent(BoxCollision);
 
     MeshComponent = CreateDefaultSubobject<USkeletalMeshComponent>("MeshComponent");
@@ -32,18 +40,29 @@ ABaseSpacecraft::ABaseSpacecraft()
 void ABaseSpacecraft::BeginPlay()
 {
     Super::BeginPlay();
-    checkf(OverlapDamage > 0, TEXT("OverlapDamage must be more than zero!"));
 
-    OnActorBeginOverlap.AddDynamic(this, &ThisClass::OnActorBeginOverlapReceive);
+    {
+        checkf(LifeSpanOnDeath > 0.0f, TEXT("LifeSpanOnDeath must be more than zero!"));
+
+        checkf(HitDamage > 0, TEXT("HitDamage must be more than zero!"));
+    }
+
+    OnActorHit.AddDynamic(this, &ThisClass::OnActorHitReceive);
+
+    HealthComponent->OnDeath.AddDynamic(this, &ThisClass::OnDeath);
 }
 
-void ABaseSpacecraft::Tick(float DeltaTime)
+void ABaseSpacecraft::OnActorHitReceive(AActor* SelfActor, AActor* OtherActor, const FVector NormalImpulse, const FHitResult& Hit)
 {
-    Super::Tick(DeltaTime);
+    if (!IsValid(OtherActor)) return;
+    OtherActor->TakeDamage(HitDamage, FDamageEvent(), Controller, this);
 }
 
-void ABaseSpacecraft::OnActorBeginOverlapReceive(AActor* OverlappedActor, AActor* OtherActor)
+void ABaseSpacecraft::OnDeath()
 {
-    if (!OtherActor) return;
-    OtherActor->TakeDamage(OverlapDamage, FDamageEvent(), Controller, this);
+    BoxCollision->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
+    SetLifeSpan(LifeSpanOnDeath);
+
+    OnDeath_Visual();
 }
+void ABaseSpacecraft::OnDeath_Visual_Implementation() {}

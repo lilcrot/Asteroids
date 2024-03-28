@@ -11,7 +11,7 @@ ASpacecraftPlayerController::ASpacecraftPlayerController()
 void ASpacecraftPlayerController::ToggleGamePause()
 {
     const bool bIsPaused = !IsPaused();
-    if (SetPause(bIsPaused) == false) return;
+    if (!SetPause(bIsPaused)) return;
 
     if (bIsPaused)
     {

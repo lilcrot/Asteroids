@@ -13,7 +13,7 @@ void UVideoSettingsWidget::NativeOnInitialized()
     Super::NativeOnInitialized();
 
     auto* UserSettings = UMyGameUserSettings::Get();
-    if (IsValid(UserSettings) == false)
+    if (!IsValid(UserSettings))
     {
         UE_LOG(LogVideoSettingsWidget, Error, TEXT("MyGameUserSettings is nullptr"));
         return;
@@ -38,20 +38,19 @@ void UVideoSettingsWidget::NativeOnInitialized()
 
 void UVideoSettingsWidget::OnBenchmark()
 {
-    if (auto* UserSettings = UMyGameUserSettings::Get())
-    {
-        UserSettings->RunBenchmark();
-    }
+    auto* UserSettings = UMyGameUserSettings::Get();
+    if (UserSettings == nullptr) return;
+
+    UserSettings->RunBenchmark();
 }
 
 void UVideoSettingsWidget::OnVideoSettingsUpdated()
 {
-    if (!ListViewVideoSettings) return;
     for (auto* GameSetting : ListViewVideoSettings->GetListItems())
     {
-        if (auto* SettingOptionWidget = ListViewVideoSettings->GetEntryWidgetFromItem<UVideoSettingOptionEntryWidget>(GameSetting))
-        {
-            SettingOptionWidget->UpdateTexts();
-        }
+        auto* SettingOptionWidget = ListViewVideoSettings->GetEntryWidgetFromItem<UVideoSettingOptionEntryWidget>(GameSetting);
+        if (SettingOptionWidget == nullptr) continue;
+
+        SettingOptionWidget->UpdateTexts();
     }
 }

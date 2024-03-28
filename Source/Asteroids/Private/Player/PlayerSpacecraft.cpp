@@ -27,20 +27,19 @@ void APlayerSpacecraft::BeginPlay()
 {
     Super::BeginPlay();
 
-    if (APlayerController* PlayerController = Cast<APlayerController>(Controller))
+    APlayerController* PlayerController = Cast<APlayerController>(Controller);
+    if (PlayerController == nullptr) return;
+
+    auto InputSubsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PlayerController->GetLocalPlayer());
+    if (InputSubsystem != nullptr)
     {
-        auto InputSubsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PlayerController->GetLocalPlayer());
-        if (InputSubsystem)
-        {
-            InputSubsystem->AddMappingContext(DefaultContext, 1);
-        }
+        InputSubsystem->AddMappingContext(DefaultContext, 1);
     }
 }
 
 void APlayerSpacecraft::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
     UEnhancedInputComponent* EnhancedInputComponent = CastChecked<UEnhancedInputComponent>(PlayerInputComponent);
-    if (!EnhancedInputComponent) return;
 
     EnhancedInputComponent->BindAction(MovementAction, ETriggerEvent::Triggered, this, &ThisClass::Move);
 
@@ -63,26 +62,23 @@ void APlayerSpacecraft::Move(const FInputActionValue& Value)
 
 void APlayerSpacecraft::FirstWeaponFire()
 {
-    if (!WeaponComponent) return;
     WeaponComponent->StartFireByIndex(0);
 }
 
 void APlayerSpacecraft::SecondWeaponFire()
 {
-    if (!WeaponComponent) return;
     WeaponComponent->StartFireByIndex(1);
 }
 
 void APlayerSpacecraft::StopFire()
 {
-    if (!WeaponComponent) return;
     WeaponComponent->StopFire();
 }
 
 void APlayerSpacecraft::LookToMouse(float DeltaTime)
 {
     const auto* PlayerController = Cast<APlayerController>(Controller);
-    if (!PlayerController) return;
+    if (PlayerController == nullptr) return;
 
     FHitResult Hit;
     PlayerController->GetHitResultUnderCursor(ECollisionChannel::ECC_Visibility, false, Hit);
@@ -95,8 +91,15 @@ void APlayerSpacecraft::LookToMouse(float DeltaTime)
 
 void APlayerSpacecraft::ToggleGamePause()
 {
-    if (auto* MyPlayerController = Cast<ASpacecraftPlayerController>(Controller))
-    {
-        MyPlayerController->ToggleGamePause();
-    }
+    auto* MyPlayerController = Cast<ASpacecraftPlayerController>(Controller);
+    if (MyPlayerController == nullptr) return;
+
+    MyPlayerController->ToggleGamePause();
+}
+
+void APlayerSpacecraft::OnDeath() 
+{
+    Super::OnDeath();
+
+    DisableInput(Cast<APlayerController>(Controller));
 }

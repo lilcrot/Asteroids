@@ -18,7 +18,7 @@ void UWeaponComponent::BeginPlay()
 void UWeaponComponent::SpawnWeapons()
 {
     UWorld* World = GetWorld();
-    if (!World) return;
+    if (World == nullptr) return;
 
     FActorSpawnParameters SpawnParams;
     SpawnParams.Owner = GetOwner();
@@ -31,7 +31,7 @@ void UWeaponComponent::SpawnWeapons()
             continue;
         }
         const auto Weapon = World->SpawnActor<ABaseWeapon>(WeaponClasses[i], SpawnParams);
-        if (!Weapon) continue;
+        if (Weapon == nullptr) continue;
 
         Weapons.Add(Weapon);
     }
@@ -48,7 +48,10 @@ void UWeaponComponent::OnComponentDestroyed(bool bDestroyingHierarchy)
 
     for (auto* Weapon : Weapons)
     {
-        if (Weapon) Weapon->Destroy();
+        if (Weapon != nullptr)
+        {
+            Weapon->Destroy();
+        }
     }
 }
 
@@ -59,7 +62,7 @@ void UWeaponComponent::StartFireByIndex(const int32 Index)
         UE_LOG(LogWeaponComponent, Warning, TEXT("StartFireByIndex: invalid index so start fire is failed!"));
         return;
     }
-    if (Weapons[Index])
+    if (Weapons[Index] != nullptr)
     {
         CurrentWeapon = Weapons[Index];
         CurrentWeapon->StartFire();
@@ -68,6 +71,6 @@ void UWeaponComponent::StartFireByIndex(const int32 Index)
 
 void UWeaponComponent::StopFire()
 {
-    if (!CurrentWeapon) return;
+    if (CurrentWeapon == nullptr) return;
     CurrentWeapon->StopFire();
 }

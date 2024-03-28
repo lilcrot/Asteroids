@@ -19,10 +19,10 @@ void AMyHUD::BeginPlay()
 template <typename T>
 void OpenSettingWidget(AMyHUD* MyHud, T*& WidgetPtr, UClass* Class)
 {
-    if (IsValid(MyHud) == false) return;
+    if (!IsValid(MyHud)) return;
 
     MyHud->CollapseAllSettingsMenu();
-    if (IsValid(WidgetPtr) == false)
+    if (!IsValid(WidgetPtr))
     {
         WidgetPtr = CreateWidget<T>(MyHud->GetWorld(), Class);
         checkf(IsValid(WidgetPtr), TEXT("Template func OpenSettingWidget is failed, Widget creation failed"));
@@ -35,7 +35,7 @@ void OpenSettingWidget(AMyHUD* MyHud, T*& WidgetPtr, UClass* Class)
     }
 
     const auto PlayerController = MyHud->GetOwningPlayerController();
-    if (IsValid(PlayerController) == false) return;
+    if (!IsValid(PlayerController)) return;
 
     FInputModeGameAndUI InputMode;
     InputMode.SetWidgetToFocus(WidgetPtr->TakeWidget());
@@ -59,7 +59,7 @@ void AMyHUD::CollapseAllSettingsMenu()
     const TArray<UUserWidget*> Settings{VideoSettingsWidget, AudioSettingsWidget};
     for (auto* Setting : Settings)
     {
-        if (IsValid(Setting) == false) continue;
+        if (!IsValid(Setting)) continue;
 
         Setting->SetVisibility(ESlateVisibility::Collapsed);
     }

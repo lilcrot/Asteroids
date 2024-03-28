@@ -111,9 +111,6 @@ const TArray<UBaseGameSetting*>& UMyGameUserSettings::GetSoundSettings(ULocalPla
 
         /*-------------------------*/
 
-
-
-
     }
     // clang-format on
 
@@ -168,17 +165,10 @@ void UMyGameUserSettings::InitializeAudioSettings()
 #if WITH_EDITOR
 void UMyGameUserSettings::OnWorldCleanup(UWorld* World, const bool bSessionEnded, const bool bCleanupResources)
 {
-    if (IsValid(World) == false) return;
-
     if (bSessionEnded)
     {
-        const int32 AudioDeviceOutputGameSettingIndex = SoundSettings.IndexOfByPredicate([&](const UBaseGameSetting* GameSetting)
-            { return IsValid(GameSetting) && GameSetting->IsA(UAudioDeviceOutputGameSetting::StaticClass()); });
-
-        if (AudioDeviceOutputGameSettingIndex != INDEX_NONE)
-        {
-            SoundSettings.RemoveAt(AudioDeviceOutputGameSettingIndex);
-        }
+        /* The SoundSettings depend on the WorldContext, so we need to handle this case for WITH_EDITOR */
+        SoundSettings.Empty();
     }
 }
 #endif  // WITH_EDITOR

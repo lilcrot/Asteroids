@@ -20,8 +20,6 @@ class ASTEROIDS_API ABaseSpacecraft : public APawn
 public:
     ABaseSpacecraft();
 
-    virtual void Tick(float DeltaTime) override;
-
 protected:
     virtual void BeginPlay() override;
 
@@ -40,11 +38,19 @@ protected:
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Components")
     UWeaponComponent* WeaponComponent;
 
-    /* When a spacecraft collides with another actor, how much damage should it do */
-    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Overlap", meta = (MinClamp = "0"))
-    int32 OverlapDamage = 1;
-
 protected:
     UFUNCTION()
-    virtual void OnActorBeginOverlapReceive(AActor* OverlappedActor, AActor* OtherActor);
+    void OnActorHitReceive(AActor* SelfActor, AActor* OtherActor, const FVector NormalImpulse, const FHitResult& Hit);
+
+    /* When a spacecraft hit with another actor, how much damage should it do */
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Damage", meta = (MinClamp = "1"))
+    int32 HitDamage = 1;
+
+    UFUNCTION(BlueprintNativeEvent)
+    void OnDeath_Visual();
+    UFUNCTION()
+    virtual void OnDeath();
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Health|Death", meta = (Units = "s", ClampMin = "0.1"))
+    float LifeSpanOnDeath = 0.1f;
 };

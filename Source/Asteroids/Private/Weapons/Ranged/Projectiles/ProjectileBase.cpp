@@ -37,10 +37,10 @@ void AProjectileBase::BeginPlay()
     Super::BeginPlay();
     checkf(Damage > 0, TEXT("Damage must be more than zero!"));
 
-    OnActorBeginOverlap.AddDynamic(this, &ThisClass::OnProjectileHitReceive);
+    OnActorBeginOverlap.AddDynamic(this, &ThisClass::OnProjectileOverlapReceive);
 }
 
-void AProjectileBase::OnProjectileHitReceive(AActor* OverlappedActor, AActor* OtherActor)
+void AProjectileBase::OnProjectileOverlapReceive(AActor* OverlappedActor, AActor* OtherActor)
 {
     if (!IsValid(OtherActor) || OtherActor == GetOwner() || OtherActor == GetInstigator()) return;
 
@@ -50,14 +50,17 @@ void AProjectileBase::OnProjectileHitReceive(AActor* OverlappedActor, AActor* Ot
 
 bool AProjectileBase::MakePointDamage(AActor* DamageTaker)
 {
-    if (IsValid(DamageTaker) == false) return false;
+    if (!IsValid(DamageTaker)) return false;
+
+    AController* EventInstigator = nullptr;
 
     const APawn* MyInstigator = GetInstigator();
-    if (IsValid(MyInstigator) == false) return false;
+    if (IsValid(MyInstigator))
+    {
+        EventInstigator = MyInstigator->GetController();
+    }
 
-    AController* EventInstigator = MyInstigator->GetController();
     FPointDamageEvent PointDamageEvent;
-
     DamageTaker->TakeDamage(Damage, PointDamageEvent, EventInstigator, GetOwner());
 
     return true;

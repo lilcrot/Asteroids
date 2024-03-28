@@ -13,4 +13,6 @@ class ASTEROIDS_API AAIBaseRangedWeapon : public ABaseRangedWeapon
 
 protected:
     virtual void GetSpawnProjectileData(FTransform& SpawnTransform, FActorSpawnParameters& SpawnParams) override;
+
+    virtual bool CanMakeShot() const override;
 };

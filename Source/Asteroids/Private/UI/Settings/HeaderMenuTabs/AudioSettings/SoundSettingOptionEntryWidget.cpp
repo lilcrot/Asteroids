@@ -6,7 +6,8 @@ void USoundSettingOptionEntryWidget::NativeOnListItemObjectSet(UObject* ListItem
 {
     Super::NativeOnListItemObjectSet(ListItemObject);
 
-    if (auto* AudioDeviceOutputGameSetting = Cast<UAudioDeviceOutputGameSetting>(ListItemObject))
+    auto* AudioDeviceOutputGameSetting = Cast<UAudioDeviceOutputGameSetting>(ListItemObject);
+    if (AudioDeviceOutputGameSetting != nullptr)
     {
         GameSetting = MakeWeakObjectPtr(AudioDeviceOutputGameSetting);
         AudioDeviceOutputGameSetting->OnAudioSettingsUpdated.AddUObject(this, &ThisClass::UpdateTexts);

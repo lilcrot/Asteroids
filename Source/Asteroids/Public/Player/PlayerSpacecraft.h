@@ -39,6 +39,8 @@ private:
 
     void ToggleGamePause();
 
+    virtual void OnDeath() override;
+
 protected:
     //-------------------
     // Enhanced Inputs

@@ -21,8 +21,10 @@ public:
 
     virtual void OnComponentDestroyed(bool bDestroyingHierarchy) override;
 
-    /* First weapon - 0 | Second weapon - 1 (if any) ...
-       You can compare Index argument with indexes in WeaponClasses */
+    /*
+        First weapon - 0 | Second weapon - 1 (if any)
+        You can compare Index argument with indexes in WeaponClasses
+    */
     void StartFireByIndex(const int32 Index);
     void StopFire();
 

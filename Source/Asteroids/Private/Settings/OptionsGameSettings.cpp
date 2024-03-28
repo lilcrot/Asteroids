@@ -112,7 +112,8 @@ void UAudioDeviceOutputGameSetting::OnInitialized()
 {
     DevicesObtainedCallback.BindUFunction(this, FName("OnAudioOutputDevicesObtained"));
 
-    if (auto* AudioDeviceNotifSubsystem = UAudioDeviceNotificationSubsystem::Get())
+    auto* AudioDeviceNotifSubsystem = UAudioDeviceNotificationSubsystem::Get();
+    if (AudioDeviceNotifSubsystem != nullptr)
     {
         AudioDeviceNotifSubsystem->DeviceAddedNative.AddUObject(this, &ThisClass::DeviceAdded);
         AudioDeviceNotifSubsystem->DeviceRemovedNative.AddUObject(this, &ThisClass::DeviceRemoved);
@@ -185,13 +186,13 @@ void UAudioDeviceOutputGameSetting::OnAudioOutputDevicesObtained(const TArray<FA
     const auto* SelectedAudioOutputDevice =
         AvailableDevices.FindByPredicate([&](const FAudioOutputDeviceInfo& Info) { return Info.DeviceId == SelectedAudioOutputDeviceID; });
     
-    const bool bHaveSelectedOutDevice = SelectedAudioOutputDeviceID.IsEmpty() == false && SelectedAudioOutputDevice != nullptr;
+    const bool bHaveSelectedOutDevice = !SelectedAudioOutputDeviceID.IsEmpty() && SelectedAudioOutputDevice != nullptr;
 
     for (const auto& DeviceInfo : AvailableDevices)
     {
         if (DeviceInfo.DeviceId.IsEmpty() || DeviceInfo.Name.IsEmpty()) continue;
 
-        if (bHaveSelectedOutDevice == false)
+        if (!bHaveSelectedOutDevice)
         {
             if (DeviceInfo.bIsSystemDefault)
             {

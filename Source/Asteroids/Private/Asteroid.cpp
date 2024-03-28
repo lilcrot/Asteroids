@@ -1,19 +1,39 @@
 // A test task by KEFIR
 #include "Asteroid.h"
 #include "Components/SphereComponent.h"
+#include "Components/SkeletalMeshComponent.h"
 #include "Components/HealthComponent.h"
 #include "GameFramework/FloatingPawnMovement.h"
 #include "AsteroidCoreTypes.h"
-#include "WorldBoundary.h"
 
 AAsteroid::AAsteroid()
 {
     PrimaryActorTick.bCanEverTick = true;
 
-    SphereCollision = CreateDefaultSubobject<USphereComponent>("SphereCollision");
-    checkf(SphereCollision, TEXT("SphereCollision doesn't exist!"));
-    SphereCollision->SetCollisionProfileName(AsteroidCollisionProfileName);
-    SetRootComponent(SphereCollision);
+    {
+        SphereCollision = CreateDefaultSubobject<USphereComponent>("SphereCollision");
+        checkf(SphereCollision, TEXT("SphereCollision doesn't exist!"));
+        SphereCollision->SetCollisionProfileName(AsteroidCollisionProfileName);
+        SphereCollision->SetNotifyRigidBodyCollision(true);
+        SphereCollision->SetSimulatePhysics(true);
+        SphereCollision->SetEnableGravity(false);
+
+        const auto SphereBodyInstance = SphereCollision->GetBodyInstance();
+        if (SphereBodyInstance != nullptr)
+        {
+            SphereBodyInstance->bLockZTranslation = true;
+        }
+
+        SphereCollision->bApplyImpulseOnDamage = false;
+        SphereCollision->SetAngularDamping(5.0f);
+        SphereCollision->SetLinearDamping(1.5f);
+
+        SetRootComponent(SphereCollision);
+    }
+
+    SkeletalMeshComponent = CreateDefaultSubobject<USkeletalMeshComponent>("SkeletalMeshComponent");
+    checkf(SkeletalMeshComponent, TEXT("SkeletalMeshComponent doesn't exist!"));
+    SkeletalMeshComponent->SetupAttachment(SphereCollision);
 
     HealthComponent = CreateDefaultSubobject<UHealthComponent>("HealthComponent");
     checkf(HealthComponent, TEXT("HealthComponent doesn't exist!"));
@@ -27,8 +47,14 @@ AAsteroid::AAsteroid()
 void AAsteroid::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
+    AddMovementInput(GetActorForwardVector());
 
-    AddMovementInput(GetActorForwardVector(), CurrentVelocityScaleValue);
+    SkeletalMeshComponent->AddLocalRotation(RotationSpeed);
+}
+
+FVector AAsteroid::GetVelocity() const
+{
+    return MovementComponent->Velocity;
 }
 
 void AAsteroid::BeginPlay()
@@ -42,53 +68,26 @@ void AAsteroid::BeginPlay()
         checkf(MaxSpeed > 0.0f, TEXT("MaxSpeed must be more than zero!"));
         MovementComponent->MaxSpeed = MaxSpeed;
 
-        checkf(OverlapDamage > 0.0f, TEXT("OverlapDamage must be more than zero!"));
+        checkf(HitDamage > 0, TEXT("HitDamage must be more than zero!"));
 
-        checkf(VelocityDivideCoefficient > 0.0f, TEXT("VelocityDivideCoefficient must be more than zero!"));
+        checkf(LifeSpanOnDeath > 0.0f, TEXT("LifeSpanOnDeath must be more than zero!"));
     }
-
-    OnActorBeginOverlap.AddDynamic(this, &ThisClass::OnActorBeginOverlapReceive);
-
     HealthComponent->OnDeath.AddDynamic(this, &ThisClass::OnDeath);
+
+    OnActorHit.AddDynamic(this, &ThisClass::OnActorHitReceive);
 }
 
 void AAsteroid::OnDeath_Implementation()
 {
     SphereCollision->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
-    Destroy();
+    SetLifeSpan(LifeSpanOnDeath);
 }
 
-void AAsteroid::OnActorBeginOverlapReceive(AActor* OverlappedActor, AActor* OtherActor)
+void AAsteroid::OnActorHitReceive(AActor* SelfActor, AActor* OtherActor, const FVector NormalImpulse, const FHitResult& Hit)
 {
-    if (IsValid(OtherActor) == false || OtherActor->IsA(AWorldBoundary::StaticClass())) return;
+    if (!IsValid(OtherActor)) return;
+    OtherActor->TakeDamage(HitDamage, FDamageEvent(), Controller, this);
 
-    OtherActor->TakeDamage(OverlapDamage, FDamageEvent(), Controller, this);
-
-    CurrentVelocityScaleValue /= VelocityDivideCoefficient;
-    CurrentVelocityScaleValue *= -1.0f;
-
-    StartRecoverVelocity();
-}
-
-void AAsteroid::StartRecoverVelocity()
-{
-    UWorld* World = GetWorld();
-    if (!World) return;
-
-    constexpr float TimerRate = 0.01f;
-    World->GetTimerManager().SetTimer(
-        RecoverVelocityTimerHandle,
-        [&]()
-        {
-            const float Plus = 0.05f;
-            const float PlusPerRateResult = CurrentVelocityScaleValue < 0.0f ? -Plus : Plus;
-
-            CurrentVelocityScaleValue = FMath::Clamp(CurrentVelocityScaleValue + PlusPerRateResult, -1.0f, 1.0f);
-
-            if ((CurrentVelocityScaleValue == 1.0f || CurrentVelocityScaleValue == -1.0f) && GetWorld())
-            {
-                GetWorld()->GetTimerManager().ClearTimer(RecoverVelocityTimerHandle);
-            }
-        },
-        TimerRate, true, -1.0f);
+    const FVector Impulse = Hit.ImpactNormal * (GetVelocity().Size() + OtherActor->GetVelocity().Size());
+    SphereCollision->AddImpulse(Impulse, NAME_None, true);
 }

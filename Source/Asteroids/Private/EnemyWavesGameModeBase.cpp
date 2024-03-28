@@ -32,7 +32,8 @@ void AEnemyWavesGameModeBase::BeginPlay()
 {
     Super::BeginPlay();
 
-    if (const auto PlayerController = UGameplayStatics::GetPlayerController(GetWorld(), 0))
+    const auto PlayerController = UGameplayStatics::GetPlayerController(GetWorld(), 0);
+    if (PlayerController != nullptr)
     {
         PlayerController->SetShowMouseCursor(true);
     }
@@ -46,7 +47,8 @@ void AEnemyWavesGameModeBase::BeginPlay()
     for (const auto It : EnemySpawners)
     {
         const auto Spawner = Cast<AEnemySpawner>(It);
-        if (!Spawner) continue;
+        if (Spawner == nullptr) continue;
+
         Spawner->OnEnemySpawned.AddDynamic(this, &ThisClass::OnEnemySpawnedByWave);
     }
 
@@ -56,7 +58,10 @@ void AEnemyWavesGameModeBase::BeginPlay()
 bool AEnemyWavesGameModeBase::SetPause(APlayerController* PC, FCanUnpause CanUnpauseDelegate)
 {
     const bool bSucceed = Super::SetPause(PC, CanUnpauseDelegate);
-    if (bSucceed) OnGamePauseChangedEvent.Broadcast(true);
+    if (bSucceed)
+    {
+        OnGamePauseChangedEvent.Broadcast(true);
+    }
 
     return bSucceed;
 }
@@ -64,7 +69,10 @@ bool AEnemyWavesGameModeBase::SetPause(APlayerController* PC, FCanUnpause CanUnp
 bool AEnemyWavesGameModeBase::ClearPause()
 {
     const bool bSucceed = Super::ClearPause();
-    if (bSucceed) OnGamePauseChangedEvent.Broadcast(false);
+    if (bSucceed)
+    {
+        OnGamePauseChangedEvent.Broadcast(false);
+    }
 
     return bSucceed;
 }
@@ -76,22 +84,26 @@ bool AEnemyWavesGameModeBase::ClearPause()
 void AEnemyWavesGameModeBase::StartNewWave(const bool bApplyProgression)
 {
     CurrentWaveNumber++;
-    if (bApplyProgression) ApplyProgression();
-
-    UE_LOG(LogEnemyWavesGMBase, Display, TEXT("The new %i-th wave with %f points !"), CurrentWaveNumber, CurrentWavePoints);
+    if (bApplyProgression)
+    {
+        ApplyProgression();
+    }
 
     const TArray<TSubclassOf<AActor>> EnemyPool = BuildEnemyPool(CurrentWavePoints);
     RemainingEnemies += EnemyPool.Num();
     for (const auto EnemyClass : EnemyPool)
     {
         const int32 RandomIndex = FMath::RandRange(0, EnemySpawners.Num() - 1);
-        if (const auto Spawner = Cast<AEnemySpawner>(EnemySpawners[RandomIndex]))
+        const auto Spawner = Cast<AEnemySpawner>(EnemySpawners[RandomIndex]);
+
+        if (Spawner != nullptr)
         {
             Spawner->TryToSpawnEnemy(EnemyClass);
         }
     }
 
-    if (UWorld* World = GetWorld())
+    UWorld* World = GetWorld();
+    if (World != nullptr)
     {
         FTimerDelegate TimerDelegate;
         TimerDelegate.BindUObject(this, &ThisClass::StartNewWave, true);
@@ -113,20 +125,21 @@ void AEnemyWavesGameModeBase::ApplyProgression()
 
 void AEnemyWavesGameModeBase::OnEnemySpawnedByWave(AActor* Enemy)
 {
-    if (!Enemy) return;
+    if (Enemy == nullptr) return;
 
     Enemy->OnDestroyed.AddDynamic(this, &ThisClass::OnEnemyFromWaveDestroyed);
 }
 
 void AEnemyWavesGameModeBase::OnEnemyFromWaveDestroyed(AActor* DestroyedEnemy)
 {
-    if (!DestroyedEnemy) return;
+    if (DestroyedEnemy == nullptr) return;
 
     DestroyedEnemy->OnDestroyed.RemoveAll(this);
 
     if (--RemainingEnemies <= 0)
     {
-        if (UWorld* World = GetWorld())
+        UWorld* World = GetWorld();
+        if (World != nullptr)
         {
             World->GetTimerManager().ClearTimer(NewWaveByPeriodTimerHandle);
             StartNewWave();

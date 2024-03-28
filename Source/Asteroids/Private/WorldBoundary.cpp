@@ -24,7 +24,8 @@ void AWorldBoundary::BeginPlay()
 void AWorldBoundary::OnDeathCollisionEndOverlap(UPrimitiveComponent* OverlappedComponent,  //
     AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)              //
 {
-    if (!IsValid(OtherActor) || !GetWorld()) return;
+    UWorld* World = GetWorld();
+    if (World == nullptr) return;
 
-    GetWorld()->DestroyActor(OtherActor);
+    World->DestroyActor(OtherActor);
 }

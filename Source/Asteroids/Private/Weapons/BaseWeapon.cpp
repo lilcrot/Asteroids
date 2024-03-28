@@ -27,7 +27,7 @@ void ABaseWeapon::StopFire() {}
 bool ABaseWeapon::TryAttachToOwner()
 {
     auto* MyOwner = GetOwner();
-    if (!MyOwner) return false;
+    if (!IsValid(MyOwner)) return false;
 
     FAttachmentTransformRules TransformRules = FAttachmentTransformRules::SnapToTargetIncludingScale;
     return AttachToActor(MyOwner, TransformRules);

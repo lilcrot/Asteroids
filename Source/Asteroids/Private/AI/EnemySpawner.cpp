@@ -26,7 +26,7 @@ void AEnemySpawner::Tick(float DeltaTime)
 bool AEnemySpawner::TryToSpawnEnemy(const TSubclassOf<AActor> EnemyClass)
 {
     UWorld* World = GetWorld();
-    if (!EnemyClass || !World) return false;
+    if (EnemyClass == nullptr || World == nullptr) return false;
 
     if (!CanSpawn())
     {
@@ -39,7 +39,7 @@ bool AEnemySpawner::TryToSpawnEnemy(const TSubclassOf<AActor> EnemyClass)
     SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
 
     const auto Enemy = World->SpawnActor<AActor>(EnemyClass, SpawnTransform, SpawnParams);
-    if (!Enemy)
+    if (Enemy == nullptr)
     {
         AddEnemyToSpawnQueue(EnemyClass);
         return false;
@@ -73,12 +73,11 @@ bool AEnemySpawner::CanSpawn() const
 
 FRotator AEnemySpawner::GetSpawnDirection() const
 {
-    if (!ArrowSpawnDirectionComponent) return GetActorRotation();
     return ArrowSpawnDirectionComponent->GetForwardVector().Rotation();
 }
 
 void AEnemySpawner::AddEnemyToSpawnQueue(const TSubclassOf<AActor> EnemyClass)
 {
-    if (!EnemyClass) return;
+    if (EnemyClass == nullptr) return;
     SpawnQueue.Enqueue(EnemyClass);
 }
