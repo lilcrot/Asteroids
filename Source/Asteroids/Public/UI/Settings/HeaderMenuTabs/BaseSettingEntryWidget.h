@@ -18,7 +18,7 @@ protected:
     virtual void NativeOnInitialized() override;
 
     UPROPERTY(meta = (BindWidget))
-    UTextBlock* SettingDisplayName;
+    TObjectPtr<UTextBlock> SettingDisplayName;
 
     UFUNCTION(BlueprintImplementableEvent)
     void OnValueChanged(const float NewValue);

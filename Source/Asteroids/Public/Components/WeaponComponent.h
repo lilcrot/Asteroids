@@ -36,8 +36,8 @@ protected:
     TArray<TSubclassOf<ABaseWeapon>> WeaponClasses;
 
 private:
-    ABaseWeapon* CurrentWeapon;
-    TArray<ABaseWeapon*> Weapons;
+    TObjectPtr<ABaseWeapon> CurrentWeapon;
+    TArray<TObjectPtr<ABaseWeapon>> Weapons;
     int32 CurrentWeaponIndex = 0;
 
     void SpawnWeapons();

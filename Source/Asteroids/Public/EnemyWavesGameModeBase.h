@@ -75,7 +75,8 @@ private:
     TArray<TSubclassOf<AActor>> BuildEnemyPool(float WavePoints);
 
 private:
-    TArray<AActor*> EnemySpawners;
+    UPROPERTY()
+    TArray<TObjectPtr<AActor>> EnemySpawners;
 
     float CurrentWavePoints = 0.0f;
     int32 CurrentWaveNumber = 0;

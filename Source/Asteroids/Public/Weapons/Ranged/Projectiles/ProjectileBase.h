@@ -24,13 +24,13 @@ protected:
     virtual void BeginPlay() override;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Components")
-    USkeletalMeshComponent* MeshComponent;
+    TObjectPtr<USkeletalMeshComponent> MeshComponent;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Components")
-    UBoxComponent* BoxCollision;
+    TObjectPtr<UBoxComponent> BoxCollision;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Components")
-    UProjectileMovementComponent* MovementComponent;
+    TObjectPtr<UProjectileMovementComponent> MovementComponent;
 
     /* When a projectile collides with another actor, how much damage should it do */
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Projectile", meta = (MinClamp = "0"))

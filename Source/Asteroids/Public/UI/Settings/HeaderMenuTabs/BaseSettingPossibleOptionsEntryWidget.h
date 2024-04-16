@@ -20,13 +20,13 @@ class ASTEROIDS_API UBaseSettingPossibleOptionsEntryWidget : public UBaseSetting
 
 protected:
     UPROPERTY(meta = (BindWidget))
-    UButton* NextSettingButton;
+    TObjectPtr<UButton> NextSettingButton;
 
     UPROPERTY(meta = (BindWidget))
-    UButton* PrevSettingButton;
+    TObjectPtr<UButton> PrevSettingButton;
 
     UPROPERTY(BlueprintReadOnly, meta = (BindWidget))
-    UGameSettingRotatorWidget* RotatorSettingValue;
+    TObjectPtr<UGameSettingRotatorWidget> RotatorSettingValue;
 
     virtual void NativeOnInitialized() override;
 

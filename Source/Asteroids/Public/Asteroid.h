@@ -28,16 +28,16 @@ protected:
     virtual void BeginPlay() override;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
-    USphereComponent* SphereCollision;
+    TObjectPtr<USphereComponent> SphereCollision;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
-    USkeletalMeshComponent* SkeletalMeshComponent;
+    TObjectPtr<USkeletalMeshComponent> SkeletalMeshComponent;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Components")
-    UHealthComponent* HealthComponent;
+    TObjectPtr<UHealthComponent> HealthComponent;
 
     UPROPERTY(BlueprintReadOnly, Category = "Components")
-    UFloatingPawnMovement* MovementComponent;
+    TObjectPtr<UFloatingPawnMovement> MovementComponent;
 
     UFUNCTION()
     void OnActorHitReceive(AActor* SelfActor, AActor* OtherActor, const FVector NormalImpulse, const FHitResult& Hit);

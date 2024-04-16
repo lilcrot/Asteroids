@@ -25,10 +25,10 @@ protected:
     void HandleSliderValueChanged(const float NewValue);
 
     UPROPERTY(meta = (BindWidget))
-    USlider* SliderSettingValue;
+    TObjectPtr<USlider> SliderSettingValue;
 
     UPROPERTY(meta = (BindWidget))
-    UTextBlock* ScalarValueText;
+    TObjectPtr<UTextBlock> ScalarValueText;
 
 private:
     TWeakObjectPtr<UScalarGameSetting> GameSetting;

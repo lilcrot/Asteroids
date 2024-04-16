@@ -30,7 +30,7 @@ void UWeaponComponent::SpawnWeapons()
             UE_LOG(LogWeaponComponent, Warning, TEXT("The %ith class isn't valid in WeaponClasses"), i);
             continue;
         }
-        const auto Weapon = World->SpawnActor<ABaseWeapon>(WeaponClasses[i], SpawnParams);
+        auto* Weapon = World->SpawnActor<ABaseWeapon>(WeaponClasses[i], SpawnParams);
         if (Weapon == nullptr) continue;
 
         Weapons.Add(Weapon);
@@ -42,16 +42,15 @@ void UWeaponComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActo
     Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 }
 
-void UWeaponComponent::OnComponentDestroyed(bool bDestroyingHierarchy) 
+void UWeaponComponent::OnComponentDestroyed(bool bDestroyingHierarchy)
 {
     Super::OnComponentDestroyed(bDestroyingHierarchy);
 
-    for (auto* Weapon : Weapons)
+    for (const auto& Weapon : Weapons)
     {
-        if (Weapon != nullptr)
-        {
-            Weapon->Destroy();
-        }
+        if (!Weapon) continue;
+
+        Weapon->Destroy();
     }
 }
 
@@ -62,7 +61,7 @@ void UWeaponComponent::StartFireByIndex(const int32 Index)
         UE_LOG(LogWeaponComponent, Warning, TEXT("StartFireByIndex: invalid index so start fire is failed!"));
         return;
     }
-    if (Weapons[Index] != nullptr)
+    if (Weapons[Index])
     {
         CurrentWeapon = Weapons[Index];
         CurrentWeapon->StartFire();
@@ -71,6 +70,6 @@ void UWeaponComponent::StartFireByIndex(const int32 Index)
 
 void UWeaponComponent::StopFire()
 {
-    if (CurrentWeapon == nullptr) return;
+    if (!CurrentWeapon) return;
     CurrentWeapon->StopFire();
 }

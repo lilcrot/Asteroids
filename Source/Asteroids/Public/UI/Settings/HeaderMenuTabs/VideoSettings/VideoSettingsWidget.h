@@ -16,10 +16,10 @@ class ASTEROIDS_API UVideoSettingsWidget : public UBaseGameSettingScreenWidget
 
 protected:
     UPROPERTY(meta = (BindWidget))
-    UListView* ListViewVideoSettings;
+    TObjectPtr<UListView> ListViewVideoSettings;
 
     UPROPERTY(meta = (BindWidget))
-    UButton* RunBenchmarkButton;
+    TObjectPtr<UButton> RunBenchmarkButton;
 
     virtual void NativeOnInitialized() override;
 

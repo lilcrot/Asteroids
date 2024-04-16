@@ -49,17 +49,17 @@ protected:
     virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent);
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "EnhancedInput|Default")
-    UInputMappingContext* DefaultContext;
+    TObjectPtr<UInputMappingContext> DefaultContext;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "EnhancedInput|Default")
-    UInputAction* MovementAction;
+    TObjectPtr<UInputAction> MovementAction;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "EnhancedInput|Default")
-    UInputAction* FirstWeaponFireAction;
+    TObjectPtr<UInputAction> FirstWeaponFireAction;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "EnhancedInput|Default")
-    UInputAction* SecondWeaponFireAction;
+    TObjectPtr<UInputAction> SecondWeaponFireAction;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "EnhancedInput|Default")
-    UInputAction* ToggleGamePauseAction;
+    TObjectPtr<UInputAction> ToggleGamePauseAction;
 };

@@ -17,7 +17,7 @@ void ABaseSpacecraftEnemy::BeginPlay()
 {
     Super::BeginPlay();
 
-    auto AIController = Cast<AAIController>(GetController());
+    auto* AIController = Cast<AAIController>(GetController());
     if (AIController != nullptr)
     {
         AIController->RunBehaviorTree(DefaultBT);
@@ -28,7 +28,7 @@ void ABaseSpacecraftEnemy::OnDeath()
 {
     Super::OnDeath();
 
-    const auto AIController = Cast<AAIController>(GetController());
+    const auto* AIController = Cast<AAIController>(GetController());
     if (AIController != nullptr)
     {
         const auto MyBrainComponent = AIController->GetBrainComponent();

@@ -17,12 +17,12 @@ void AMyHUD::BeginPlay()
 //----------------------
 
 template <typename T>
-void OpenSettingWidget(AMyHUD* MyHud, T*& WidgetPtr, UClass* Class)
+void OpenSettingWidget(AMyHUD* MyHud, TObjectPtr<T>& WidgetPtr, UClass* Class)
 {
     if (!IsValid(MyHud)) return;
 
     MyHud->CollapseAllSettingsMenu();
-    if (!IsValid(WidgetPtr))
+    if (!WidgetPtr)
     {
         WidgetPtr = CreateWidget<T>(MyHud->GetWorld(), Class);
         checkf(IsValid(WidgetPtr), TEXT("Template func OpenSettingWidget is failed, Widget creation failed"));
@@ -56,10 +56,10 @@ void AMyHUD::OpenAudioSettings()
 
 void AMyHUD::CollapseAllSettingsMenu()
 {
-    const TArray<UUserWidget*> Settings{VideoSettingsWidget, AudioSettingsWidget};
-    for (auto* Setting : Settings)
+    const TArray<TObjectPtr<UUserWidget>> Settings{VideoSettingsWidget, AudioSettingsWidget};
+    for (auto& Setting : Settings)
     {
-        if (!IsValid(Setting)) continue;
+        if (!Setting) continue;
 
         Setting->SetVisibility(ESlateVisibility::Collapsed);
     }

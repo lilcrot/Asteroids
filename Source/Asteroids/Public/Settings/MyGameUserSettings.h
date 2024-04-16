@@ -21,10 +21,10 @@ struct FSoundMixClassInfo
     GENERATED_USTRUCT_BODY()
 
     UPROPERTY(EditAnywhere)
-    USoundMix* SoundMix;
+    TObjectPtr<USoundMix> SoundMix;
 
     UPROPERTY(EditAnywhere)
-    USoundClass* SoundClass;
+    TObjectPtr<USoundClass> SoundClass;
 };
 
 DECLARE_MULTICAST_DELEGATE(FOnSettingsUpdatedDelegate);
@@ -75,11 +75,11 @@ protected:
 
 private:
     UPROPERTY()
-    TArray<UScalarGameSetting*> AudioSettings;
+    TArray<TObjectPtr<UScalarGameSetting>> AudioSettings;
     void InitializeAudioSettings();
 
     UPROPERTY()
-    TArray<UBaseGameSetting*> SoundSettings;
+    TArray<TObjectPtr<UBaseGameSetting>> SoundSettings;
 
     #if WITH_EDITOR
     void OnWorldCleanup(UWorld* World, const bool bSessionEnded, const bool bCleanupResources);

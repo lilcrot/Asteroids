@@ -25,10 +25,10 @@ protected:
 
     // It can be set by AI perception or etc methods
     UPROPERTY(BlueprintReadWrite, Category = "Enemy")
-    AActor* CurrentTarget;
+    TObjectPtr<AActor> CurrentTarget;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Enemy")
-    UBehaviorTree* DefaultBT;
+    TObjectPtr<UBehaviorTree> DefaultBT;
 
 private:
     virtual void OnDeath() override;

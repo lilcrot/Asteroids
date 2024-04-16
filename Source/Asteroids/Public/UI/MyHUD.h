@@ -29,20 +29,20 @@ public:
 
 protected:
     UPROPERTY(BlueprintReadOnly, Category = "SettingsMenu")
-    UVideoSettingsWidget* VideoSettingsWidget = nullptr;
+    TObjectPtr<UVideoSettingsWidget> VideoSettingsWidget;
 
     UPROPERTY(EditDefaultsOnly, Category = "SettingsMenu")
-    TSubclassOf<UVideoSettingsWidget> VideoSettingsWidgetClass = nullptr;
+    TSubclassOf<UVideoSettingsWidget> VideoSettingsWidgetClass;
 
     UPROPERTY(BlueprintReadOnly, Category = "SettingsMenu")
-    UAudioSettingsWidget* AudioSettingsWidget = nullptr;
+    TObjectPtr<UAudioSettingsWidget> AudioSettingsWidget;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "SettingsMenu")
-    TSubclassOf<UAudioSettingsWidget> AudioSettingsWidgetClass = nullptr;
+    TSubclassOf<UAudioSettingsWidget> AudioSettingsWidgetClass;
 
 private:
     void CollapseAllSettingsMenu();
 
     template <typename T>
-    friend void OpenSettingWidget(AMyHUD* MyHud, T*& WidgetPtr, UClass* Class);
+    friend void OpenSettingWidget(AMyHUD* MyHud, TObjectPtr<T>& WidgetPtr, UClass* Class);
 };

@@ -27,10 +27,10 @@ void APlayerSpacecraft::BeginPlay()
 {
     Super::BeginPlay();
 
-    APlayerController* PlayerController = Cast<APlayerController>(Controller);
+    auto* PlayerController = Cast<APlayerController>(Controller);
     if (PlayerController == nullptr) return;
 
-    auto InputSubsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PlayerController->GetLocalPlayer());
+    auto* InputSubsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PlayerController->GetLocalPlayer());
     if (InputSubsystem != nullptr)
     {
         InputSubsystem->AddMappingContext(DefaultContext, 1);

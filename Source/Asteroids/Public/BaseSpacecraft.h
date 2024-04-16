@@ -24,19 +24,19 @@ protected:
     virtual void BeginPlay() override;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Components")
-    USkeletalMeshComponent* MeshComponent;
+    TObjectPtr<USkeletalMeshComponent> MeshComponent;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Components")
-    UBoxComponent* BoxCollision;
+    TObjectPtr<UBoxComponent> BoxCollision;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Components")
-    UFloatingPawnMovement* MovementComponent;
+    TObjectPtr<UFloatingPawnMovement> MovementComponent;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Components")
-    UHealthComponent* HealthComponent;
+    TObjectPtr<UHealthComponent> HealthComponent;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Components")
-    UWeaponComponent* WeaponComponent;
+    TObjectPtr<UWeaponComponent> WeaponComponent;
 
 protected:
     UFUNCTION()

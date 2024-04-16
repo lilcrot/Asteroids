@@ -18,10 +18,10 @@ public:
     UBaseGameSettingScreenWidget(const FObjectInitializer& ObjectInitializer);
 
     UPROPERTY(meta = (BindWidget))
-    UImage* BackgroundImage = nullptr;
+    TObjectPtr<UImage> BackgroundImage = nullptr;
 
     UPROPERTY(meta = (BindWidget))
-    UBorder* MenuBorder = nullptr;
+    TObjectPtr<UBorder> MenuBorder = nullptr;
 
 protected:
     virtual FReply NativeOnKeyDown(const FGeometry& InGeometry, const FKeyEvent& InKeyEvent) override;

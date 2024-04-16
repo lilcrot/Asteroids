@@ -32,7 +32,7 @@ protected:
     float RequiredTimeBetweenSpawn = 0.7f;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Components")
-    UArrowComponent* ArrowSpawnDirectionComponent;
+    TObjectPtr<UArrowComponent> ArrowSpawnDirectionComponent;
 
     void AddEnemyToSpawnQueue(const TSubclassOf<AActor> EnemyClass);
 

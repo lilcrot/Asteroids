@@ -17,8 +17,8 @@ protected:
     virtual void NativeOnInitialized() override;
 
     UPROPERTY(meta = (BindWidget))
-    UListView* ListViewAudioSettings;
+    TObjectPtr<UListView> ListViewAudioSettings;
 
     UPROPERTY(meta = (BindWidget))
-    UListView* ListViewSoundSettings;
+    TObjectPtr<UListView> ListViewSoundSettings;
 };
