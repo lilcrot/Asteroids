@@ -10,7 +10,7 @@
 
 class AProjectileBase;
 
-UCLASS(Abstract)
+UCLASS(HideDropdown)
 class ASTEROIDS_API ABaseRangedWeapon : public ABaseWeapon
 {
     GENERATED_BODY()

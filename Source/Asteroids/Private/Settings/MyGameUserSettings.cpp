@@ -106,6 +106,7 @@ const TArray<UBaseGameSetting*>& UMyGameUserSettings::GetSoundSettings(ULocalPla
         SoundSettings.AddUnique(AudioDeviceOutputGameSetting);
 
         #if WITH_EDITOR
+        FWorldDelegates::OnWorldCleanup.RemoveAll(this);
         FWorldDelegates::OnWorldCleanup.AddUObject(this, &ThisClass::OnWorldCleanup);
         #endif // WITH_EDITOR
 

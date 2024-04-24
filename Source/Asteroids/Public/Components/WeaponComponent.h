@@ -17,8 +17,6 @@ class ASTEROIDS_API UWeaponComponent : public UActorComponent
 public:
     UWeaponComponent();
 
-    virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
-
     virtual void OnComponentDestroyed(bool bDestroyingHierarchy) override;
 
     /*

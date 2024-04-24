@@ -1,5 +1,4 @@
 // A test task by KEFIR
-
 #include "Player/PlayerSpacecraft.h"
 #include "EnhancedInputSubsystems.h"
 #include "EnhancedInputComponent.h"

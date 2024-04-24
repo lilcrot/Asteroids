@@ -88,6 +88,8 @@ void AAsteroid::OnActorHitReceive(AActor* SelfActor, AActor* OtherActor, const F
     if (!IsValid(OtherActor)) return;
     OtherActor->TakeDamage(HitDamage, FDamageEvent(), Controller, this);
 
-    const FVector Impulse = Hit.ImpactNormal * (GetVelocity().Size() + OtherActor->GetVelocity().Size());
+    FVector Impulse = Hit.ImpactNormal * (GetVelocity().Size() + OtherActor->GetVelocity().Size());
+    Impulse.Z = 0.0;
+
     SphereCollision->AddImpulse(Impulse, NAME_None, true);
 }

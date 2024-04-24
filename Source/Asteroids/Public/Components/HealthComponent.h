@@ -26,7 +26,6 @@ public:
     UFUNCTION(BlueprintPure, Category = "Health")
     int32 GetHealth() const;
 
-    /* return health limit */
     UFUNCTION(BlueprintPure, Category = "Health")
     int32 GetMaxHealth() const;
 

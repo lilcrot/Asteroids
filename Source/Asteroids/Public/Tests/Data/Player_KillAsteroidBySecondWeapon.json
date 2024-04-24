@@ -1,0 +1,11994 @@
+{
+	"bindings": [
+		{
+			"actionsData": [],
+			"worldTime": 0
+		},
+		{
+			"actionsData": [],
+			"worldTime": 0.0083334967494010925
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.08658280223608017
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.094916298985481262
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.10324969887733459
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.11158320307731628
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.11991670727729797
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.12825021147727966
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.1365835964679718
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.14491710066795349
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.15325060486793518
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.16158400475978851
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.16991749405860901
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.1782509982585907
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.18658460676670074
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.19491809606552124
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.20325160026550293
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.21158500015735626
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.21991850435733795
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.22825190424919128
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.23658530414104462
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.24491879343986511
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.25325220823287964
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.26158571243286133
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.26991921663284302
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.27825269103050232
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.28658619523048401
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.2949196994304657
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.30325320363044739
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.31158661842346191
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.31992009282112122
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.32825359702110291
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.33658710122108459
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.34492060542106628
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.35325399041175842
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.36158740520477295
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.36992090940475464
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.37825429439544678
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.38658779859542847
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.39492130279541016
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.40325480699539185
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.41158819198608398
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.41992169618606567
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.42825520038604736
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.43658870458602905
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.44492208957672119
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.45325559377670288
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.46158909797668457
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.46992260217666626
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.4782559871673584
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.48658940196037292
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.49492281675338745
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.50325667858123779
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.51159012317657471
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 1,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "Triggered"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 1,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "Triggered"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.5199236273765564
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 1,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "Triggered"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 1,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "Triggered"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.52825713157653809
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 1,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "Triggered"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 1,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "Triggered"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.53659051656723022
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 1,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "Triggered"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 1,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "Triggered"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.54492390155792236
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 1,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "Triggered"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 1,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "Triggered"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.55325740575790405
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 1,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "Triggered"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 1,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "Triggered"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.56159079074859619
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 1,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "Triggered"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 1,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "Triggered"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.56992429494857788
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 1,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "Triggered"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 1,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "Triggered"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.57825767993927002
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 1,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "Triggered"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 1,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "Triggered"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.58659112453460693
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 1,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "Triggered"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 1,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "Triggered"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.59492462873458862
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 1,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "Triggered"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 1,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "Triggered"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.60325801372528076
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 1,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "Triggered"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 1,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "Triggered"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.61159151792526245
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 1,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "Triggered"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 1,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "Triggered"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.61992490291595459
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "Completed"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "Completed"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.62825828790664673
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.63659167289733887
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.64492511749267578
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.65325850248336792
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.66159200668334961
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.6699255108833313
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.67825889587402344
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.68659240007400513
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.69492578506469727
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.70325922966003418
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.71159261465072632
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.71992611885070801
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.7282596230506897
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.73659312725067139
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.7449265718460083
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.75326001644134521
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.76159340143203735
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.76992690563201904
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.77826029062271118
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.78659379482269287
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.79492717981338501
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.8032606840133667
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.81159418821334839
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.81992757320404053
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.82826101779937744
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.83659452199935913
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.84492802619934082
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.85326147079467773
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.86159497499465942
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.86992841958999634
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.87826192378997803
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.88659542798995972
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.89492881298065186
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.90326231718063354
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.91159570217132568
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.91992920637130737
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.92826259136199951
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.93659597635269165
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.94492948055267334
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.95326292514801025
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.96159642934799194
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.96992993354797363
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.97826337814331055
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.98659688234329224
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 0.99493032693862915
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.0032638311386108
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.0115972757339478
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.0199307203292847
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.0282641649246216
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.036597728729248
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.044931173324585
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.0532647371292114
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.0615980625152588
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.0699316263198853
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.0782650709152222
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.0865986347198486
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.094931960105896
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.1032654047012329
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.1115988492965698
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.1199322938919067
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.1282658576965332
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.1365991830825806
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.144932746887207
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.1532661914825439
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.1615996360778809
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.1699329614639282
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.1782665252685547
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.1865999698638916
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.1949334144592285
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.2032668590545654
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.2116001844406128
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.2199337482452393
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.2282671928405762
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.2366007566452026
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.24493408203125
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.2532675266265869
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.2616009712219238
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.2699344158172607
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.2782678604125977
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.2866013050079346
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.2949347496032715
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.3032681941986084
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.3116016387939453
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.3199349641799927
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.3282685279846191
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.3366019725799561
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.3449355363845825
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.3532688617706299
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.3616023063659668
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.3699357509613037
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.3782690763473511
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.3866026401519775
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.3949360847473145
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.4032695293426514
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.4116029739379883
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.4199364185333252
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.4282698631286621
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.4366034269332886
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.4449367523193359
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.4532703161239624
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.4616036415100098
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.4699372053146362
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.4782706499099731
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.4866040945053101
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.4949376583099365
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.5032711029052734
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.5116045475006104
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.5199381113052368
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.5282715559005737
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.5366052389144897
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.5449385643005371
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.553272008895874
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.5616054534912109
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.5699388980865479
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.5782723426818848
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.5866056680679321
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.5949392318725586
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.6032726764678955
+		},
+		{
+			"actionsData": [
+				{
+					"actionName": "IA_Movement",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_FirstWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_SecondWeaponFire",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				},
+				{
+					"actionName": "IA_ToggleGamePause",
+					"value":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"currentTrigger": "None"
+				}
+			],
+			"worldTime": 1.611606240272522
+		}
+	],
+	"initialTransform":
+	{
+		"rotation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0,
+			"w": 1
+		},
+		"translation":
+		{
+			"x": -650,
+			"y": 0,
+			"z": 0
+		},
+		"scale3D":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		}
+	}
+}

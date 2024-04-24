@@ -6,7 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "BaseWeapon.generated.h"
 
-UCLASS()
+UCLASS(HideDropdown)
 class ASTEROIDS_API ABaseWeapon : public AActor
 {
     GENERATED_BODY()

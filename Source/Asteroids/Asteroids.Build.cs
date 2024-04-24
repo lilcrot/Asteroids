@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// A test task by KEFIR
 
 using UnrealBuildTool;
 
@@ -9,11 +9,14 @@ public class Asteroids : ModuleRules
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
         PublicDependencyModuleNames.AddRange(new string[]
-        { 
+        {
             "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput",
-            "AIModule", "GameplayTasks", "AudioMixer"
+            "AIModule", "GameplayTasks", "AudioMixer",  "UMG", "Json", "JsonUtilities"
         });
 
-        PrivateDependencyModuleNames.AddRange(new string[] { });
+        if (Target.Configuration != UnrealTargetConfiguration.Shipping)
+        {
+            PublicDependencyModuleNames.Add("FunctionalTesting");
+        }
     }
 }

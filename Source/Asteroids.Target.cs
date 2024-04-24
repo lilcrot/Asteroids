@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// A test task by KEFIR
 
 using UnrealBuildTool;
 using System.Collections.Generic;
