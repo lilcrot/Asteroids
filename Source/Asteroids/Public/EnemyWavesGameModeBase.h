@@ -19,7 +19,20 @@ struct FEnemyClassInWaveInfo
     int32 MaxSpawnPerWave = 10;
 };
 
+USTRUCT(Blueprintable)
+struct FCurrentWaveInfo
+{
+    GENERATED_USTRUCT_BODY()
+
+    int32 WaveNumber = 0;
+    int32 RemainingEnemies = 0;
+
+    float EnemyWavePeriodTime = 0.0f;
+    float WavePoints = 0.0f;
+};
+
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnGamePauseChangedDelegate, bool, bIsPaused);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnNewWaveHasStarted, FCurrentWaveInfo, WaveInfo);
 
 UCLASS(Abstract)
 class ASTEROIDS_API AEnemyWavesGameModeBase : public AGameModeBase
@@ -33,6 +46,12 @@ public:
 
     UPROPERTY(BlueprintAssignable, Category = "GameMode")
     FOnGamePauseChangedDelegate OnGamePauseChangedEvent;
+
+    UPROPERTY(BlueprintAssignable, Category = "GameMode")
+    FOnNewWaveHasStarted OnNewWaveHasStarted;
+
+    UFUNCTION(BlueprintPure)
+    FCurrentWaveInfo GetCurrentWaveInfo() const;
 
 protected:
     virtual void BeginPlay() override;
@@ -50,7 +69,7 @@ protected:
 
     /* Every time this time expires, a new wave will be spawned */
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "EnemyWaves", meta = (ClamMin = "0.01", Units = "s"))
-    float EnemyWavePeriodTime = 10.0f;
+    float InitEnemyWavePeriodTime = 10.0f;
 
     /* The first wave will have this amount of points so it's the starting point for the progression */
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "EnemyWaves|Progression")
@@ -78,8 +97,7 @@ private:
     UPROPERTY()
     TArray<TObjectPtr<AActor>> EnemySpawners;
 
-    float CurrentWavePoints = 0.0f;
-    int32 CurrentWaveNumber = 0;
+    FCurrentWaveInfo CurrentWaveInfo;
 
     FTimerHandle NewWaveByPeriodTimerHandle;
 
@@ -88,5 +106,4 @@ private:
 
     UFUNCTION()
     void OnEnemyFromWaveDestroyed(AActor* DestroyedEnemy);
-    int32 RemainingEnemies = 0;
 };

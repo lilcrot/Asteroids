@@ -18,14 +18,20 @@ void AEnemyWavesGameModeBase::InitGame(const FString& MapName, const FString& Op
     Super::InitGame(MapName, Options, ErrorMessage);
 
     {
-        checkf(EnemyWavePeriodTime > 0.0f, TEXT("EnemyWavePeriodTime must be more than zero!"));
+        checkf(InitEnemyWavePeriodTime > 0.0f, TEXT("EnemyWavePeriodTime must be more than zero!"));
         checkf(WavePeriodTimeAdditionalModifier >= 0.0f, TEXT("WavePeriodTimeAdditionalModifier must be more or equal than zero!"));
 
         checkf(EnemyStrengthMultiplier >= 1.0f, TEXT("EnemyStrengthMultiplier must be more or equal than one!"));
         checkf(PointsAdditionalModifier >= 0.0f, TEXT("PointsAdditionalModifier must be more or equal than zero!"));
     }
 
-    CurrentWavePoints = InitialPoints;
+    CurrentWaveInfo.WavePoints = InitialPoints;
+    CurrentWaveInfo.EnemyWavePeriodTime = InitEnemyWavePeriodTime;
+}
+
+FCurrentWaveInfo AEnemyWavesGameModeBase::GetCurrentWaveInfo() const
+{
+    return CurrentWaveInfo;
 }
 
 void AEnemyWavesGameModeBase::BeginPlay()
@@ -83,14 +89,15 @@ bool AEnemyWavesGameModeBase::ClearPause()
 
 void AEnemyWavesGameModeBase::StartNewWave(const bool bApplyProgression)
 {
-    CurrentWaveNumber++;
+    CurrentWaveInfo.WaveNumber++;
     if (bApplyProgression)
     {
         ApplyProgression();
     }
+    OnNewWaveHasStarted.Broadcast(CurrentWaveInfo);
 
-    const TArray<TSubclassOf<AActor>> EnemyPool = BuildEnemyPool(CurrentWavePoints);
-    RemainingEnemies += EnemyPool.Num();
+    const TArray<TSubclassOf<AActor>> EnemyPool = BuildEnemyPool(CurrentWaveInfo.WavePoints);
+    CurrentWaveInfo.RemainingEnemies += EnemyPool.Num();
     for (const auto EnemyClass : EnemyPool)
     {
         const int32 RandomIndex = FMath::RandRange(0, EnemySpawners.Num() - 1);
@@ -108,18 +115,18 @@ void AEnemyWavesGameModeBase::StartNewWave(const bool bApplyProgression)
         FTimerDelegate TimerDelegate;
         TimerDelegate.BindUObject(this, &ThisClass::StartNewWave, true);
 
-        World->GetTimerManager().SetTimer(NewWaveByPeriodTimerHandle, TimerDelegate, EnemyWavePeriodTime, false, -1.0f);
+        World->GetTimerManager().SetTimer(NewWaveByPeriodTimerHandle, TimerDelegate, CurrentWaveInfo.EnemyWavePeriodTime, false, -1.0f);
     }
 }
 
 void AEnemyWavesGameModeBase::ApplyProgression()
 {
-    CurrentWavePoints = (InitialPoints * (CurrentWaveNumber * EnemyStrengthMultiplier) + PointsAdditionalModifier);
+    CurrentWaveInfo.WavePoints = (InitialPoints * (CurrentWaveInfo.WaveNumber * EnemyStrengthMultiplier) + PointsAdditionalModifier);
 
     /* Every 10 waves EnemyWavePeriodTime modifier is added to the current */
-    if (CurrentWaveNumber % 10 == 0)
+    if (CurrentWaveInfo.WaveNumber % 10 == 0)
     {
-        EnemyWavePeriodTime += WavePeriodTimeAdditionalModifier;
+        CurrentWaveInfo.EnemyWavePeriodTime += WavePeriodTimeAdditionalModifier;
     }
 }
 
@@ -136,7 +143,7 @@ void AEnemyWavesGameModeBase::OnEnemyFromWaveDestroyed(AActor* DestroyedEnemy)
 
     DestroyedEnemy->OnDestroyed.RemoveAll(this);
 
-    if (--RemainingEnemies <= 0)
+    if (--CurrentWaveInfo.RemainingEnemies <= 0)
     {
         UWorld* World = GetWorld();
         if (World != nullptr)

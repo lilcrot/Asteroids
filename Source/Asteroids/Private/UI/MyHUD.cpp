@@ -3,36 +3,74 @@
 #include "UI/Settings/HeaderMenuTabs/VideoSettings/VideoSettingsWidget.h"
 #include "UI/Settings/HeaderMenuTabs/AudioSettings/AudioSettingsWidget.h"
 #include "GameFramework/PlayerController.h"
+#include "UI/GameplayWidget.h"
+#include "UI/PauseMenuWidget.h"
+#include "EnemyWavesGameModeBase.h"
 
 void AMyHUD::BeginPlay()
 {
     Super::BeginPlay();
+    {
+        checkf(PauseMenuWidgetClass, TEXT("PauseMenuWidgetClass isn't set!"));
+        checkf(VideoSettingsWidgetClass, TEXT("VideoSettingsWidgetClass isn't set!"));
+        checkf(AudioSettingsWidgetClass, TEXT("AudioSettingsWidgetClass isn't set!"));
+        checkf(GameplayWidgetClass, TEXT("GameplayWidgetClass isn't set!"));
+    }
 
-    checkf(VideoSettingsWidgetClass, TEXT("VideoSettingsWidgetClass isn't set!"));
-    checkf(AudioSettingsWidgetClass, TEXT("AudioSettingsWidgetClass isn't set!"));
+    UWorld* World = GetWorld();
+    if (!World) return;
+
+    auto* GameMode = Cast<AEnemyWavesGameModeBase>(World->GetAuthGameMode());
+    if (GameMode)
+    {
+        GameMode->OnGamePauseChangedEvent.AddDynamic(this, &ThisClass::OnGamePauseChanged);
+    }
+
+    OpenGameplayWidget();
 }
 
-//----------------------
-//  Settings Menu
-//----------------------
-
 template <typename T>
-void OpenSettingWidget(AMyHUD* MyHud, TObjectPtr<T>& WidgetPtr, UClass* Class)
+void SetNewCurrentWidget(AMyHUD* MyHud, TObjectPtr<T>& NewWidget, TSubclassOf<T> Class)
 {
-    if (!IsValid(MyHud)) return;
+    if (!IsValid(MyHud) || !Class || (IsValid(MyHud->CurrentWidget) && MyHud->CurrentWidget == NewWidget)) return;
 
-    MyHud->CollapseAllSettingsMenu();
-    if (!WidgetPtr)
+    if (!IsValid(NewWidget))
     {
-        WidgetPtr = CreateWidget<T>(MyHud->GetWorld(), Class);
-        checkf(IsValid(WidgetPtr), TEXT("Template func OpenSettingWidget is failed, Widget creation failed"));
-
-        WidgetPtr->AddToViewport();
+        NewWidget = CreateWidget<T>(MyHud->GetWorld(), Class);
+        checkf(NewWidget, TEXT("SetNewCurrentWidget is failed because NewWidget(%s) creation failed"), *Class->GetAuthoredName());
+        NewWidget->AddToViewport();
     }
     else
     {
-        WidgetPtr->SetVisibility(ESlateVisibility::Visible);
+        NewWidget->SetVisibility(ESlateVisibility::Visible);
     }
+
+    if (IsValid(MyHud->CurrentWidget))
+    {
+        MyHud->CurrentWidget->SetVisibility(ESlateVisibility::Collapsed);
+    }
+
+    MyHud->CurrentWidget = NewWidget;
+}
+
+//----------------------
+//  GameInProgress
+//----------------------
+
+void AMyHUD::OpenGameplayWidget()
+{
+    SetNewCurrentWidget<UGameplayWidget>(this, GameplayWidget, GameplayWidgetClass);
+}
+
+//----------------------
+//  GameInPause
+//----------------------
+
+template <typename T>
+void OpenGameInPauseWidget(AMyHUD* MyHud, TObjectPtr<T>& WidgetPtr, TSubclassOf<T> Class)
+{
+    if (!IsValid(MyHud)) return;
+    SetNewCurrentWidget<T>(MyHud, WidgetPtr, Class);
 
     const auto PlayerController = MyHud->GetOwningPlayerController();
     if (!IsValid(PlayerController)) return;
@@ -46,21 +84,22 @@ void OpenSettingWidget(AMyHUD* MyHud, TObjectPtr<T>& WidgetPtr, UClass* Class)
 
 void AMyHUD::OpenVideoSettings()
 {
-    OpenSettingWidget<UVideoSettingsWidget>(this, VideoSettingsWidget, VideoSettingsWidgetClass);
+    OpenGameInPauseWidget<UVideoSettingsWidget>(this, VideoSettingsWidget, VideoSettingsWidgetClass);
 }
 
 void AMyHUD::OpenAudioSettings()
 {
-    OpenSettingWidget<UAudioSettingsWidget>(this, AudioSettingsWidget, AudioSettingsWidgetClass);
+    OpenGameInPauseWidget<UAudioSettingsWidget>(this, AudioSettingsWidget, AudioSettingsWidgetClass);
 }
 
-void AMyHUD::CollapseAllSettingsMenu()
+void AMyHUD::OnGamePauseChanged(const bool bIsPaused)
 {
-    const TArray<TObjectPtr<UUserWidget>> Settings{VideoSettingsWidget, AudioSettingsWidget};
-    for (auto& Setting : Settings)
+    if (bIsPaused)
     {
-        if (!Setting) continue;
-
-        Setting->SetVisibility(ESlateVisibility::Collapsed);
+        OpenGameInPauseWidget<UPauseMenuWidget>(this, PauseMenuWidget, PauseMenuWidgetClass);
+    }
+    else
+    {
+        OpenGameplayWidget();
     }
 }
