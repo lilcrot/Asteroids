@@ -12,8 +12,6 @@ void AMyHUD::BeginPlay()
     Super::BeginPlay();
     {
         checkf(PauseMenuWidgetClass, TEXT("PauseMenuWidgetClass isn't set!"));
-        checkf(VideoSettingsWidgetClass, TEXT("VideoSettingsWidgetClass isn't set!"));
-        checkf(AudioSettingsWidgetClass, TEXT("AudioSettingsWidgetClass isn't set!"));
         checkf(GameplayWidgetClass, TEXT("GameplayWidgetClass isn't set!"));
     }
 
@@ -80,16 +78,6 @@ void OpenGameInPauseWidget(AMyHUD* MyHud, TObjectPtr<T>& WidgetPtr, TSubclassOf<
     InputMode.SetHideCursorDuringCapture(false);
 
     PlayerController->SetInputMode(InputMode);
-}
-
-void AMyHUD::OpenVideoSettings()
-{
-    OpenGameInPauseWidget<UVideoSettingsWidget>(this, VideoSettingsWidget, VideoSettingsWidgetClass);
-}
-
-void AMyHUD::OpenAudioSettings()
-{
-    OpenGameInPauseWidget<UAudioSettingsWidget>(this, AudioSettingsWidget, AudioSettingsWidgetClass);
 }
 
 void AMyHUD::OnGamePauseChanged(const bool bIsPaused)

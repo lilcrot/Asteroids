@@ -2,7 +2,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "UI/Settings/BaseGameSettingScreenWidget.h"
+#include "UI/Settings/BaseSettingsCategoryWidget.h"
 
 #include "VideoSettingsWidget.generated.h"
 
@@ -10,7 +10,7 @@ class UListView;
 class UButton;
 
 UCLASS(Abstract, Blueprintable)
-class ASTEROIDS_API UVideoSettingsWidget : public UBaseGameSettingScreenWidget
+class ASTEROIDS_API UVideoSettingsWidget : public UBaseSettingsCategoryWidget
 {
     GENERATED_BODY()
 
