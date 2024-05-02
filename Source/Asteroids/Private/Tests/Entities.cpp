@@ -9,6 +9,7 @@
 #include "Tests/TestConstants.h"
 #include "Asteroid.h"
 #include "Components/HealthComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 BEGIN_DEFINE_SPEC(FAsteroidsEntities, "Asteroids",
     EAutomationTestFlags::ApplicationContextMask | EAutomationTestFlags::ProductFilter | EAutomationTestFlags::HighPriority)
@@ -60,8 +61,40 @@ void FAsteroidsEntities::Define()
                             return true;
                         }));
                 });
-            // TODO: implement automation test
-            xIt("BigAsteroidMustSplitUpAfterHisDeath", [this]() { unimplemented(); });
+            It("BigAsteroidMustSplitUpToSmallAsteroidAfterHisDeath",
+                [this]()
+                {
+                    BigAsteroid = CreateBlueprint<AAsteroid>(World, BigAsteroidBPName);
+                    if (!BigAsteroid) return;
+
+                    auto* HealthComponent = BigAsteroid->FindComponentByClass<UHealthComponent>();
+                    if (!TestTrue("HealthComponent of the BigAsteroid exists", IsValid(HealthComponent))) return;
+
+                    HealthComponent->SetHealth(0);  // death
+
+                    ADD_LATENT_AUTOMATION_COMMAND(FEngineWaitLatentCommand(0.15))
+                    ADD_LATENT_AUTOMATION_COMMAND(FFunctionLatentCommand(
+                        [&]()
+                        {
+                            if (!TestTrue("BigAsteroid was destroyed", !IsValid(BigAsteroid))) return true;
+
+                            TArray<AActor*> SmallAsteroids;
+                            UGameplayStatics::GetAllActorsOfClass(World, AAsteroid::StaticClass(), SmallAsteroids);
+
+                            const int32 BigAsteroidIndex =
+                                SmallAsteroids.IndexOfByPredicate([&](const AActor* Asteroid) { return Asteroid == BigAsteroid; });
+
+                            if (SmallAsteroids.IsValidIndex(BigAsteroidIndex))
+                            {
+                                SmallAsteroids.RemoveAt(BigAsteroidIndex);
+                            }
+
+                            TestTrue("Small asteroid appeared", SmallAsteroids.Num() >= 1);
+
+                            SpecCloseLevel(World);
+                            return true;
+                        }));
+                });
         });
 }
 

@@ -14,6 +14,7 @@ ABaseSpacecraft::ABaseSpacecraft()
     checkf(BoxCollision, TEXT("BoxCollision doesn't exist!"));
     BoxCollision->SetCollisionProfileName(UCollisionProfile::Pawn_ProfileName);
     BoxCollision->SetNotifyRigidBodyCollision(true);
+    BoxCollision->SetEnableGravity(false);
 
     const auto BoxBodyInstance = BoxCollision->GetBodyInstance();
     if (BoxBodyInstance != nullptr)

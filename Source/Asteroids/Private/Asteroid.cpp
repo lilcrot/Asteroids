@@ -24,10 +24,6 @@ AAsteroid::AAsteroid()
             SphereBodyInstance->bLockZTranslation = true;
         }
 
-        SphereCollision->bApplyImpulseOnDamage = false;
-        SphereCollision->SetAngularDamping(5.0f);
-        SphereCollision->SetLinearDamping(1.5f);
-
         SetRootComponent(SphereCollision);
     }
 
@@ -87,9 +83,4 @@ void AAsteroid::OnActorHitReceive(AActor* SelfActor, AActor* OtherActor, const F
 {
     if (!IsValid(OtherActor)) return;
     OtherActor->TakeDamage(HitDamage, FDamageEvent(), Controller, this);
-
-    FVector Impulse = Hit.ImpactNormal * (GetVelocity().Size() + OtherActor->GetVelocity().Size());
-    Impulse.Z = 0.0;
-
-    SphereCollision->AddImpulse(Impulse, NAME_None, true);
 }

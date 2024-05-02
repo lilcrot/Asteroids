@@ -68,6 +68,6 @@ protected:
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Asteroid|Damage", meta = (MinClamp = "1"))
     int32 HitDamage = 1;
 
-    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Asteroid|Health|Death", meta = (Units = "s", ClampMin = "0.1"))
-    float LifeSpanOnDeath = 0.1f;
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Asteroid|Health|Death", meta = (Units = "s", ClampMin = "0.05"))
+    float LifeSpanOnDeath = 0.05f;
 };
