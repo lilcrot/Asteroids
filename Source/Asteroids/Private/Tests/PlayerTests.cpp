@@ -8,7 +8,7 @@
 #include "Player/PlayerSpacecraft.h"
 #include "Kismet/GameplayStatics.h"
 #include "Tests/Utils/JsonUtils.h"
-#include "Asteroid.h"
+#include "Asteroid/Asteroid.h"
 
 using namespace Test;
 using namespace TestConstants;

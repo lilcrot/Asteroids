@@ -7,7 +7,7 @@
 #include "Misc/PathViews.h"
 #include "Tests/Utils/TestUtils.h"
 #include "Tests/TestConstants.h"
-#include "Asteroid.h"
+#include "Asteroid/Asteroid.h"
 #include "Components/HealthComponent.h"
 #include "Kismet/GameplayStatics.h"
 
