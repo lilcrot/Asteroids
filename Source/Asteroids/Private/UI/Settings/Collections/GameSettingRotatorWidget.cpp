@@ -1,5 +1,5 @@
 // A test task by KEFIR
-#include "UI/Settings/GameSettingRotatorWidget.h"
+#include "UI/Settings/Collections/GameSettingRotatorWidget.h"
 
 UGameSettingRotatorWidget::UGameSettingRotatorWidget(const FObjectInitializer& Initializer) : Super(Initializer) {}
 

@@ -1,7 +1,7 @@
 // A test task by KEFIR
 #include "UI/MyHUD.h"
-#include "UI/Settings/HeaderMenuTabs/VideoSettings/VideoSettingsWidget.h"
-#include "UI/Settings/HeaderMenuTabs/AudioSettings/AudioSettingsWidget.h"
+#include "UI/Settings/Collections/VideoSettings/VideoSettingsWidget.h"
+#include "UI/Settings/Collections/AudioSettings/AudioSettingsWidget.h"
 #include "GameFramework/PlayerController.h"
 #include "UI/GameplayWidget.h"
 #include "UI/PauseMenuWidget.h"

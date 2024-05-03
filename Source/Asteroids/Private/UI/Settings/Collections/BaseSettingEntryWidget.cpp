@@ -1,5 +1,5 @@
 // A test task by KEFIR
-#include "UI/Settings/HeaderMenuTabs/BaseSettingEntryWidget.h"
+#include "UI/Settings/Collections/BaseSettingEntryWidget.h"
 
 void UBaseSettingEntryWidget::NativeOnInitialized()
 {

@@ -2,7 +2,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "UI/Settings/HeaderMenuTabs/BaseSettingPossibleOptionsEntryWidget.h"
+#include "UI/Settings/Collections/BaseSettingPossibleOptionsEntryWidget.h"
 
 #include "VideoSettingOptionEntryWidget.generated.h"
 

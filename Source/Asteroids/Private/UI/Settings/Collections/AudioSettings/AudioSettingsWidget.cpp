@@ -1,5 +1,5 @@
 // A test task by KEFIR
-#include "UI/Settings/HeaderMenuTabs/AudioSettings/AudioSettingsWidget.h"
+#include "UI/Settings/Collections/AudioSettings/AudioSettingsWidget.h"
 #include "Settings/MyGameUserSettings.h"
 #include "Settings/ScalarGameSettings.h"
 #include "Settings/OptionsGameSettings.h"

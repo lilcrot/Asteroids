@@ -1,9 +1,9 @@
 // A test task by KEFIR
-#include "UI/Settings/HeaderMenuTabs/BaseSettingPossibleOptionsEntryWidget.h"
+#include "UI/Settings/Collections/BaseSettingPossibleOptionsEntryWidget.h"
 #include "Settings/OptionsGameSettings.h"
 #include "Components/TextBlock.h"
 #include "Components/Button.h"
-#include "UI/Settings/GameSettingRotatorWidget.h"
+#include "UI/Settings/Collections/GameSettingRotatorWidget.h"
 
 void UBaseSettingPossibleOptionsEntryWidget::NativeOnInitialized()
 {

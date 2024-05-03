@@ -1,6 +1,6 @@
 // A test task by KEFIR
-#include "UI/Settings/HeaderMenuTabs/VideoSettings/VideoSettingsWidget.h"
-#include "UI/Settings/HeaderMenuTabs/VideoSettings/VideoSettingOptionEntryWidget.h"
+#include "UI/Settings/Collections/VideoSettings/VideoSettingsWidget.h"
+#include "UI/Settings/Collections/VideoSettings/VideoSettingOptionEntryWidget.h"
 #include "Settings/MyGameUserSettings.h"
 #include "Settings/OptionsGameSettings.h"
 #include "Components/ListView.h"

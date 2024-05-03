@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
-#include "UI/Settings/HeaderMenuTabs/BaseSettingEntryWidget.h"
+#include "UI/Settings/Collections/BaseSettingEntryWidget.h"
 
 #include "BaseSettingPossibleOptionsEntryWidget.generated.h"
 

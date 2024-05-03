@@ -1,5 +1,5 @@
 // A test task by KEFIR
-#include "UI/Settings/HeaderMenuTabs/VideoSettings/VideoSettingOptionEntryWidget.h"
+#include "UI/Settings/Collections/VideoSettings/VideoSettingOptionEntryWidget.h"
 #include "Settings/OptionsGameSettings.h"
 
 void UVideoSettingOptionEntryWidget::NativeOnListItemObjectSet(UObject* ListItemObject)

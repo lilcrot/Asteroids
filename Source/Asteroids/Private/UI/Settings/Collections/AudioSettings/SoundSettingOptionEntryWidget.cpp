@@ -1,5 +1,5 @@
 // A test task by KEFIR
-#include "UI/Settings/HeaderMenuTabs/AudioSettings/SoundSettingOptionEntryWidget.h"
+#include "UI/Settings/Collections/AudioSettings/SoundSettingOptionEntryWidget.h"
 #include "Settings/OptionsGameSettings.h"
 
 void USoundSettingOptionEntryWidget::NativeOnListItemObjectSet(UObject* ListItemObject)

@@ -1,5 +1,5 @@
 // A test task by KEFIR
-#include "UI/Settings/HeaderMenuTabs/BaseScalarSettingOptionEntryWidget.h"
+#include "UI/Settings/Collections/BaseScalarSettingOptionEntryWidget.h"
 #include "Settings/ScalarGameSettings.h"
 #include "Components/TextBlock.h"
 #include "Components/Slider.h"

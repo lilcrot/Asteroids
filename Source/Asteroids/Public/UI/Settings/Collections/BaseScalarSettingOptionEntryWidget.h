@@ -2,7 +2,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "UI/Settings/HeaderMenuTabs/BaseSettingEntryWidget.h"
+#include "UI/Settings/Collections/BaseSettingEntryWidget.h"
 
 #include "BaseScalarSettingOptionEntryWidget.generated.h"
 
