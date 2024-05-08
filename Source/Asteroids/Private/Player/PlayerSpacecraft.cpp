@@ -7,12 +7,18 @@
 #include "Player/SpacecraftPlayerController.h"
 #include "Components/BoxComponent.h"
 #include "AsteroidCoreTypes.h"
+#include "NiagaraComponent.h"
 
 APlayerSpacecraft::APlayerSpacecraft()
 {
     PrimaryActorTick.bCanEverTick = true;
 
     BoxCollision->SetCollisionProfileName(PlayerCollisionProfileName);
+
+    EngineFireNiagaraComponent = CreateDefaultSubobject<UNiagaraComponent>("EngineFireNiagaraComponent");
+    checkf(EngineFireNiagaraComponent, TEXT("EngineFireNiagaraComponent doesn't exist!"));
+    EngineFireNiagaraComponent->SetupAttachment(MeshComponent);
+    EngineFireNiagaraComponent->bAutoActivate = false;
 }
 
 void APlayerSpacecraft::Tick(float DeltaTime)
@@ -41,6 +47,8 @@ void APlayerSpacecraft::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
     UEnhancedInputComponent* EnhancedInputComponent = CastChecked<UEnhancedInputComponent>(PlayerInputComponent);
 
     EnhancedInputComponent->BindAction(MovementAction, ETriggerEvent::Triggered, this, &ThisClass::Move);
+    EnhancedInputComponent->BindAction(MovementAction, ETriggerEvent::Started, this, &ThisClass::OnMoveStarted);
+    EnhancedInputComponent->BindAction(MovementAction, ETriggerEvent::Completed, this, &ThisClass::OnMoveCompleted);
 
     EnhancedInputComponent->BindAction(FirstWeaponFireAction, ETriggerEvent::Started, this, &ThisClass::FirstWeaponFire);
     EnhancedInputComponent->BindAction(FirstWeaponFireAction, ETriggerEvent::Completed, this, &ThisClass::StopFire);
@@ -59,16 +67,23 @@ void APlayerSpacecraft::Move(const FInputActionValue& Value)
     AddMovementInput(FVector::RightVector, MovementVector.Y);
 }
 
+void APlayerSpacecraft::OnMoveStarted()
+{
+    EngineFireNiagaraComponent->Activate();
+}
+void APlayerSpacecraft::OnMoveCompleted()
+{
+    EngineFireNiagaraComponent->Deactivate();
+}
+
 void APlayerSpacecraft::FirstWeaponFire()
 {
     WeaponComponent->StartFireByIndex(0);
 }
-
 void APlayerSpacecraft::SecondWeaponFire()
 {
     WeaponComponent->StartFireByIndex(1);
 }
-
 void APlayerSpacecraft::StopFire()
 {
     WeaponComponent->StopFire();
@@ -90,15 +105,14 @@ void APlayerSpacecraft::LookToMouse(float DeltaTime)
 
 void APlayerSpacecraft::ToggleGamePause()
 {
-    auto* MyPlayerController = Cast<ASpacecraftPlayerController>(Controller);
-    if (MyPlayerController == nullptr) return;
-
-    MyPlayerController->ToggleGamePause();
+    if (auto* MyPlayerController = Cast<ASpacecraftPlayerController>(Controller))
+    {
+        MyPlayerController->ToggleGamePause();
+    }
 }
 
-void APlayerSpacecraft::OnDeath() 
+void APlayerSpacecraft::OnDeath()
 {
     Super::OnDeath();
-
     DisableInput(Cast<APlayerController>(Controller));
 }

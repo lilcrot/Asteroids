@@ -5,6 +5,7 @@
 #include "GameFramework/FloatingPawnMovement.h"
 #include "Components/HealthComponent.h"
 #include "Components/WeaponComponent.h"
+#include "NiagaraFunctionLibrary.h"
 
 ABaseSpacecraft::ABaseSpacecraft()
 {
@@ -64,6 +65,6 @@ void ABaseSpacecraft::OnDeath()
     BoxCollision->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
     SetLifeSpan(LifeSpanOnDeath);
 
-    OnDeath_Visual();
+    SetActorHiddenInGame(true);
+    UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), DeathEffect, GetActorLocation(), GetActorRotation());
 }
-void ABaseSpacecraft::OnDeath_Visual_Implementation() {}

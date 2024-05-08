@@ -11,6 +11,7 @@ class UBoxComponent;
 class UFloatingPawnMovement;
 class UHealthComponent;
 class UWeaponComponent;
+class UNiagaraSystem;
 
 UCLASS()
 class ASTEROIDS_API ABaseSpacecraft : public APawn
@@ -42,15 +43,16 @@ protected:
     UFUNCTION()
     void OnActorHitReceive(AActor* SelfActor, AActor* OtherActor, const FVector NormalImpulse, const FHitResult& Hit);
 
+    UFUNCTION()
+    virtual void OnDeath();
+
     /* When a spacecraft hit with another actor, how much damage should it do */
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Damage", meta = (MinClamp = "1"))
     int32 HitDamage = 1;
 
-    UFUNCTION(BlueprintNativeEvent)
-    void OnDeath_Visual();
-    UFUNCTION()
-    virtual void OnDeath();
-
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Health|Death", meta = (Units = "s", ClampMin = "0.1"))
     float LifeSpanOnDeath = 0.1f;
+
+    UPROPERTY(EditDefaultsOnly, Category = "VFX")
+    TObjectPtr<UNiagaraSystem> DeathEffect;
 };

@@ -11,7 +11,7 @@ public class Asteroids : ModuleRules
         PublicDependencyModuleNames.AddRange(new string[]
         {
             "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput",
-            "AIModule", "GameplayTasks", "AudioMixer",  "UMG", "Json", "JsonUtilities"
+            "AIModule", "GameplayTasks", "AudioMixer",  "UMG", "Json", "JsonUtilities", "Niagara"
         });
 
         if (Target.Configuration != UnrealTargetConfiguration.Shipping)

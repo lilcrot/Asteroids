@@ -10,6 +10,7 @@
 
 class UInputMappingContext;
 class UInputAction;
+class UNiagaraComponent;
 
 UCLASS()
 class ASTEROIDS_API APlayerSpacecraft : public ABaseSpacecraft
@@ -24,22 +25,28 @@ public:
 protected:
     virtual void BeginPlay() override;
 
+private:
     UFUNCTION()
     void Move(const FInputActionValue& Value);
+    void OnMoveStarted();
+    void OnMoveCompleted();
 
-    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Movement", meta = (ClampMin = "0.0"))
-    float RotationSpeed = 2.5f;
+    void LookToMouse(float DeltaTime);
 
     void FirstWeaponFire();
     void SecondWeaponFire();
     void StopFire();
 
-private:
-    void LookToMouse(float DeltaTime);
-
     void ToggleGamePause();
 
     virtual void OnDeath() override;
+
+protected:
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Movement", meta = (ClampMin = "0.0"))
+    float RotationSpeed = 2.5f;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Components")
+    TObjectPtr<UNiagaraComponent> EngineFireNiagaraComponent;
 
 protected:
     //-------------------

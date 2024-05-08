@@ -6,6 +6,8 @@
 #include "Weapons/Ranged/BaseRangedWeapon.h"
 #include "Laser.generated.h"
 
+class UNiagaraSystem;
+
 UCLASS(Abstract)
 class ASTEROIDS_API ALaser : public ABaseRangedWeapon
 {
@@ -38,7 +40,16 @@ protected:
     UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Weapon|Laser", meta = (ClampMin = "0.01", Units = "s"))
     float ReloadingTime = 10.0f;
 
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Weapon|Laser|VFX")
+    TObjectPtr<UNiagaraSystem> LaserEffect;
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Weapon|Laser|VFX")
+    FName LaserEndVectorParamaterName = "LaserEnd";
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Weapon|Laser|VFX")
+    FName LaserWidthFloatParamaterName = "LaserWidth";
+
 private:
+    void PlayLaserEffect(const FHitResult& Hit);
+
     int32 CurrentLaserShots = 0;
 
     void StartReloadLaserShots();

@@ -4,11 +4,14 @@
 #include "Components/SkeletalMeshComponent.h"
 #include "Components/HealthComponent.h"
 #include "GameFramework/FloatingPawnMovement.h"
+#include "Asteroid/AsteroidRotatingComponent.h"
 #include "AsteroidCoreTypes.h"
+#include "NiagaraFunctionLibrary.h"
 
 AAsteroid::AAsteroid()
 {
     PrimaryActorTick.bCanEverTick = true;
+    AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;
 
     {
         SphereCollision = CreateDefaultSubobject<USphereComponent>("SphereCollision");
@@ -37,15 +40,14 @@ AAsteroid::AAsteroid()
     MovementComponent = CreateDefaultSubobject<UFloatingPawnMovement>("MovementComponent");
     checkf(MovementComponent, TEXT("MovementComponent doesn't exist!"));
 
-    AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;
+    AsteroidRotatingComponent = CreateDefaultSubobject<UAsteroidRotatingComponent>("AsteroidRotatingComponent");
+    checkf(AsteroidRotatingComponent, TEXT("AsteroidRotatingComponent doesn't exist!"));
 }
 
 void AAsteroid::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
     AddMovementInput(GetActorForwardVector());
-
-    SkeletalMeshComponent->AddLocalRotation(RotationSpeed);
 }
 
 FVector AAsteroid::GetVelocity() const
@@ -58,7 +60,7 @@ void AAsteroid::BeginPlay()
     Super::BeginPlay();
 
     {
-        checkf(MaxAcceleration > MinAcceleration, TEXT("MaxAcceleration must be more than MinAcceleration!"));
+        checkf(MaxAcceleration >= MinAcceleration, TEXT("MaxAcceleration must be more than or equal MinAcceleration!"));
         MovementComponent->Acceleration = FMath::RandRange(MaxAcceleration, MinAcceleration);
 
         checkf(MaxSpeed > 0.0f, TEXT("MaxSpeed must be more than zero!"));
@@ -77,6 +79,9 @@ void AAsteroid::OnDeath_Implementation()
 {
     SphereCollision->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
     SetLifeSpan(LifeSpanOnDeath);
+
+    SetActorHiddenInGame(true);
+    UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), DeathEffect, GetActorLocation(), GetActorRotation());
 }
 
 void AAsteroid::OnActorHitReceive(AActor* SelfActor, AActor* OtherActor, const FVector NormalImpulse, const FHitResult& Hit)

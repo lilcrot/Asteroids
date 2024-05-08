@@ -2,6 +2,9 @@
 #include "Weapons/Ranged/Laser.h"
 #include "Kismet/KismetSystemLibrary.h"
 #include "AsteroidCoreTypes.h"
+#include "NiagaraFunctionLibrary.h"
+#include "NiagaraComponent.h"
+#include "Components/HealthComponent.h"
 
 ALaser::ALaser() {}
 
@@ -42,15 +45,34 @@ void ALaser::MakeShot()
     FHitResult Hit;
 
     UKismetSystemLibrary::SphereTraceSingle(GetWorld(), TraceStart, TraceEnd, LaserRadius,
-        UEngineTypes::ConvertToTraceType(WeaponTraceCollisionChannel), true, {GetOwner()}, EDrawDebugTrace::Type::ForDuration, Hit, true);
+        UEngineTypes::ConvertToTraceType(WeaponTraceCollisionChannel), true, {GetOwner()}, EDrawDebugTrace::Type::None, Hit, true);
 
     AActor* HitActor = Hit.GetActor();
     if (Hit.bBlockingHit && IsValid(HitActor))
     {
-        HitActor->Destroy();
+        auto* HitActorHealthComponent = HitActor->FindComponentByClass<UHealthComponent>();
+        if (HitActorHealthComponent)
+        {
+            HitActorHealthComponent->SetHealth(0);
+        }
+        else
+        {
+            HitActor->Destroy();
+        }
     }
 
     --CurrentLaserShots;
+
+    PlayLaserEffect(Hit);
+}
+
+void ALaser::PlayLaserEffect(const FHitResult& Hit)
+{
+    auto* NiagaraComponent = UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), LaserEffect, Hit.TraceStart, GetActorRotation());
+    if (!IsValid(NiagaraComponent)) return;
+
+    NiagaraComponent->SetVectorParameter(LaserEndVectorParamaterName, Hit.bBlockingHit ? Hit.ImpactPoint : Hit.TraceEnd);
+    NiagaraComponent->SetFloatParameter(LaserWidthFloatParamaterName, LaserRadius * 2.0f);
 }
 
 bool ALaser::CanMakeShot() const
