@@ -16,7 +16,7 @@ void ALaser::BeginPlay()
     checkf(MaxLaserShots > 0, TEXT("MaxLaserShots must be more than zero!"));
     checkf(ReloadingTime > 0.0f, TEXT("ReloadingTime must be more than zero!"));
 
-    CurrentLaserShots = MaxLaserShots;
+    SetCurrentLaserShots(MaxLaserShots);
 }
 
 void ALaser::StartFire()
@@ -61,7 +61,7 @@ void ALaser::MakeShot()
         }
     }
 
-    --CurrentLaserShots;
+    SetCurrentLaserShots(CurrentLaserShots - 1);
 
     PlayLaserEffect(Hit);
 }
@@ -75,9 +75,10 @@ void ALaser::PlayLaserEffect(const FHitResult& Hit)
     NiagaraComponent->SetFloatParameter(LaserWidthFloatParamaterName, LaserRadius * 2.0f);
 }
 
-bool ALaser::CanMakeShot() const
+void ALaser::SetCurrentLaserShots(const int32 NewLaserShots)
 {
-    return CurrentLaserShots > 0;
+    CurrentLaserShots = FMath::Clamp(NewLaserShots, 0, MaxLaserShots);
+    OnLaserShotsChanged.Broadcast(CurrentLaserShots);
 }
 
 void ALaser::GetTraceData(FVector& TraceStart, FVector& TraceEnd) const
@@ -101,7 +102,22 @@ void ALaser::StartReloadLaserShots()
         [&]()
         {
             bReloading = false;
-            CurrentLaserShots = MaxLaserShots;
+            SetCurrentLaserShots(MaxLaserShots);
         },
         ReloadingTime, false, -1.0f);
+}
+
+bool ALaser::CanMakeShot() const
+{
+    return CurrentLaserShots > 0;
+}
+
+int32 ALaser::GetCurrentLaserShots() const
+{
+    return CurrentLaserShots;
+}
+
+float ALaser::GetReloadingTime() const
+{
+    return ReloadingTime;
 }

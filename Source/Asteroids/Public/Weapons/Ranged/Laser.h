@@ -8,6 +8,8 @@
 
 class UNiagaraSystem;
 
+DECLARE_MULTICAST_DELEGATE_OneParam(FOnLaserShotsChanged, int32);
+
 UCLASS(Abstract)
 class ASTEROIDS_API ALaser : public ABaseRangedWeapon
 {
@@ -19,6 +21,14 @@ public:
     virtual void StartFire() override;
     virtual void StopFire() override;
 
+    FOnLaserShotsChanged OnLaserShotsChanged;
+
+    UFUNCTION(BlueprintPure)
+    int32 GetCurrentLaserShots() const;
+
+    UFUNCTION(BlueprintPure)
+    float GetReloadingTime() const;
+
 protected:
     virtual void BeginPlay() override;
 
@@ -27,14 +37,14 @@ protected:
 
     void GetTraceData(FVector& TraceStart, FVector& TraceEnd) const;
 
-    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Weapon|Laser", meta = (Units = "cm"))
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Weapon|Laser", meta = (ClampMin = "100", Units = "cm"))
     float ShotRange = 3000.0f;
 
     /* Think of the laser as a sphere */
-    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Weapon|Laser", meta = (Units = "cm"))
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Weapon|Laser", meta = (ClampMin = "3", Units = "cm"))
     float LaserRadius = 15.0f;
 
-    UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Weapon|Laser")
+    UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Weapon|Laser", meta = (ClampMin = "1"))
     int32 MaxLaserShots = 10;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Weapon|Laser", meta = (ClampMin = "0.01", Units = "s"))
@@ -50,6 +60,7 @@ protected:
 private:
     void PlayLaserEffect(const FHitResult& Hit);
 
+    void SetCurrentLaserShots(const int32 NewLaserShots);
     int32 CurrentLaserShots = 0;
 
     void StartReloadLaserShots();

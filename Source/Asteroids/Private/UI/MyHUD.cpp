@@ -2,6 +2,7 @@
 #include "UI/MyHUD.h"
 #include "UI/Settings/Collections/VideoSettings/VideoSettingsWidget.h"
 #include "UI/Settings/Collections/AudioSettings/AudioSettingsWidget.h"
+#include "UI/Settings/SettingsCollectionWidget.h"
 #include "GameFramework/PlayerController.h"
 #include "UI/GameplayWidget.h"
 #include "UI/PauseMenuWidget.h"
@@ -13,6 +14,7 @@ void AMyHUD::BeginPlay()
     {
         checkf(PauseMenuWidgetClass, TEXT("PauseMenuWidgetClass isn't set!"));
         checkf(GameplayWidgetClass, TEXT("GameplayWidgetClass isn't set!"));
+        checkf(SettingsCollectionWidgetClass, TEXT("SettingsCollectionWidgetClass isn't set!"));
     }
 
     UWorld* World = GetWorld();
@@ -30,9 +32,9 @@ void AMyHUD::BeginPlay()
 template <typename T>
 void SetNewCurrentWidget(AMyHUD* MyHud, TObjectPtr<T>& NewWidget, TSubclassOf<T> Class)
 {
-    if (!IsValid(MyHud) || !Class || (IsValid(MyHud->CurrentWidget) && MyHud->CurrentWidget == NewWidget)) return;
+    if (!IsValid(MyHud) || !Class || (MyHud->CurrentWidget && MyHud->CurrentWidget == NewWidget)) return;
 
-    if (!IsValid(NewWidget))
+    if (!NewWidget)
     {
         NewWidget = CreateWidget<T>(MyHud->GetWorld(), Class);
         checkf(NewWidget, TEXT("SetNewCurrentWidget is failed because NewWidget(%s) creation failed"), *Class->GetAuthoredName());
@@ -43,7 +45,7 @@ void SetNewCurrentWidget(AMyHUD* MyHud, TObjectPtr<T>& NewWidget, TSubclassOf<T>
         NewWidget->SetVisibility(ESlateVisibility::Visible);
     }
 
-    if (IsValid(MyHud->CurrentWidget))
+    if (MyHud->CurrentWidget)
     {
         MyHud->CurrentWidget->SetVisibility(ESlateVisibility::Collapsed);
     }
@@ -70,14 +72,13 @@ void OpenGameInPauseWidget(AMyHUD* MyHud, TObjectPtr<T>& WidgetPtr, TSubclassOf<
     if (!IsValid(MyHud)) return;
     SetNewCurrentWidget<T>(MyHud, WidgetPtr, Class);
 
-    const auto PlayerController = MyHud->GetOwningPlayerController();
-    if (!IsValid(PlayerController)) return;
+    if (!WidgetPtr) return;
+    WidgetPtr->SetFocus();
+}
 
-    FInputModeGameAndUI InputMode;
-    InputMode.SetWidgetToFocus(WidgetPtr->TakeWidget());
-    InputMode.SetHideCursorDuringCapture(false);
-
-    PlayerController->SetInputMode(InputMode);
+void AMyHUD::OpenSettingsCollection()
+{
+    OpenGameInPauseWidget<USettingsCollectionWidget>(this, SettingsCollectionWidget, SettingsCollectionWidgetClass);
 }
 
 void AMyHUD::OnGamePauseChanged(const bool bIsPaused)

@@ -5,31 +5,37 @@
 
 #include "GameplayWidget.generated.h"
 
-class UProgressBar;
+class URemainingTimeProgressBar;
 class UTextBlock;
+class UWeaponComponent;
 
 UCLASS()
 class ASTEROIDS_API UGameplayWidget : public UUserWidget
 {
     GENERATED_BODY()
 protected:
-    void NativeTick(const FGeometry& MyGeometry, float InDeltaTime) override;
     virtual void NativeOnInitialized() override;
+    virtual void NativeTick(const FGeometry& MyGeometry, float InDeltaTime);
 
-    UPROPERTY(meta = (BindWidget))
-    TObjectPtr<UProgressBar> WaveTimeLeftProgressBar;
+    UPROPERTY(EditDefaultsOnly, meta = (BindWidget))
+    TObjectPtr<URemainingTimeProgressBar> WaveRemainingTimeProgressBar;
 
     UPROPERTY(meta = (BindWidget))
     TObjectPtr<UTextBlock> WaveNumberText;
 
-protected:
-    UFUNCTION(BlueprintPure)
-    float GetCurrentTimeLeftPercent() const;
+    UPROPERTY(EditDefaultsOnly, meta = (BindWidget))
+    TObjectPtr<URemainingTimeProgressBar> LaserShotsReloadTimeProgressBar;
 
+    UPROPERTY(meta = (BindWidget))
+    TObjectPtr<UTextBlock> LaserShotsNumberText;
+
+private:
     UFUNCTION()
     void OnNewWaveHasStarted(const FCurrentWaveInfo WaveInfo);
 
+    void SetLaserShotsNumber(const int32 NewLaserShots);
+    void OnAllPlayerWeaponsSpawned();
+
 private:
-    float CurrentTimeLeft = 0.0f;
-    float MaxWavePeriodTime = 0.0f;
+    TWeakObjectPtr<UWeaponComponent> PlayerWeaponComponent;
 };

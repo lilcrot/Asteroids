@@ -35,6 +35,7 @@ void UWeaponComponent::SpawnWeapons()
 
         Weapons.Add(Weapon);
     }
+    OnAllWeaponsSpawned.Broadcast();
 }
 
 void UWeaponComponent::OnComponentDestroyed(bool bDestroyingHierarchy)

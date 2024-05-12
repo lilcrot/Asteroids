@@ -8,6 +8,7 @@
 
 class UPauseMenuWidget;
 class UGameplayWidget;
+class USettingsCollectionWidget;
 
 UCLASS()
 class ASTEROIDS_API AMyHUD : public AHUD
@@ -41,7 +42,16 @@ public:
     //----------------------
     //  GameInPause
     //----------------------
+    
+    UFUNCTION(BlueprintCallable, Category = "UI|GameInPause")
+    void OpenSettingsCollection();
+
 protected:
+    UPROPERTY(BlueprintReadOnly, Category = "UI|GameInPause")
+    TObjectPtr<USettingsCollectionWidget> SettingsCollectionWidget;
+    UPROPERTY(EditDefaultsOnly, Category = "UI|GameInPause")
+    TSubclassOf<USettingsCollectionWidget> SettingsCollectionWidgetClass;
+
     UPROPERTY(BlueprintReadOnly, Category = "UI|GameInPause")
     TObjectPtr<UPauseMenuWidget> PauseMenuWidget;
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "UI|GameInPause")
