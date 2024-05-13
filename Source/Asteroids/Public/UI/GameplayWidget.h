@@ -34,6 +34,9 @@ private:
     void OnNewWaveHasStarted(const FCurrentWaveInfo WaveInfo);
 
     void SetLaserShotsNumber(const int32 NewLaserShots);
+    void OnLaserReloadingStarted(const float ReloadTimeSec);
+    void OnLaserReloadingFinished();
+
     void OnAllPlayerWeaponsSpawned();
 
 private:

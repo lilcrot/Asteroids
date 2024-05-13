@@ -59,6 +59,8 @@ void UWeaponComponent::StartFireByIndex(const int32 Index)
     }
     if (Weapons[Index])
     {
+        StopFire();
+
         CurrentWeapon = Weapons[Index];
         CurrentWeapon->StartFire();
     }

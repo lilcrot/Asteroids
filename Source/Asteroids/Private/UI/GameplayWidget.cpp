@@ -46,7 +46,10 @@ void UGameplayWidget::OnAllPlayerWeaponsSpawned()
 
     const auto Laser = PlayerWeaponComponent->GetWeaponByClass<ALaser>();
     checkf(Laser, TEXT("Laser player weapon isn't valid or doesn't exists!"));
+
     Laser->OnLaserShotsChanged.AddUObject(this, &ThisClass::SetLaserShotsNumber);
+    Laser->OnReloadingStarted.AddUObject(this, &ThisClass::OnLaserReloadingStarted);
+    Laser->OnReloadingFinished.AddUObject(this, &ThisClass::OnLaserReloadingFinished);
 
     SetLaserShotsNumber(Laser->GetCurrentLaserShots());
 }
@@ -61,17 +64,14 @@ void UGameplayWidget::OnNewWaveHasStarted(const FCurrentWaveInfo WaveInfo)
 void UGameplayWidget::SetLaserShotsNumber(const int32 NewLaserShots)
 {
     LaserShotsNumberText->SetText(FText::AsNumber(NewLaserShots));
+}
 
-    if (NewLaserShots == 0 && PlayerWeaponComponent.IsValid())
-    {
-        const auto Laser = PlayerWeaponComponent->GetWeaponByClass<ALaser>();
-        checkf(Laser, TEXT("Laser player weapon isn't valid or doesn't exists!"));
-
-        LaserShotsReloadTimeProgressBar->SetVisibility(ESlateVisibility::Visible);
-        LaserShotsReloadTimeProgressBar->StartProgressBar(Laser->GetReloadingTime());
-    }
-    else
-    {
-        LaserShotsReloadTimeProgressBar->SetVisibility(ESlateVisibility::Hidden);
-    }
+void UGameplayWidget::OnLaserReloadingStarted(const float ReloadTimeSec)
+{
+    LaserShotsReloadTimeProgressBar->SetVisibility(ESlateVisibility::Visible);
+    LaserShotsReloadTimeProgressBar->StartProgressBar(ReloadTimeSec);
+}
+void UGameplayWidget::OnLaserReloadingFinished()
+{
+    LaserShotsReloadTimeProgressBar->SetVisibility(ESlateVisibility::Hidden);
 }

@@ -9,6 +9,7 @@
 class UPauseMenuWidget;
 class UGameplayWidget;
 class USettingsCollectionWidget;
+class UGameOverWidget;
 
 UCLASS()
 class ASTEROIDS_API AMyHUD : public AHUD
@@ -32,7 +33,7 @@ protected:
 
     UPROPERTY(BlueprintReadOnly, Category = "UI|GameInProgress")
     TObjectPtr<UGameplayWidget> GameplayWidget;
-    UPROPERTY(EditDefaultsOnly, Category = "UI|GameInProgress")
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "UI|GameInProgress")
     TSubclassOf<UGameplayWidget> GameplayWidgetClass;
 
     UFUNCTION(BlueprintCallable, Category = "UI|GameInProgress")
@@ -42,14 +43,14 @@ public:
     //----------------------
     //  GameInPause
     //----------------------
-    
+
     UFUNCTION(BlueprintCallable, Category = "UI|GameInPause")
     void OpenSettingsCollection();
 
 protected:
     UPROPERTY(BlueprintReadOnly, Category = "UI|GameInPause")
     TObjectPtr<USettingsCollectionWidget> SettingsCollectionWidget;
-    UPROPERTY(EditDefaultsOnly, Category = "UI|GameInPause")
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "UI|GameInPause")
     TSubclassOf<USettingsCollectionWidget> SettingsCollectionWidgetClass;
 
     UPROPERTY(BlueprintReadOnly, Category = "UI|GameInPause")
@@ -60,4 +61,18 @@ protected:
 private:
     UFUNCTION()
     void OnGamePauseChanged(const bool bIsPaused);
+
+private:
+    //----------------------
+    //  GameOver
+    //----------------------
+
+    UFUNCTION()
+    void OpenGameOverWidget();
+
+protected:
+    UPROPERTY(BlueprintReadOnly, Category = "UI|GameOver")
+    TObjectPtr<UGameOverWidget> GameOverWidget;
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "UI|GameOver")
+    TSubclassOf<UGameOverWidget> GameOverWidgetClass;
 };

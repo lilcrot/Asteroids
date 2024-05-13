@@ -8,7 +8,9 @@
 
 class UNiagaraSystem;
 
-DECLARE_MULTICAST_DELEGATE_OneParam(FOnLaserShotsChanged, int32);
+DECLARE_MULTICAST_DELEGATE_OneParam(FOnLaserShotsChanged, int32);  // new laser shots value
+DECLARE_MULTICAST_DELEGATE_OneParam(FOnReloadingStarted, float);   // reload time in seconds
+DECLARE_MULTICAST_DELEGATE(FOnReloadingFinished);
 
 UCLASS(Abstract)
 class ASTEROIDS_API ALaser : public ABaseRangedWeapon
@@ -22,6 +24,9 @@ public:
     virtual void StopFire() override;
 
     FOnLaserShotsChanged OnLaserShotsChanged;
+
+    FOnReloadingStarted OnReloadingStarted;
+    FOnReloadingFinished OnReloadingFinished;
 
     UFUNCTION(BlueprintPure)
     int32 GetCurrentLaserShots() const;

@@ -95,12 +95,16 @@ void ALaser::StartReloadLaserShots()
     UWorld* World = GetWorld();
     if (bReloading || World == nullptr) return;
 
+    OnReloadingStarted.Broadcast(ReloadingTime);
     bReloading = true;
+
     FTimerHandle ReloadTimerHandle;
     World->GetTimerManager().SetTimer(
         ReloadTimerHandle,
         [&]()
         {
+            OnReloadingFinished.Broadcast();
+
             bReloading = false;
             SetCurrentLaserShots(MaxLaserShots);
         },

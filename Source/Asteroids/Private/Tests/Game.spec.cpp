@@ -28,7 +28,7 @@ void FAsteroidsGame::Define()
             It("GameMapShouldExist",
                 [this]()
                 {
-                    const TArray<FString> GameMaps = {"M_Space", "M_TestEmpty"};
+                    const TArray<FString> GameMaps = {"M_Space", "M_TestEmpty", "M_MainMenu"};
 
                     TArray<FString> AllProjectMaps;
                     IFileManager::Get().FindFilesRecursive(AllProjectMaps, *FPaths::ProjectContentDir(), TEXT("*.umap"), true, false);

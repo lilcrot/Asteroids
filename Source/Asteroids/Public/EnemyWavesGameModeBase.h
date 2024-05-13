@@ -33,6 +33,7 @@ struct FCurrentWaveInfo
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnGamePauseChangedDelegate, bool, bIsPaused);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnNewWaveHasStarted, FCurrentWaveInfo, WaveInfo);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnGameOver);
 
 UCLASS(Abstract)
 class ASTEROIDS_API AEnemyWavesGameModeBase : public AGameModeBase
@@ -50,6 +51,9 @@ public:
     UPROPERTY(BlueprintAssignable, Category = "GameMode")
     FOnNewWaveHasStarted OnNewWaveHasStarted;
 
+    UPROPERTY(BlueprintAssignable, Category = "GameMode")
+    FOnGameOver OnGameOver;
+
     UFUNCTION(BlueprintPure)
     FCurrentWaveInfo GetCurrentWaveInfo() const;
 
@@ -58,6 +62,12 @@ protected:
 
     virtual bool SetPause(APlayerController* PC, FCanUnpause CanUnpauseDelegate = FCanUnpause()) override;
     virtual bool ClearPause() override;
+
+private:
+    UFUNCTION()
+    void OnPlayerPawnDestroyed(AActor* DestroyedActor);
+
+    void GameOver();
 
 protected:
     //-----------------------
@@ -88,6 +98,8 @@ protected:
     float WavePeriodTimeAdditionalModifier = 3.0f;
 
 private:
+    bool bCanStartNewWave = true;
+
     void StartNewWave(const bool bApplyProgression = true);
     void ApplyProgression();
 

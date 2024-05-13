@@ -16,7 +16,6 @@ AEnemyWavesGameModeBase::AEnemyWavesGameModeBase()
 void AEnemyWavesGameModeBase::InitGame(const FString& MapName, const FString& Options, FString& ErrorMessage)
 {
     Super::InitGame(MapName, Options, ErrorMessage);
-
     {
         checkf(InitEnemyWavePeriodTime > 0.0f, TEXT("EnemyWavePeriodTime must be more than zero!"));
         checkf(WavePeriodTimeAdditionalModifier >= 0.0f, TEXT("WavePeriodTimeAdditionalModifier must be more or equal than zero!"));
@@ -39,10 +38,13 @@ void AEnemyWavesGameModeBase::BeginPlay()
     Super::BeginPlay();
 
     const auto PlayerController = UGameplayStatics::GetPlayerController(GetWorld(), 0);
-    if (PlayerController != nullptr)
-    {
-        PlayerController->SetShowMouseCursor(true);
-    }
+    checkf(IsValid(PlayerController), TEXT("PlayerController isn't valid"));
+    PlayerController->SetShowMouseCursor(true);
+    PlayerController->SetInputMode(FInputModeGameOnly().SetConsumeCaptureMouseDown(false));
+
+    const auto PlayerPawn = PlayerController->GetPawn();
+    checkf(IsValid(PlayerPawn), TEXT("PlayerPawn isn't valid"));
+    PlayerPawn->OnDestroyed.AddDynamic(this, &ThisClass::OnPlayerPawnDestroyed);
 
     UGameplayStatics::GetAllActorsOfClass(GetWorld(), AEnemySpawner::StaticClass(), EnemySpawners);
     if (EnemySpawners.IsEmpty())
@@ -53,12 +55,12 @@ void AEnemyWavesGameModeBase::BeginPlay()
     for (const auto It : EnemySpawners)
     {
         const auto Spawner = Cast<AEnemySpawner>(It);
-        if (Spawner == nullptr) continue;
+        if (!Spawner) continue;
 
         Spawner->OnEnemySpawned.AddDynamic(this, &ThisClass::OnEnemySpawnedByWave);
     }
 
-    StartNewWave(false);  // we don't need progression on the first wave
+    StartNewWave(false);
 }
 
 bool AEnemyWavesGameModeBase::SetPause(APlayerController* PC, FCanUnpause CanUnpauseDelegate)
@@ -83,12 +85,30 @@ bool AEnemyWavesGameModeBase::ClearPause()
     return bSucceed;
 }
 
+void AEnemyWavesGameModeBase::OnPlayerPawnDestroyed(AActor* DestroyedActor)
+{
+    GameOver();
+}
+
+void AEnemyWavesGameModeBase::GameOver()
+{
+    OnGameOver.Broadcast();
+    bCanStartNewWave = false;
+
+    if (UWorld* World = GetWorld())
+    {
+        World->GetTimerManager().ClearTimer(NewWaveByPeriodTimerHandle);
+    }
+}
+
 //-----------------------
 //     Enemy Waves
 //-----------------------
 
 void AEnemyWavesGameModeBase::StartNewWave(const bool bApplyProgression)
 {
+    if (!bCanStartNewWave) return;
+
     CurrentWaveInfo.WaveNumber++;
     if (bApplyProgression)
     {
@@ -101,16 +121,13 @@ void AEnemyWavesGameModeBase::StartNewWave(const bool bApplyProgression)
     for (const auto EnemyClass : EnemyPool)
     {
         const int32 RandomIndex = FMath::RandRange(0, EnemySpawners.Num() - 1);
-        const auto Spawner = Cast<AEnemySpawner>(EnemySpawners[RandomIndex]);
-
-        if (Spawner != nullptr)
+        if (const auto Spawner = Cast<AEnemySpawner>(EnemySpawners[RandomIndex]))
         {
             Spawner->TryToSpawnEnemy(EnemyClass);
         }
     }
 
-    UWorld* World = GetWorld();
-    if (World != nullptr)
+    if (UWorld* World = GetWorld())
     {
         FTimerDelegate TimerDelegate;
         TimerDelegate.BindUObject(this, &ThisClass::StartNewWave, true);
@@ -132,15 +149,13 @@ void AEnemyWavesGameModeBase::ApplyProgression()
 
 void AEnemyWavesGameModeBase::OnEnemySpawnedByWave(AActor* Enemy)
 {
-    if (Enemy == nullptr) return;
-
+    if (!Enemy) return;
     Enemy->OnDestroyed.AddDynamic(this, &ThisClass::OnEnemyFromWaveDestroyed);
 }
 
 void AEnemyWavesGameModeBase::OnEnemyFromWaveDestroyed(AActor* DestroyedEnemy)
 {
-    if (DestroyedEnemy == nullptr) return;
-
+    if (!DestroyedEnemy) return;
     DestroyedEnemy->OnDestroyed.RemoveAll(this);
 
     if (--CurrentWaveInfo.RemainingEnemies <= 0)

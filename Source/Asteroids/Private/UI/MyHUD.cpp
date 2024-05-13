@@ -3,9 +3,10 @@
 #include "UI/Settings/Collections/VideoSettings/VideoSettingsWidget.h"
 #include "UI/Settings/Collections/AudioSettings/AudioSettingsWidget.h"
 #include "UI/Settings/SettingsCollectionWidget.h"
-#include "GameFramework/PlayerController.h"
+#include "UI/GameOverWidget.h"
 #include "UI/GameplayWidget.h"
 #include "UI/PauseMenuWidget.h"
+#include "GameFramework/PlayerController.h"
 #include "EnemyWavesGameModeBase.h"
 
 void AMyHUD::BeginPlay()
@@ -15,15 +16,16 @@ void AMyHUD::BeginPlay()
         checkf(PauseMenuWidgetClass, TEXT("PauseMenuWidgetClass isn't set!"));
         checkf(GameplayWidgetClass, TEXT("GameplayWidgetClass isn't set!"));
         checkf(SettingsCollectionWidgetClass, TEXT("SettingsCollectionWidgetClass isn't set!"));
+        checkf(GameOverWidgetClass, TEXT("GameOverWidgetClass isn't set!"));
     }
 
     UWorld* World = GetWorld();
     if (!World) return;
 
-    auto* GameMode = Cast<AEnemyWavesGameModeBase>(World->GetAuthGameMode());
-    if (GameMode)
+    if (auto* GameMode = Cast<AEnemyWavesGameModeBase>(World->GetAuthGameMode()))
     {
         GameMode->OnGamePauseChangedEvent.AddDynamic(this, &ThisClass::OnGamePauseChanged);
+        GameMode->OnGameOver.AddDynamic(this, &ThisClass::OpenGameOverWidget);
     }
 
     OpenGameplayWidget();
@@ -91,4 +93,13 @@ void AMyHUD::OnGamePauseChanged(const bool bIsPaused)
     {
         OpenGameplayWidget();
     }
+}
+
+//----------------------
+//  GameOver
+//----------------------
+
+void AMyHUD::OpenGameOverWidget()
+{
+    SetNewCurrentWidget<UGameOverWidget>(this, GameOverWidget, GameOverWidgetClass);
 }
