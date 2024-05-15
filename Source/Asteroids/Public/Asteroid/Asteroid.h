@@ -48,6 +48,9 @@ protected:
     void OnActorHitReceive(AActor* SelfActor, AActor* OtherActor, const FVector NormalImpulse, const FHitResult& Hit);
 
     UFUNCTION(BlueprintNativeEvent)
+    void OnAsteroidHit_Visual();
+
+    UFUNCTION(BlueprintNativeEvent)
     void OnDeath();
 
 protected:
@@ -72,7 +75,4 @@ protected:
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Asteroid|Health|Death", meta = (Units = "s", ClampMin = "0.05"))
     float LifeSpanOnDeath = 0.05f;
-
-    UPROPERTY(EditDefaultsOnly, Category = "Asteroid|VFX")
-    TObjectPtr<UNiagaraSystem> DeathEffect;
 };

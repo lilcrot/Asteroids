@@ -44,6 +44,7 @@ private:
     TObjectPtr<ABaseWeapon> CurrentWeapon;
     TArray<TObjectPtr<ABaseWeapon>> Weapons;
     int32 CurrentWeaponIndex = 0;
+    bool bIsFiring = false;
 
     void SpawnWeapons();
 };

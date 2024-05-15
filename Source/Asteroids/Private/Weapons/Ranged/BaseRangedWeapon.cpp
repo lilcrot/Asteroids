@@ -49,7 +49,9 @@ void ABaseRangedWeapon::MakeShot()
     GetSpawnProjectileData(SpawnTransform, SpawnParams);
 
     World->SpawnActor<AProjectileBase>(ProjectileClass, SpawnTransform, SpawnParams);
+    PlayShotEffect();
 }
+void ABaseRangedWeapon::PlayShotEffect_Implementation() {}
 
 void ABaseRangedWeapon::GetSpawnProjectileData(FTransform& SpawnTransform, FActorSpawnParameters& SpawnParams)
 {

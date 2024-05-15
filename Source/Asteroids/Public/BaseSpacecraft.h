@@ -45,6 +45,8 @@ protected:
 
     UFUNCTION()
     virtual void OnDeath();
+    UFUNCTION(BlueprintNativeEvent)
+    void OnDeath_Visual();
 
     /* When a spacecraft hit with another actor, how much damage should it do */
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Damage", meta = (MinClamp = "1"))
@@ -52,7 +54,4 @@ protected:
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Health|Death", meta = (Units = "s", ClampMin = "0.1"))
     float LifeSpanOnDeath = 0.1f;
-
-    UPROPERTY(EditDefaultsOnly, Category = "VFX")
-    TObjectPtr<UNiagaraSystem> DeathEffect;
 };

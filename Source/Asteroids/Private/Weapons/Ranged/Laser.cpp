@@ -64,6 +64,7 @@ void ALaser::MakeShot()
     SetCurrentLaserShots(CurrentLaserShots - 1);
 
     PlayLaserEffect(Hit);
+    PlayShotEffect();
 }
 
 void ALaser::PlayLaserEffect(const FHitResult& Hit)

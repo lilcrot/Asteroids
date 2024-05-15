@@ -65,6 +65,6 @@ void ABaseSpacecraft::OnDeath()
     BoxCollision->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
     SetLifeSpan(LifeSpanOnDeath);
 
-    SetActorHiddenInGame(true);
-    UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), DeathEffect, GetActorLocation(), GetActorRotation());
+    OnDeath_Visual();
 }
+void ABaseSpacecraft::OnDeath_Visual_Implementation() {}

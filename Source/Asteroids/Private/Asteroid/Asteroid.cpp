@@ -79,13 +79,14 @@ void AAsteroid::OnDeath_Implementation()
 {
     SphereCollision->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
     SetLifeSpan(LifeSpanOnDeath);
-
-    SetActorHiddenInGame(true);
-    UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), DeathEffect, GetActorLocation(), GetActorRotation());
 }
 
 void AAsteroid::OnActorHitReceive(AActor* SelfActor, AActor* OtherActor, const FVector NormalImpulse, const FHitResult& Hit)
 {
     if (!IsValid(OtherActor)) return;
     OtherActor->TakeDamage(HitDamage, FDamageEvent(), Controller, this);
+
+    OnAsteroidHit_Visual();
 }
+
+void AAsteroid::OnAsteroidHit_Visual_Implementation() {}

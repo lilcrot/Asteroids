@@ -40,4 +40,9 @@ protected:
 
     virtual void MakeShot();
     FTimerHandle FireHandle;
+
+    /*  Note: Automatically called in the MakeShot function of this class,
+        if the logic of the function is not inherited, then you must call it yourself */
+    UFUNCTION(BlueprintNativeEvent)
+    void PlayShotEffect();
 };
