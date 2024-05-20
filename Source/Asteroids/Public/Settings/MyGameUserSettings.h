@@ -33,15 +33,25 @@ UCLASS(Abstract, BlueprintType, Blueprintable)
 class ASTEROIDS_API UMyGameUserSettings : public UGameUserSettings
 {
     GENERATED_BODY()
+    friend class UMyGameInstance;
 
 public:
     UMyGameUserSettings();
 
     static UMyGameUserSettings* Get();
 
-    const TArray<UVideoGameSetting*>& GetVideoSettings() const;
-    const TArray<UScalarGameSetting*>& GetAudioSettings() const;
+    const TArray<UVideoGameSetting*>& GetVideoSettings(ULocalPlayer* InLocalPlayer);
+    const TArray<UScalarGameSetting*>& GetAudioSettings(ULocalPlayer* InLocalPlayer);
     const TArray<UBaseGameSetting*>& GetSoundSettings(ULocalPlayer* InLocalPlayer);
+
+    virtual class UWorld* GetWorld() const;
+
+private:
+    UPROPERTY()
+    TObjectPtr<UWorld> CurrentWorld;
+
+    void OnGameStarted(UWorld* World);  // called by MyGameInstance
+    void OnPostWorldInitialization(UWorld* World, const UWorld::InitializationValues IVS);
 
 public:
     //------------------
@@ -55,8 +65,8 @@ public:
 
 private:
     UPROPERTY()
-    TArray<UVideoGameSetting*> VideoSettings;
-    void InitializeVideoSettings();
+    TArray<TObjectPtr<UVideoGameSetting>> VideoSettings;
+    void InitializeVideoSettings(ULocalPlayer* InLocalPlayer);
 
 public:
     //--------------------------
@@ -65,7 +75,7 @@ public:
 
 protected:
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "AudioSettings")
-    FSoundMixClassInfo OverrallAudioInfo;
+    FSoundMixClassInfo OverallAudioInfo;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "AudioSettings")
     FSoundMixClassInfo MusicAudioInfo;
@@ -76,14 +86,15 @@ protected:
 private:
     UPROPERTY()
     TArray<TObjectPtr<UScalarGameSetting>> AudioSettings;
-    void InitializeAudioSettings();
+    void InitializeAudioSettings(ULocalPlayer* InLocalPlayer);
 
     UPROPERTY()
     TArray<TObjectPtr<UBaseGameSetting>> SoundSettings;
+    void InitializeSoundSettings(ULocalPlayer* InLocalPlayer);
 
-    #if WITH_EDITOR
+#if WITH_EDITOR
     void OnWorldCleanup(UWorld* World, const bool bSessionEnded, const bool bCleanupResources);
-    #endif  // WITH_EDITOR
+#endif  // WITH_EDITOR
 
     UPROPERTY(Config)
     float OverallVolumePercentage = 1.0f;
@@ -96,4 +107,7 @@ private:
 
     UPROPERTY(Config)
     FString AudioOutputDeviceId;
+
+    UFUNCTION()
+    void OnCompletedAudioDeviceSwap(const FSwapAudioOutputResult& SwapResult);
 };

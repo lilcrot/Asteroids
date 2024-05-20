@@ -7,7 +7,6 @@
 
 DEFINE_LOG_CATEGORY_STATIC(LogAudioSettingsWidget, All, All);
 
-
 void UAudioSettingsWidget::NativeOnInitialized()
 {
     Super::NativeOnInitialized();
@@ -22,10 +21,15 @@ void UAudioSettingsWidget::NativeOnInitialized()
     }
     UserSettings->LoadSettings();
 
+    const auto* OwningPlayerController = GetOwningPlayer();
+    if (!IsValid(OwningPlayerController)) return;
+
+    const auto LocalPlayer = OwningPlayerController->GetLocalPlayer();
+
     /*---------------- ListViewAudioSettings ----------------*/
     ListViewAudioSettings->ClearListItems();
 
-    const auto AudioSettings = UserSettings->GetAudioSettings();
+    const auto AudioSettings = UserSettings->GetAudioSettings(LocalPlayer);
     for (auto* Setting : AudioSettings)
     {
         ListViewAudioSettings->AddItem(Setting);
@@ -34,13 +38,9 @@ void UAudioSettingsWidget::NativeOnInitialized()
     /*---------------- ListViewSoundSettings ----------------*/
     ListViewSoundSettings->ClearListItems();
 
-    const auto* OwningPlayerController = GetOwningPlayer();
-    if (IsValid(OwningPlayerController))
+    const auto SoundSettings = UserSettings->GetSoundSettings(LocalPlayer);
+    for (auto* Setting : SoundSettings)
     {
-        const auto SoundSettings = UserSettings->GetSoundSettings(OwningPlayerController->GetLocalPlayer());
-        for (auto* Setting : SoundSettings)
-        {
-            ListViewSoundSettings->AddItem(Setting);
-        }
+        ListViewSoundSettings->AddItem(Setting);
     }
 }

@@ -45,9 +45,9 @@ void UWeaponComponent::OnComponentDestroyed(bool bDestroyingHierarchy)
     for (const auto& Weapon : Weapons)
     {
         if (!Weapon) continue;
-
         Weapon->Destroy();
     }
+    Weapons.Empty();
 }
 
 void UWeaponComponent::StartFireByIndex(const int32 Index)

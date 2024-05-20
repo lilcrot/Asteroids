@@ -19,8 +19,11 @@ void UVideoSettingsWidget::NativeOnInitialized()
         return;
     }
 
+    const auto* OwningPlayerController = GetOwningPlayer();
+    if (!IsValid(OwningPlayerController)) return;
+
     UserSettings->LoadSettings();
-    const auto& VideoSettings = UserSettings->GetVideoSettings();
+    const auto& VideoSettings = UserSettings->GetVideoSettings(OwningPlayerController->GetLocalPlayer());
 
     checkf(ListViewVideoSettings, TEXT("ListViewVideoSettings doesn't exist!"));
     ListViewVideoSettings->ClearListItems();

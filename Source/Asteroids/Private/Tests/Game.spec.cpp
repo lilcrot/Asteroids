@@ -90,16 +90,12 @@ void FAsteroidsGame::Define()
             It("SettingsExist",
                 [this]()
                 {
-                    TestTrue("VideoSettings exist", GameUserSettings->GetVideoSettings().Num() != 0);
-                    TestTrue("AudioSettings exist", GameUserSettings->GetAudioSettings().Num() != 0);
-
                     const auto* FirstPlayerController = World->GetFirstPlayerController();
-                    TestTrueExpr(IsValid(FirstPlayerController));
-                    if (FirstPlayerController)
-                    {
-                        TestTrue("SoundSettings exist",  //
-                            GameUserSettings->GetSoundSettings(FirstPlayerController->GetLocalPlayer()).Num() != 0);
-                    }
+                    if (!TestTrue("FirstPlayerController exist", IsValid(FirstPlayerController))) return;
+
+                    TestTrue("VideoSettings exist", GameUserSettings->GetVideoSettings(FirstPlayerController->GetLocalPlayer()).Num() != 0);
+                    TestTrue("AudioSettings exist", GameUserSettings->GetAudioSettings(FirstPlayerController->GetLocalPlayer()).Num() != 0);
+                    TestTrue("SoundSettings exist", GameUserSettings->GetSoundSettings(FirstPlayerController->GetLocalPlayer()).Num() != 0);
                 });
         });
 }

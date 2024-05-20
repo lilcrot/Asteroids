@@ -28,7 +28,7 @@ void ALaser::StopFire()
 {
     if (CurrentLaserShots == 0)
     {
-        StartReloadLaserShots();
+        StartReload();
     }
 }
 
@@ -91,7 +91,7 @@ void ALaser::GetTraceData(FVector& TraceStart, FVector& TraceEnd) const
     TraceEnd = TraceStart + ShotDirection * ShotRange;
 }
 
-void ALaser::StartReloadLaserShots()
+void ALaser::StartReload()
 {
     UWorld* World = GetWorld();
     if (bReloading || World == nullptr) return;
@@ -99,17 +99,14 @@ void ALaser::StartReloadLaserShots()
     OnReloadingStarted.Broadcast(ReloadingTime);
     bReloading = true;
 
-    FTimerHandle ReloadTimerHandle;
-    World->GetTimerManager().SetTimer(
-        ReloadTimerHandle,
-        [&]()
-        {
-            OnReloadingFinished.Broadcast();
+    World->GetTimerManager().SetTimer(ReloadTimerHandle, this, &ThisClass::StopReload, ReloadingTime, false, -1.0f);
+}
+void ALaser::StopReload()
+{
+    OnReloadingFinished.Broadcast();
+    bReloading = false;
 
-            bReloading = false;
-            SetCurrentLaserShots(MaxLaserShots);
-        },
-        ReloadingTime, false, -1.0f);
+    SetCurrentLaserShots(MaxLaserShots);
 }
 
 bool ALaser::CanMakeShot() const

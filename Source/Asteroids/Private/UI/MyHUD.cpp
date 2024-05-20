@@ -102,4 +102,8 @@ void AMyHUD::OnGamePauseChanged(const bool bIsPaused)
 void AMyHUD::OpenGameOverWidget()
 {
     SetNewCurrentWidget<UGameOverWidget>(this, GameOverWidget, GameOverWidgetClass);
+    if (GameOverWidget)
+    {
+        GameOverWidget->SetFocus();
+    }
 }

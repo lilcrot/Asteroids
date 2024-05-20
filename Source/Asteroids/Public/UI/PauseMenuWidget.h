@@ -11,6 +11,9 @@ UCLASS()
 class ASTEROIDS_API UPauseMenuWidget : public UUserWidget
 {
     GENERATED_BODY()
+public:
+    UPauseMenuWidget(const FObjectInitializer& ObjectInitializer);
+
 protected:
     virtual void NativeOnInitialized() override;
 

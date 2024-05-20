@@ -5,10 +5,11 @@
 
 #include "GameOverWidget.generated.h"
 
-
 UCLASS()
 class ASTEROIDS_API UGameOverWidget : public UUserWidget
 {
-	GENERATED_BODY()
-	
+    GENERATED_BODY()
+
+public:
+    UGameOverWidget(const FObjectInitializer& ObjectInitializer);
 };

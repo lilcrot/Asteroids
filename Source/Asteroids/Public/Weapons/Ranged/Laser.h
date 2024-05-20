@@ -68,6 +68,8 @@ private:
     void SetCurrentLaserShots(const int32 NewLaserShots);
     int32 CurrentLaserShots = 0;
 
-    void StartReloadLaserShots();
+    FTimerHandle ReloadTimerHandle;
     bool bReloading = false;
+    void StartReload();
+    void StopReload();
 };
